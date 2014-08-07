@@ -1,0 +1,92 @@
+body {
+	font-size: 16pt;
+	font-family: Calibri, Arial, Helvetica, Sans-Serif;
+}
+
+.result {
+	background-color: #f0f0f0;
+	padding: 0.2em;
+}
+
+.result h3 {
+	text-transform: capitalize;
+	}
+	
+.result ul {
+	list-style: none; 
+	padding: 0;
+	margin: 0;
+	}
+
+.result-row {
+	padding: 0.5em 0 ;
+	}
+	
+.screenshot {
+	text-align: center; 
+}
+
+.screenshot img {
+	max-height: 240px;
+	border: 1px solid #dedede;
+	padding: 5px;
+	max-width: 100%;
+	}
+	
+ul.sitelist {
+	-webkit-column-count: 4; 
+}
+
+ul.sitelist>li {
+	text-transform: capitalize;
+	}
+
+.previous {
+	background-color: #DEF; 
+	margin: 0.4em 0;
+	padding: 0 0.4em;
+	}
+
+ul.monthlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+ul.monthlist li { 
+	display: inline; 
+}
+
+ul.monthlist>li>a {
+	display: inline-block;
+	padding: 0.2em 0.5em;
+}
+
+ul.monthlist>li>a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+
+
+.month-result>.page-header {
+    border-bottom: 5px solid darkblue;
+    padding-bottom: 2px;
+    margin: 2px;
+}
+
+header {
+	padding: 0.5em;
+	background-color: #FED;
+	margin-bottom: 1em;
+	}
+	
+footer {
+	padding: 1em 0;
+	min-height: 75px;
+	background-color: #FED;
+	margin-top: 1.5em;
+}
+
+.tab-pane { 
+	padding-top: 10px;
+	}

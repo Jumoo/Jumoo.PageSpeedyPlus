@@ -1,0 +1,23 @@
+#
+# PageSpeedyPlus
+#
+
+#
+/results/*
+councilsites.txt
+*.db
+*.config.json
+*.csv
+*.pyc
+
+/backfill/
+
+
+#
+# For sanity (and because they actually live if physically diffrent places)
+# the WebDB is a copy of the processing DB 
+#
+# (a batch job moves the files)
+#
+/website/results/
+/website/*.db
