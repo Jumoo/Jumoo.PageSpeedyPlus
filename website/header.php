@@ -16,7 +16,9 @@
 				<div class="col-xs-12">
 					<a href="sites.php">LocalGov Speedy [Alpha]</a> |
 					<a href="featurelist.php">Feature List</a> |
-					<a href="speedytable.php?month=7">Latest Speedy Table</a>
+					<a href="speedytable.php?month=7">Latest Speedy Table</a> |
+					<a href="achecktable.php?month=7">Accessibility Table</a> |
+					<a href="https://github.com/KevinJump/Jumoo.PageSpeedyPlus/">Code on Github</a>
 				</div>
 			</div>
 		</div>

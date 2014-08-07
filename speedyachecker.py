@@ -72,6 +72,10 @@ class AChecker(object):
 			test_status = root.find("./summary/status")
 			test_errors = root.find("./summary/NumOfErrors")
 			
+			# new need db to change -->
+			test_likely = root.find("./summary/NumOfLikelyProblems")
+			test_potential = root.find("./summary/NumOfPotentialProblems")
+			
 			print "Status:", test_status.text, 
 			print "Error Count:", test_errors.text, 
 			self.db.saveChecker(siteId, monthId, test_status.text, test_errors.text);

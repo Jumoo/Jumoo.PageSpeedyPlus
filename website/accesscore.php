@@ -29,8 +29,26 @@ class Checker
 		
 		$statement->close();
 		
-		return $results; 
+		return $results; 		
+	}
+	
+	function getTable($month)
+	{	
+		$accesstable = array();
 		
+		$sql = "SELECT * FROM CHECKER_VIEW Where monthId = :id ORDER BY Errors"; 
+		$statement = $this->db->prepare($sql);
+		$statement->bindValue(':id', $month, SQLITE3_TEXT);
+		$results = $statement->execute();
+		
+		while( $row = $results->fetchArray()) {
+			$accesstable[] = $row ; 
+		}
+		
+		$statement->close();
+		return $accesstable; 
+		
+	
 	}
 }
 
