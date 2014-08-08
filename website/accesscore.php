@@ -50,6 +50,14 @@ class Checker
 		
 	
 	}
+	
+	function getXML($month, $sitename)
+	{
+		$path = "results/" . $month . "/checker/" . $sitename . ".xml";
+		$xml = simplexml_load_file($path);
+		
+		return $xml; 
+	}
 }
 
 function ShowChecker($c, $month, $s)
@@ -69,9 +77,10 @@ function ShowChecker($c, $month, $s)
 				<strong><?php echo $check['Status']; ?></strong><br/>
 				Errors: <?php echo $check['Errors']; ?><br/>
 				<?php 
-					$raw_url = 'results/' . $check['MonthID'] . '/checker/' . $s->getSiteName() . '.xml' ;
+					// $raw_url = 'results/' . $check['MonthID'] . '/checker/' . $s->getSiteName() . '.xml' ;
+					$raw_url = 'xml.php?id=' . $s->getSiteId() . '&month=' . $check['MonthID'] ;
 				?>
-				<a href="<?php echo $raw_url; ?>">Raw Results</a>
+				<a href="<?php echo $raw_url; ?>">Detailed Results</a>
 			</p>
 					
 		<?php

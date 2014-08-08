@@ -4,7 +4,7 @@
 		<footer>
 			<div class="container">
 				<div class="col-xs-12">
-					PageSpeedy is a <a href="http://jumoo.uk/">Jumoo</a> thingymabob, 
+					PageSpeedy is a <a href="http://jumoo.uk/" class="logo">Jumoo</a> thingymabob, 
 				</div>
 			</div>
 		</footer>

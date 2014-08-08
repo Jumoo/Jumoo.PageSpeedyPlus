@@ -11,6 +11,10 @@
 	<div class="page-header">
 		<h2>Site Features</h2>
 	</div>
+	<p>
+		When pagespeedy runs, it uses a version of <a href="https://wappalyzer.com/">wappalyzer</a> to interrogate each site to see what they are running.
+		this page lists the technologies found.
+	</p>
 	
 	<ul>
 	<?php

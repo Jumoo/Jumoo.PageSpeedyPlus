@@ -14,6 +14,10 @@ class Speedy
 		return $this->db->querySingle('SELECT Name FROM SITES WHERE ID = ' . $this->siteId . ';');
 	}
 	
+	function getSiteId() {
+		return $this->siteId; 
+	}
+	
 	function getSiteUrl()
 	{
 		return $this->db->querySingle('SELECT Url FROM SITES WHERE ID = ' . $this->siteId . ';');

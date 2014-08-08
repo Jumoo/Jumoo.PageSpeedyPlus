@@ -1,4 +1,5 @@
 <?php include 'header.php' ; ?>
+<p>All the sites <span class="logo"><span class="lg">Localgov</span>.pagespeedy</span> looks at:
 <?php
 
 	$db = new SQlite3('speedyplus.db');

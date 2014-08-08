@@ -13,16 +13,16 @@
 <div class="row">
 	<div class="col-xs-12">
 		<h2>Speedy Reviews</h2>	
-		<div class="alert alert-info">
-		Once a month, pageSpeedy is ran against each site, this page show what page speedy finds
-		</div>
+		<p>
+		Once a month, pageSpeedy runs against each site, this page show what page speedy has found for this one.
+		</p>
 	</div>
 </div>
 
 <div class="row">
 	<div class="col-xs-12">
 		<div class="page-header">
-			<h1><?php echo $speedy->getSiteName(); ?> 
+			<h1 class="sitename"><?php echo $speedy->getSiteName(); ?> 
 				<?php $url = $speedy->getSiteUrl(); ?>
 				<small><a href="<?php echo $url ?>"><?php echo $url ?></a></small></h1>
 		</div>
