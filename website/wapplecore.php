@@ -33,13 +33,14 @@ class Wapple
 		
 	}
 	
-	function getSites($feature)	
+	function getSites($feature, $monthId)	
 	{
 		$sites = array();
 	
-		$sql = 'SELECT * FROM SITES INNER JOIN Features ON Features.SiteId = Sites.ID WHERE Application = :feature';
+		$sql = 'SELECT * FROM SITES INNER JOIN Features ON Features.SiteId = Sites.ID WHERE Application = :feature and MonthID = :month';
 		$statement = $this->db->prepare($sql);
 		$statement->bindValue(':feature', $feature, SQLITE3_TEXT);
+		$statement->bindValue(':month', $monthId, SQLITE3_INTEGER);
 		$rows = $statement->execute();
 		
 		while ( $row = $rows->fetchArray())

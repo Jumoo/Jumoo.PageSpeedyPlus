@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<body>
+
+<canvas id="results" width="400" height="400"></canvas>
+
+<script src="js/chart.min.js"></script>
+
+<script>
+
+	var data = {
+		labels: ["March", "April", "May", "June"],
+		datasets: [
+			{
+				label: "Score",
+				fillColor: "rgba(220,220, 220, 0.2)",
+				strokeColor: "rgba(220,220,220,1)",
+				pointColor: "rgba(220,220,220,1)",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(220,220,220,1)",
+				data: [65,43,45,43]
+			}
+		]
+	};
+		
+	var ctx = document.getElementById("results").getContext("2d");
+	var resultChart = new Chart(ctx).Line(data);
+	
+</script>
+</body>

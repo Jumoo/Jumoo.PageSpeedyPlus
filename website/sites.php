@@ -4,7 +4,7 @@
 
 	$db = new SQlite3('speedyplus.db');
 	
-	$statement = $db->prepare('SELECT * FROM SITES');
+	$statement = $db->prepare('SELECT * FROM SITES ORDER BY Name;');
 	$results = $statement->execute();
 	
 	print '<ul class="sitelist">';

@@ -36,7 +36,7 @@ class Checker
 	{	
 		$accesstable = array();
 		
-		$sql = "SELECT * FROM CHECKER_VIEW Where monthId = :id ORDER BY Errors"; 
+		$sql = "SELECT * FROM CHECKER_VIEW Where monthId = :id ORDER BY Errors DESC"; 
 		$statement = $this->db->prepare($sql);
 		$statement->bindValue(':id', $month, SQLITE3_TEXT);
 		$results = $statement->execute();
@@ -53,7 +53,7 @@ class Checker
 	
 	function getXML($month, $sitename)
 	{
-		$path = "results/" . $month . "/checker/" . $sitename . ".xml";
+		$path = "results/" . $month . "/checker/" . $sitename . ".txt";
 		$xml = simplexml_load_file($path);
 		
 		return $xml; 

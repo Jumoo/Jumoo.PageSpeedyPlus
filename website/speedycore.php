@@ -36,6 +36,37 @@ class Speedy
 		return $months ; 
 	}
 	
+	function getScores($id, $type)
+	{
+		$scores = array();
+		
+		$scoreSql = 'select score from SpeedyResults_View where siteID = :id and platform = :type order by Month';
+		$statement = $this->db->prepare($scoreSql);
+		$statement->bindValue(':id', $id, SQLITE3_INTEGER);
+		$statement->bindValue(':type', $type);
+		$rows = $statement->execute();
+		while( $row = $rows->fetchArray())
+		{
+			$scores[] = $row ;
+		}
+		return $scores;
+	}
+	
+	function getTotalSizes($id)
+	{
+		$scores = array();
+		
+		$scoreSql = 'select * from SpeedyResults_View where siteID = :id and platform = "desktop" order by Month';
+		$statement = $this->db->prepare($scoreSql);
+		$statement->bindValue(':id', $id, SQLITE3_INTEGER);
+		$rows = $statement->execute();
+		while( $row = $rows->fetchArray())
+		{
+			$scores[] = $row ;
+		}
+		return $scores;
+	}
+	
 	function getProcessedMonths()
 	{
 		$monthlist = array();
@@ -107,6 +138,39 @@ class Speedy
 		return $speedytable; 
 
 	}
-
+	
+	function getNewSites($month)
+	{
+		$newSites = array();
+		
+		$newSiteSql = 'SELECT * FROM NewSites_View WHERE newMonthId = :month;' ;
+		$statement = $this->db->prepare($newSiteSql);
+		$statement->bindValue(':month', $month, SQLITE3_INTEGER);
+		
+		$results = $statement->execute();
+		
+		while( $row = $results->fetchArray()) {
+			$newSites[] = $row ;
+		}
+		$statement->close();
+		return $newSites;
+	}
+	
+	function getLatestSites()
+	{
+		$newSites = array();
+		
+		$latestSql = 'SELECT * FROM NewSites_View ORDER BY newMonthId DESC;';
+		
+		$statement = $this->db->prepare($latestSql);
+		
+		$results = $statement->execute();
+		
+		while( $row = $results->fetchArray()) {
+			$newSites[] = $row ;
+		}
+		$statement->close();
+		return $newSites;
+	}
 }
 ?>

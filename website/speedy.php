@@ -20,15 +20,18 @@
 </div>
 
 <div class="row">
-	<div class="col-xs-12">
+	<div class="col-xs-12 col-md-6">
 		<div class="page-header">
 			<h1 class="sitename"><?php echo $speedy->getSiteName(); ?> 
-				<?php $url = $speedy->getSiteUrl(); ?>
-				<small><a href="<?php echo $url ?>"><?php echo $url ?></a></small></h1>
+				<?php $url = $speedy->getSiteUrl(); ?><br/>
+				<small><a href="<?php echo $url ?>"><?php echo $url ?></a></small>
+			</h1>
 		</div>
 	</div>
+	<div class="col-xs-12 col-md-6">
+		<canvas id="results" width="500" height="200"></canvas>
+	</div>
 </div>
-
 		
 	<?php
 		$months = $speedy->getMonths(); 
@@ -37,16 +40,15 @@
 			?>
 			<div class="month-result">
 				<div class="page-header">
-					<h2><?php echo $month; ?></h2>
-				</div>
+					<h2><?php echo $month; ?></h2></div>
 				<div class="result-row">
 					<div class="row">
 						<div class="col-xs-12">
 							<h3>GooglePageSpeed Insight Scores</h3>
 						</div>
 					<?php
-						ShowSpeedy($speedy, $month, "desktop");
-						ShowSpeedy($speedy, $month, "mobile");
+						ShowSpeedy($speedy, $month, "desktop", $latest_month);
+						ShowSpeedy($speedy, $month, "mobile", $latest_month);
 					?>
 					</div>
 				</div>
@@ -65,5 +67,6 @@
 		}
 	?>
 
+<?php include 'speedychart.php' ?>
 <?php include 'footer.php'; ?>
 	

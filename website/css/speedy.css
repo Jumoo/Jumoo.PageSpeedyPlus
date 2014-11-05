@@ -65,12 +65,13 @@ body {
 	}
 	
 ul.sitelist {
-	-webkit-column-count: 4; 
+	-webkit-column-count: 3; 
 }
 
 ul.sitelist>li {
 	text-transform: capitalize;
 	}
+	
 
 .previous {
 	margin: 0.4em 0;
@@ -126,3 +127,35 @@ footer {
 	border-bottom: 2px solid darkblue;
 	padding-bottom: 0;
 	}
+	
+.new-site.result {
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    background-color: transparent;
+}
+.siteimg  {
+	float:left;
+    padding: 1em;
+}	
+
+.siteimg img { display: block; }
+
+table.size-data {
+	font-size: 0.8em;
+}
+
+.size-data th {
+	padding-left: 5px;
+}
+
+.data-key {
+	padding: 10px;
+	}
+
+.data-html { background-color: #F24D40; }
+.data-css { background-color: #C78B7B; }
+.data-img { background-color: #46BFBD ; }
+.data-js { background-color: #4097F2; }
+.data-other { background-color: #444E59 ; }
+
+

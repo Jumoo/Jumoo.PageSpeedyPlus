@@ -1,4 +1,5 @@
 <?php 
+	$latest_month = 10;
 ?>
 
 <!DOCTYPE html>
@@ -9,9 +10,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Localgov.PageSpeedy by Jumoo</title>
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/bootstrap.css" type="text/css"> 
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
 		<link rel="stylesheet" href="css/speedy.css" type="text/css">
-		
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="newsitesfeed.php" />
+
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -36,8 +38,9 @@
 				<ul class="nav navbar-nav">
 					<li><a href="sites.php">Sites</a></li>
 					<li><a href="featurelist.php">App list</a></li>
-					<li><a href="speedytable.php?month=7">Speeds</a></li>
-					<li><a href="achecktable.php?month=7">Accessibility</a></li>
+					<li><a href="speedytable.php?month=<?php echo $latest_month ?>">Speeds</a></li>
+					<li><a href="achecktable.php?month=<?php echo $latest_month ?>">Accessibility</a></li>
+					<li><a href="newsites.php?month=<?php echo $latest_month ?>">New Sites</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
@@ -52,15 +55,6 @@
 			</div>
 		</div>
 	</nav>
-	
-<div class="alert alert-warning">
-	<div class="container">
-		<div class="col-xs-12">
-				<strong>Localgov Speedy - Alpha</strong><br/>
-				This is an Alpha release of the pagespeedy indexes, not everything works, but you can view the data.
-			</div>
-		</div>
-	</div>
-	
+
 	<div class="container">
 	
