@@ -1,0 +1,183 @@
+University of Aberdeen,http://www.abdn.ac.uk/
+University of Abertay  [Dundee],http://www.abertay.ac.uk/
+Anglia Ruskin University [Chelmsford],http://www.apu.ac.uk/
+Anglia Ruskin University [Cambridge],http://www.apu.ac.uk/
+Aston University [Birmingham],http://www.aston.ac.uk/
+The University of Bath,http://www.bath.ac.uk/
+Birmingham University,http://www.bham.ac.uk/
+The University of Bolton,http://www.bolton.ac.uk/
+Bournemouth University,http://www.bournemouth.ac.uk/
+Bradford University,http://www.brad.ac.uk/
+University of Brighton,http://www.bton.ac.uk/
+Bristol University,http://www.bris.ac.uk/
+Brunel University [Uxbridge West London],http://www.brunel.ac.uk/
+University of Buckingham,http://www.buckingham.ac.uk/
+University of Cambridge,http://www.cam.ac.uk/
+University of Central England  [Birmingham],http://www.uce.ac.uk/
+University of Central Lancashire  [Preston],http://www.uclan.ac.uk/
+University of Chester,http://www.chester.ac.uk/
+City University [Central London],http://www.city.ac.uk/
+Coventry University,http://www.coventry.ac.uk/
+Cranfield University,http://www.cranfield.ac.uk/
+Derby University,http://www.derby.ac.uk/
+University of Dundee,http://www.dundee.ac.uk/
+Durham University,http://www.dur.ac.uk/
+University of East Anglia  [Norwich],http://www.uea.ac.uk/
+University of East London,http://www.uel.ac.uk/index.htm
+Edinburgh University,http://www.ed.ac.uk/
+University of Essex  [Colchester],http://www.essex.ac.uk/
+Exeter University,http://www.ex.ac.uk/
+Glasgow Caledonian University,http://www.gcal.ac.uk/
+University of Glamorgan  [Pontypridd],http://www.glam.ac.uk/
+Glasgow University,http://www.gla.ac.uk/
+University of Gloucestershire  [Cheltenham],http://www.glos.ac.uk/
+University of Greenwich  [London],http://www.gre.ac.uk/
+Heriot Watt University [Edinburgh],http://www.hw.ac.uk/
+University of Hertfordshire  [Hatfield],http://www.herts.ac.ukperseus.herts.ac.uk/
+Huddersfield University,http://www.hud.ac.uk/
+University of Hull,http://www.hull.ac.uk/
+University of Hull Scarborough,http://www.scar.hull.ac.uk/
+UHI Millennium Institute  [Inverness],http://www.uhi.ac.uk/
+Keele University [Staffordshire],http://www.keele.ac.uk/
+University of Kent  [Canterbury],http://www.kent.ac.uk/
+Kingston University [South West London],http://www.kingston.ac.uk/
+Lancaster University,http://www.lancs.ac.uk/
+University of Leeds,http://www.leeds.ac.uk/
+Leeds Metropolitan University,http://www.leedsmet.ac.uk/
+University of Leicester,http://www.le.ac.uk/
+De Montfort University  [Leicester],http://www.dmu.ac.uk/
+University of Lincoln [Lincoln],https://www.lincoln.ac.uk
+Liverpool University,http://www.liv.ac.uk/
+Liverpool Hope University,http://www.hope.ac.uk/
+Liverpool John Moores University,http://www.livjm.ac.uk/
+University of London,http://www.lon.ac.uk/
+University of London Birkbeck College,http://www.bbk.ac.uk/
+University of London Goldsmiths College,http://www.goldsmiths.ac.uk/
+University of London Heythrop College,http://www.heythrop.ac.uk/
+University of London Imperial College of Science Technology and Medicine,http://www.imperial.ac.uk/
+University of London King's College,http://www.kcl.ac.uk/
+Courtauld Institute of Art [London],http://www.courtauld.ac.uk/
+University of London Queen Mary,http://www.qmul.ac.uk/
+University of London Royal Holloway,http://web.rhul.ac.uk/
+University of London University College,http://www.ucl.ac.uk/
+University of London Eastman Dental Institute,http://www.eastman.ucl.ac.uk/
+Institute of Child Health  [London],http://www.ich.ucl.ac.uk/
+University of London Institute of Cancer Research,http://www.icr.ac.uk/
+Institute of Neurology  [London],http://www.ion.ucl.ac.uk/
+University of London Institute of Education,http://www.ioe.ac.uk/
+University of London Institute of Psychiatry,http://www.iop.kcl.ac.uk/
+The Royal Veterinary College,http://www.rvc.ac.uk/
+The Royal College of Music  [London],http://www.rcm.ac.uk/
+University of London School of Advanced Studies,http://www.sas.ac.uk/
+University of London St. George's Hospital Medical School  [London SW17],http://www.sgul.ac.uk/
+University of London London Business School,http://www.london.edu/
+University of London School of Economics and Political Science,http://www.lse.ac.uk/
+School of Pharmacy  [London],http://www.ulsop.ac.uk/
+University of London School of Hygiene and Tropical Medicine,http://www.lshtm.ac.uk/
+University of London School of Oriental and African Studies,http://www.soas.ac.uk/
+University of London School of Slavonic and East European Studies,http://www.ssees.ac.uk/
+University of the Arts London,http://www.arts.ac.uk/
+Camberwell College of Arts,http://www.camberwell.arts.ac.uk/
+Chelsea College of Arts and Design,http://www.chelsea.arts.ac.uk/
+Central St.Martins School of Art and Design,http://www.csm.arts.ac.uk/
+London Metropolitan University,http://www.londonmet.ac.uk/
+London South Bank University,http://www.sbu.ac.uk/
+Loughborough University,http://www.lboro.ac.uk/
+University of Luton,http://www.luton.ac.uk/
+Manchester Metropolitan University,http://www.mmu.ac.uk/
+University of Manchester,http://www.manchester.ac.uk/
+Middlesex University [West London],http://www.mdx.ac.uk/
+Napier University [Edinburgh],http://www.napier.ac.uk/
+Newcastle University,http://www.ncl.ac.uk/
+University of Northumbria  [Newcastle],http://www.northumbria.ac.uk/
+The University of Northampton,http://www.northampton.ac.uk/
+Nottingham University,http://www.nottingham.ac.uk/
+Nottingham Trent University,http://www.ntu.ac.uk/
+The Open University  [Milton Keynes],http://www.open.ac.uk/
+Oxford University,http://www.ox.ac.uk/
+Oxford Brookes University,http://www.brookes.ac.uk/
+Paisley University,http://www.paisley.ac.uk/
+Plymouth University,http://www.plym.ac.uk/
+The University of Portsmouth,http://www.port.ac.uk/
+Queen's University Belfast,http://www.qub.ac.uk/
+Reading University,http://www.rdg.ac.uk/
+Richmond University,http://www.richmond.ac.uk/
+Robert Gordon University [Aberdeen],http://www.rgu.ac.uk/
+Roehampton University [London SW15],http://www.roehampton.ac.uk/
+St.Andrews University,http://www.st-and.ac.uk/
+University of Salford,http://www.salford.ac.uk/
+The University of Sheffield,http://www.shef.ac.uk/
+Sheffield Hallam University,http://www.shu.ac.uk/
+Southampton Solent University,http://www.solent.ac.uk/
+University of Southampton,http://www.soton.ac.uk/
+Staffordshire University,http://www.staffs.ac.uk/
+Stirling University,http://www.stir.ac.uk/
+The University of Strathclyde  [Glasgow],http://www.strath.ac.uk/
+Sunderland University,http://www.sunderland.ac.uk/
+University of Surrey  [Guildford],http://www.surrey.ac.uk/
+University of Sussex  [Brighton],http://www.sussex.ac.uk//
+University of Teesside,http://www.tees.ac.uk/
+Thames Valley University [Slough],http://www.tvu.ac.uk/
+University of Ulster,http://www.ulster.ac.uk/
+University of Warwick,http://www.warwick.ac.uk/
+University of the West of England  [Bristol],http://www.uwe.ac.uk/
+University of Westminster  [London],http://www.wmin.ac.uk/
+The University of Winchester,http://www.winchester.ac.uk/
+University of Wolverhampton,http://www.wlv.ac.uk/
+University of Worcester,http://www.worc.ac.uk/
+University of York,http://www.york.ac.uk/
+University of Wales,http://www.wales.ac.uk/
+University of Wales Aberystwyth,http://www.aber.ac.uk/
+University of Wales Bangor,http://www.bangor.ac.uk/
+Cardiff University,http://www.cf.ac.uk/
+University of Wales Lampeter,http://www.lamp.ac.uk/
+University of Wales Newport,http://www.newport.ac.uk/
+University of Wales Swansea,http://www.swan.ac.uk/
+University of Wales Institute  [Cardiff],http://www.uwic.ac.uk/
+Bath Spa University College,http://www.bathspa.ac.uk/
+Buckinghamshire Chilterns University College [High Wycombe],http://www.bcuc.ac.uk/
+Royal Welsh College of Music and Drama  [Cardiff],http://www.rwcmd.ac.uk/
+Trinity College Carmarthen,http://www.trinity-cm.ac.uk/
+Cumbria College of Art and Design [Carlisle],http://www.cumbriacad.ac.uk/
+University College Chichester,http://www.ucc.ac.uk/
+Royal Agricultural College [Cirencester],http://www.royagcol.ac.uk/
+British College of Osteopathic Medicine,http://www.bcom.ac.uk/
+Northern School of Contemporary Dance  [Leeds],http://www.nscd.ac.uk/
+Central School of Speech &amp; Drama  [London],http://www.cssd.ac.uk/
+Dartington College of Arts,http://www.dartington.ac.uk/
+Edinburgh College of Art,http://www.eca.ac.uk/
+Edge Hill University College [Ormskirk Lancashire],http://info.edgehill.ac.uk/
+University College Falmouth,http://www.falmouth.ac.uk/
+Glasgow School of Art,http://www.gsa.ac.uk/
+Guildford College,http://www.guildford.ac.uk/
+Harper Adams University College [Newport Shropshire],http://www.harper-adams.ac.uk/
+Kent Institute of Art and Design,http://www.kiad.ac.uk/
+University College of St.Martin  [Lancaster Ambleside and Carlisle],http://www.ucsm.ac.uk/
+Bishop Grosseteste College [Lincoln],http://www.bgc.ac.uk/
+London College of Fashion,http://www.lcf.linst.ac.uk/content/building_menu.htm
+The London College of Communication,http://www.lcc.arts.ac.uk/
+North East Wales Institute of Higher Education [Wrexham],http://www.newi.ac.uk/
+Newman College of Higher Education [Birmingham],http://www.newman.ac.uk/
+Norwich School of Art and Design,http://www.nsad.ac.uk/
+University College of St.Mark &amp; St.John  [Plymouth],http://www.marjon.ac.uk/
+Queen Margaret University College [Edinburgh],http://www.qmuc.ac.uk/
+Ravensbourne College of Design and Communication  [London],http://www.rave.ac.uk/
+Royal Academy of Music  [London],http://www.ram.ac.uk/
+The Royal College of Art,http://www.rca.ac.uk/
+Royal Northern College of Music  [Manchester],http://www.rncm.ac.uk/
+Royal Scottish Academy of Music and Drama,http://www.rsamd.ac.uk/
+British School of Osteopathy,http://www.bso.ac.uk/
+The Scottish Agricultural College  [Edinburgh Aberdeen and Ayr],http://www.sac.ac.uk/
+Rose Bruford College [Sidcup Kent],http://www.bruford.ac.uk/
+St.Mary's University College [Belfast],http://www.stmarys-belfast.ac.uk/
+Stranmillis University College [Belfast],http://www.stran.ac.uk/
+Surrey Institute of Art and Design Farnham,http://www.surrart.ac.uk/
+Swansea Institute of Higher Education,http://www.sihe.ac.uk/
+St.Mary's College [Twickenham West London],http://www.smuc.ac.uk/
+Trinity and All Saints University College [Leeds],http://www.tasc.ac.uk/
+Trinity Laban,http://www.trinitylaban.ac.uk/
+University Campus St Albans,http://www.uc-sa.co.uk/
+Warrington Collegiate,http://www.warrington.ac.uk/
+Wimbledon School of Art,http://www.wimbledon.ac.uk/
+Writtle College  [Chelmsford],http://www.writtle.ac.uk/
+York St.John College,http://www.yorksj.ac.uk/

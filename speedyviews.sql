@@ -7,3 +7,7 @@ CREATE VIEW SpeedyResults_View AS
 CREATE VIEW Checker_View AS
 	select Sites.Id, Sites.name, Checker.MonthID, Checker.Status, Checker.Errors from Sites 
 		INNER JOIN Checker ON Sites.ID = Checker.SiteId;
+		
+CREATE VIEW NewSites_View as 		
+	select Sites.Id, Sites.Name, Sites.Url, NewSites.newMonthId, NewSites.newMonthId - 1 as lastMonthId from NewSites
+		INNER JOIN Sites ON Sites.Id = newSites.SiteId;

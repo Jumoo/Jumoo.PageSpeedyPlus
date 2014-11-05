@@ -106,7 +106,7 @@ class PageSpeedy(object):
 			encoded_args = urllib.urlencode(url_args)
 			ps_url = 'https://www.googleapis.com/pagespeedonline/v1/runPagespeed?{0}'.format(encoded_args)
 		
-			response = urllib2.urlopen(ps_url, timeout = 30)
+			response = urllib2.urlopen(ps_url, timeout = 45)
 			return response.read()
 			
 		except Exception, e:

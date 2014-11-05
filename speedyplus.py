@@ -52,9 +52,6 @@ def main(argv):
 			sys.exit()			
 		elif s.validMonth(monthid) == 1 :
 		
-		# accessilbity check
-			ch = checker.AChecker()
-			ch.runChecker(monthid)
 		
 		# pagespeed check
 			ps = speedy.PageSpeedy()
@@ -63,6 +60,10 @@ def main(argv):
 		# wapplizer check
 			wp = wapple.SpeedyWapple()
 			wp.process(monthid)
+
+		# accessilbity check
+			ch = checker.AChecker()
+			ch.runChecker(monthid)
 			
 			s.closeMonth(monthid)
 		else:

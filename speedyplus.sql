@@ -18,27 +18,29 @@ CREATE TABLE Speedy_Result(Id INTEGER PRIMARY KEY, SpeedyID INTEGER, platform TE
 		
 CREATE TABLE Checker(Id INTEGER PRIMARY KEY, SiteId INTEGER, MonthID INTEGER, Status TEXT, Errors INTEGER);
 
+/* the new sites thing - will be managed manually */
+CREATE TABLE NewSites(Id INTEGER PRIMARY KEY, SiteId, INTEGER, newMonthId INTEGER);
 
 /*
  * Load Some Months
  *
  */
  
-INSERT INTO Months(Name, Processed) VALUES("February 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("March 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("April 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("May 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("June 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("July 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("August 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("September 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("October 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("November 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("December 14", 0);
-INSERT INTO Months(Name, Processed) VALUES("January 15", 0);
-INSERT INTO Months(Name, Processed) VALUES("February 15", 0);
-INSERT INTO Months(Name, Processed) VALUES("March 15", 0);
-INSERT INTO Months(Name, Processed) VALUES("April 15", 0);
+INSERT INTO Months(Name, Processed) VALUES("02: February 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("03: March 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("04: April 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("05: May 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("06: June 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("07: July 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("08: August 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("09: September 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("10: October 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("11: November 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("12: December 14", 0);
+INSERT INTO Months(Name, Processed) VALUES("01: January 15", 0);
+INSERT INTO Months(Name, Processed) VALUES("02: February 15", 0);
+INSERT INTO Months(Name, Processed) VALUES("03: March 15", 0);
+INSERT INTO Months(Name, Processed) VALUES("04: April 15", 0);
 
 		
 
