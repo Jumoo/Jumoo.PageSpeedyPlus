@@ -25,6 +25,7 @@ body {
 .result {
 	background-color: #f0f0f0;
 	padding: 0.2em;
+	box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
 }
 
 .result h3 {
@@ -132,6 +133,7 @@ footer {
     margin-bottom: 1em;
     padding-bottom: 0.5em;
     background-color: transparent;
+	box-shadow:none;
 }
 .siteimg  {
 	float:left;
@@ -158,4 +160,28 @@ table.size-data {
 .data-js { background-color: #4097F2; }
 .data-other { background-color: #444E59 ; }
 
+span.score {
+    padding: 0.2em 0.4em;
+}
 
+.score-high { background-color: lightgreen; color: #fff; }
+.score-med { background-color: lightsalmon; color: #fff; }
+.score-low { background-color: lightcoral; color: #fff; }
+
+.score-list dd {
+    margin: 0.5em 0;
+}
+
+.dl-horizontal.score-list dt {
+    width: 100px;
+}
+
+img.screenshot { 
+	width: 100%; 
+	box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+.summary h2 {
+    margin-top: 0;
+    color: #222;
+    border-bottom: 1px solid lightgray;
+}

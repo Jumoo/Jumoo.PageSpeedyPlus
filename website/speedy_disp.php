@@ -33,7 +33,7 @@ function ShowSpeedy($sp, $month, $platform, $latest_month)
 					
 					<div class="col-sm-12">
 						<div class="screenshot">
-						<?php if ($line['MonthId'] > 3) {?>
+						<?php if ($line['MonthId'] > 2) {?>
 							<img src="results/<?php echo $line['MonthId'] ?>/screenshots/<?php echo $line['Site'] ?>_<?php echo $line['platform'] ?>.jpg">
 						<?php } ?>
 						</div>
@@ -44,4 +44,11 @@ function ShowSpeedy($sp, $month, $platform, $latest_month)
 	<?php
 	}	
 }
+
+function GetChartData($MonthId, $platform, $data)
+{
+
+}
+
+
 ?>

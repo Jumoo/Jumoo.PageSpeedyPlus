@@ -97,6 +97,12 @@ class Speedy
 		return $list ;
 	}
 	
+	function getScore($platform, $monthId)
+	{
+		$sql = 'SELECT score from SPEEDYRESULTS_VIEW where SiteId = ' . $this->siteId . ' and MonthId = ' . $monthId . ' and Platform = "' . $platform . '";';	
+		return $this->db->querySingle($sql);
+	}
+		
 	function getResults($platform, $month)
 	{
 		$speedyresult = array() ;
@@ -115,8 +121,7 @@ class Speedy
 		}
 		
 		$statement->close();
-		return $speedyresult; 
-		
+		return $speedyresult; 		
 	}
 	
 	function getTable($platform, $month)
@@ -171,6 +176,23 @@ class Speedy
 		}
 		$statement->close();
 		return $newSites;
+	}
+	
+	function getSiteUpdates()
+	{
+		$updates = array();
+		
+		$newSiteSql = 'SELECT * FROM NewSites_View WHERE id = :siteId ORDER BY newMonthId DESC;' ;
+		$statement = $this->db->prepare($newSiteSql);
+		$statement->bindValue(':siteId', $this->siteId, SQLITE3_INTEGER);
+		
+		$results = $statement->execute();
+		
+		while( $row = $results->fetchArray()) {
+			$updates[] = $row ;
+		}
+		$statement->close();
+		return $updates;
 	}
 }
 ?>
