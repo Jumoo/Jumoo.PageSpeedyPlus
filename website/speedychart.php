@@ -39,7 +39,7 @@
 <?php
 function MonthsDataList($speedy)
 {
-	$months = $speedy->getProcessedMonths() ;
+	$months = $speedy->getMonthsWithScores() ;
 
 	print '[' ;
 	foreach($months as $month)

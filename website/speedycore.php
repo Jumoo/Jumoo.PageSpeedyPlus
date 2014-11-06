@@ -81,6 +81,21 @@ class Speedy
 		return $monthlist;
 	}
 	
+	function getMonthsWithScores()
+	{
+		$monthlist = array(); 
+		$months_sql = 'select Months.* from Months inner join SPEEDY on Months.Id = Speedy.MonthId where speedy.SiteId = :id order by Months.Id';
+		$statement = $this->db->prepare($months_sql);
+		$statement->bindValue(':id', $this->siteId);
+		$rows = $statement->execute();
+		while( $row = $rows->fetchArray())
+		{
+			$monthlist[] = $row ;
+		}
+		return $monthlist;
+	
+	}
+	
 	function getList($sql, $id, $itemName)
 	{
 		$list = array(); 
