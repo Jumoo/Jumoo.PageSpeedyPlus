@@ -185,3 +185,16 @@ img.screenshot {
     color: #222;
     border-bottom: 1px solid lightgray;
 }
+
+dl.textly {
+    font-size: 70%;
+}
+
+.textly dl {
+    margin: 0;
+	padding-left:110px;
+}
+
+.textly dt {
+    width: 100px;
+}

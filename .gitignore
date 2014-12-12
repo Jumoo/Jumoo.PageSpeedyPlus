@@ -9,6 +9,7 @@ councilsites.txt
 *.config.json
 *.csv
 *.pyc
+*.log
 
 /backfill/
 

@@ -1,5 +1,5 @@
 <?php 
-	$latest_month = 10;
+	$latest_month = 11;
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Localgov.PageSpeedy by Jumoo</title>
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
-		<link rel="stylesheet" href="css/speedy.css" type="text/css">
+		<link rel="stylesheet" href="css/speedy-all.min.css" type="text/css">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="newsitesfeed.php" />
 
 		

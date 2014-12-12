@@ -29,7 +29,7 @@ class SpeedyWapple(object):
 		self.apps = data['apps']
 
 		self.db = speedydb.SpeedyDb()
-
+		
 		
 	def process(self, monthId):
 	
@@ -83,4 +83,17 @@ class SpeedyWapple(object):
 				self.db.saveFeatures(month, id, app, categories.strip(","), version) ;
 		except:
 			print 'error getting thing' 
+		
+	def ProcessSingleSite(self, siteid, monthId):
+		sites = self.db.getSingleSite(siteid)
+		for site in sites:
+		
+			siteId = site[0]
+			siteName = site[1]
+			siteUrl = site[2]
+			
+			print '' 
+			print siteId, siteName, siteUrl , 
+			self.wapple(siteId, siteUrl, monthId)
+		
 		

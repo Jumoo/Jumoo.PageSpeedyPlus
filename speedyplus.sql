@@ -19,7 +19,9 @@ CREATE TABLE Speedy_Result(Id INTEGER PRIMARY KEY, SpeedyID INTEGER, platform TE
 CREATE TABLE Checker(Id INTEGER PRIMARY KEY, SiteId INTEGER, MonthID INTEGER, Status TEXT, Errors INTEGER);
 
 /* the new sites thing - will be managed manually */
-CREATE TABLE NewSites(Id INTEGER PRIMARY KEY, SiteId, INTEGER, newMonthId INTEGER);
+CREATE TABLE NewSites(Id INTEGER PRIMARY KEY, SiteId INTEGER, newMonthId INTEGER);
+
+CREATE TABLE Textly(Id INTEGER PRIMARY KEY, SiteId INTEGER, MonthID, INTEGER, Trendyness INTEGER, LinkCount INTEGER, WORDS TEXT);
 
 /*
  * Load Some Months

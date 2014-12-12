@@ -2,6 +2,7 @@
 <?php include 'speedy_disp.php' ; ?>
 <?php include 'wapplecore.php' ; ?>
 <?php include 'accesscore.php' ; ?>
+<?php include 'textlycore.php' ; ?>
 <?php include 'header.php' ; ?>
 
 <?php
@@ -9,6 +10,7 @@
 	$speedy = new Speedy($id); 
 	$wapple = new Wapple($id);
 	$checker = new Checker($id);
+	$textly = new Textly($id); 
 	
 	$url = $speedy->getSiteUrl();
 	$siteName = $speedy->getSiteName();
@@ -33,9 +35,7 @@
 						<dt>Desktop</dt><dd><span class="score"><?php echo ShowScore($speedy->getScore("desktop", $latest_month)) ?></span></dd>
 						<dt>Mobile</dt><dd><span class="score"><?php echo ShowScore($speedy->getScore("mobile", $latest_month)) ?></span></dd>
 					</dl>
-					
-					<?php ShowUpdates($speedy) ?>
-					
+					<?php ShowTextly($textly, $latest_month) ?>
 				</div>
 				<div class="col-md-7">
 					<img class="screenshot" src="results/<?php echo $latest_month ?>/screenshots/<?php echo $siteName ?>_desktop.jpg">
@@ -45,6 +45,7 @@
 		<div class="col-xs-12 col-md-6">
 			<h2>Previous results</h2>
 			<canvas id="results" width="500" height="200"></canvas>
+			<?php ShowUpdates($speedy) ?>
 		</div>
 	</div>
 </div>
@@ -103,16 +104,28 @@ function ShowUpdates($speedy)
 	
 	if ( count($updates) > 0 ) 
 	{
-		echo '<h3>Update detected:</h3>';
+		echo '<div><strong>New Site:</strong>';
 
-		echo '<ul>' ;
 		foreach( $updates as $update )
 		{
-			echo '<li>' . $speedy->getMonthName($update['newMonthId']) . '</li>';
+			echo $speedy->getMonthName($update['newMonthId']) . ' ' ;
 		}
 		
-		echo '</ul>';
+		echo '</div>';
+		
 	}
+}
+
+function ShowTextly($textly, $monthId)
+{
+	$results = $textly->getResults($monthId);
+	echo '<dl class="dl-horizontal textly">';
+	foreach ($results as $t) {
+		echo '<dt>Links:</dt><dl>' .  $t['LinkCount'] . '</dl>';
+		echo '<dt>Top words:</dt><dl>' .  str_replace(',', '<br/>', $t['WORDS']) . '</dl>';
+	}
+	echo '</dl>';
+
 }
 ?>
 <?php include 'speedychart.php' ?>

@@ -49,6 +49,20 @@ class AChecker(object):
 			print '' 
 			print siteId, siteName, siteUrl , 					
 			self.getCheckerResult(siteId, siteName, siteUrl, monthId)
+
+	def ProcessSingleSite(self, siteid, monthId):
+		self.initMonth(monthId)
+	
+		sites = self.db.getSingleSite(siteid)
+		for site in sites:
+		
+			siteId = site[0]
+			siteName = site[1]
+			siteUrl = site[2]
+			
+			print '' 
+			print siteId, siteName, siteUrl , 
+			self.getCheckerResult(siteId, siteName, siteUrl, monthId)
 			
 	def getCheckerResult(self, siteId, siteName, siteUrl, monthId):
 	

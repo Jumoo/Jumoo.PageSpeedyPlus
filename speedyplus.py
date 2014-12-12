@@ -49,6 +49,13 @@ def main(argv):
 			#process just one site. (ignore valid month thing)			
 			ps = speedy.PageSpeedy()
 			ps.ProcessSingleSite(single, monthid)
+			
+			wp = wapple.SpeedyWapple()
+			wp.ProcessSingleSite(single, monthid)
+			
+			ch = checker.AChecker()
+			ch.ProcessSingleSite(single, monthid)
+			
 			sys.exit()			
 		elif s.validMonth(monthid) == 1 :
 		
