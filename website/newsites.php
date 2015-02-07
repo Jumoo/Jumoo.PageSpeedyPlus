@@ -9,13 +9,14 @@
 	$speedy = new Speedy(1); 
 		
 	?>
-	
+	<br/>
 	<div class="alert alert-info">
 		<p>
-		As page speedy runs every month it gives us a good opertunity to spot when things change, this page
+		As page speedy runs every month it gives us a good opportunity to spot when things change, this page
 		lists the new websites (we have noticed) as we've been running page speedy. 
-		</p><p>
-		<em>We haven't done this historically for every month (yet) so some months may be blank.</em>
+		</p>
+		<p>
+		The Month is the month in which the change was detected, so the site probably changed sometime in the previous month.
 		</p>
 	</div>
 	
@@ -40,7 +41,7 @@
 <?php 
 function MonthsList($speedy)
 {
-	$months = $speedy->getProcessedMonths() ;
+	$months = $speedy->getMonthsWithNewSites() ;
 
 	print '<ul class="monthlist">' ;
 	foreach($months as $month)

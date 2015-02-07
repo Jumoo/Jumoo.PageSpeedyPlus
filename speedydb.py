@@ -103,10 +103,9 @@ class SpeedyDb(object):
 		self.con.commit() 
 
 	def saveFeatures(self, monthId, siteId, app, categories, version):
-	
-		self.cur.execute( wapFeature_insert.format(siteId, monthId, app, categories, version))
-		self.con.commit()
-		
+		if ( self.IsFeatureSet(siteId, monthId, app) == False):
+			self.cur.execute( wapFeature_insert.format(siteId, monthId, app, categories, version))
+			self.con.commit()
 		
 	def saveChecker(self, siteId, monthId, status, errors):
 		self.cur.execute( checker_insert.format(siteId, monthId, status, errors) )
@@ -123,3 +122,25 @@ class SpeedyDb(object):
 		self.cur.execute(resultSql.format(siteId, monthId, platform))
 		#print resultSql.format(siteId, monthId, platform)
 		return self.cur.fetchone()
+
+	def IsFeatureSet(self, siteId, monthId, app):
+		checkSql = "SELECT COUNT(*) FROM Features where SiteID = {0} AND MonthID = {1} AND Application = '{2}';"
+		self.cur.execute( checkSql.format(siteId, monthId, app))
+		counter_row = self.cur.fetchone()
+		counter = counter_row[0]
+
+		if ( counter == 0 ):
+			return False
+		else:
+			return True 
+	
+	def hasAppType(self, siteId, monthId, category):
+		checkSql = "SELECT COUNT(*) FROM Features where SiteID = {0} AND MonthID = {1} AND Category = '{2}';"
+		self.cur.execute( checkSql.format(siteId, monthId, category))
+		counter_row = self.cur.fetchone()
+		counter = counter_row[0]
+
+		if ( counter == 0 ):
+			return False
+		else:
+			return True 

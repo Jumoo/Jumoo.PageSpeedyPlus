@@ -12,7 +12,8 @@ function ShowSpeedy($sp, $month, $platform, $latest_month)
 			<div class="result">
 				<div class="row">
 					<div class="col-xs-12">
-						<h3 class="platform"><?php echo $line['platform'] ?> : <?php echo $line['Score'] ?></h3>
+						<h3 class="platform"><?php echo $line['platform'] ?> : <?php echo $line['Score'] ?>
+						</h3>
 					</div>
 						<div class="col-sm-5">
 							<table class="size-data">

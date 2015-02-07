@@ -30,7 +30,7 @@ class Speedy
 	
 	function getMonths()
 	{
-		$monthlist_sql = 'SELECT DISTINCT(Month) as Month From SpeedyResults_View where SiteId = :id order by Month DESC';
+		$monthlist_sql = 'SELECT DISTINCT(Month) as Month From SpeedyResults_View where SiteId = :id order by MonthId DESC';
 		$months = $this->getList($monthlist_sql, $this->siteId, 'Month');
 	
 		return $months ; 
@@ -40,7 +40,7 @@ class Speedy
 	{
 		$scores = array();
 		
-		$scoreSql = 'select score from SpeedyResults_View where siteID = :id and platform = :type order by Month';
+		$scoreSql = 'select score from SpeedyResults_View where siteID = :id and platform = :type order by MonthId';
 		$statement = $this->db->prepare($scoreSql);
 		$statement->bindValue(':id', $id, SQLITE3_INTEGER);
 		$statement->bindValue(':type', $type);
@@ -56,7 +56,7 @@ class Speedy
 	{
 		$scores = array();
 		
-		$scoreSql = 'select * from SpeedyResults_View where siteID = :id and platform = "desktop" order by Month';
+		$scoreSql = 'select * from SpeedyResults_View where siteID = :id and platform = "desktop" order by MonthId';
 		$statement = $this->db->prepare($scoreSql);
 		$statement->bindValue(':id', $id, SQLITE3_INTEGER);
 		$rows = $statement->execute();
@@ -79,6 +79,21 @@ class Speedy
 			$monthlist[] = $row ;
 		}
 		return $monthlist;
+	}
+	
+	function getMonthsWithNewSites()
+	{
+		$monthlist = array();
+		
+		$months_sql = 'select distinct(Months.Id), Months.Name from Months inner join NewSites on Months.Id = NewSites.NewMonthID order by Months.Id;';
+		$statement = $this->db->prepare($months_sql);
+		$rows = $statement->execute();
+		while( $row = $rows->fetchArray())
+		{
+			$monthlist[] = $row ;
+		}
+		return $monthlist;
+		
 	}
 	
 	function getMonthsWithScores()
@@ -122,7 +137,7 @@ class Speedy
 	{
 		$speedyresult = array() ;
 	
-		$result_sql = 'SELECT * FROM SPEEDYRESULTS_VIEW WHERE SiteId = :id and Month = :month and Platform = :platform ;';
+		$result_sql = 'SELECT * FROM SPEEDYRESULTS_VIEW WHERE SiteId = :id and Month = :month and Platform = :platform order by MonthId;';
 	
 		$statement = $this->db->prepare($result_sql);
 		$statement->bindValue(':id', $this->siteId, SQLITE3_INTEGER);

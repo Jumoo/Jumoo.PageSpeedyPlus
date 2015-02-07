@@ -160,7 +160,7 @@ table.size-data {
 .data-js { background-color: #4097F2; }
 .data-other { background-color: #444E59 ; }
 
-span.score {
+.score {
     padding: 0.2em 0.4em;
 }
 

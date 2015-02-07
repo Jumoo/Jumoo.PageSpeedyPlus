@@ -30,14 +30,22 @@
 		<div class="col-xs-12 col-md-6">
 			<h2>Latest results:</h2>
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-sm-5">
 					<dl class="dl-horizontal score-list">
-						<dt>Desktop</dt><dd><span class="score"><?php echo ShowScore($speedy->getScore("desktop", $latest_month)) ?></span></dd>
-						<dt>Mobile</dt><dd><span class="score"><?php echo ShowScore($speedy->getScore("mobile", $latest_month)) ?></span></dd>
+						<dt>Desktop</dt><dd>
+								<a href="https://developers.google.com/speed/pagespeed/insights/?url=<?php echo $url ?>&tab=desktop" class="score">
+									<?php echo ShowScore($speedy->getScore("desktop", $latest_month)) ?>
+								</a>
+							</dd>
+						<dt>Mobile</dt><dd>
+								<a href="https://developers.google.com/speed/pagespeed/insights/?url=<?php echo $url ?>" class="score">
+									<?php echo ShowScore($speedy->getScore("mobile", $latest_month)) ?>
+								</a>
+							</dd>
 					</dl>
 					<?php ShowTextly($textly, $latest_month) ?>
 				</div>
-				<div class="col-md-7">
+				<div class="col-sm-7">
 					<img class="screenshot" src="results/<?php echo $latest_month ?>/screenshots/<?php echo $siteName ?>_desktop.jpg">
 				</div>
 			</div>

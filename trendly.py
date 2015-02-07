@@ -5,7 +5,7 @@ import BeautifulSoup
 import sqlite3 as lite
 import speedydb 
 
-month = 11; 
+month = 13; 
 
 
 trendlySql_insert = "INSERT INTO Textly(SiteId, MonthId, TrendyNess, LinkCount, Words) VALUES({0}, {1}, {2}, {3}, {4});"

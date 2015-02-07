@@ -3468,6 +3468,12 @@
 			"website": "www.sdltridion.com",
 			"cats": [ 1 ],
 			"html": "_tcm"
+		},
+		
+		"ActivEdition": {
+			"website": "http://www.activedition.com/",
+			"cats": [ 1 ],
+			"html": "activedition"
 		}
 		
 		
