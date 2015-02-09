@@ -1,67 +1,77 @@
 PhantomJS is launching GhostDriver...
-[INFO  - 2014-11-05T12:47:53.104Z] GhostDriver - Main - running on port 65132
-[INFO  - 2014-11-05T12:47:53.698Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
-[INFO  - 2014-11-05T12:47:53.698Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.customHeaders:  - {}
-[INFO  - 2014-11-05T12:47:53.698Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.8","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2014-11-05T12:47:53.699Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f57f3670-64e9-11e4-9752-6d25d7bf8e56
-[INFO  - 2014-11-05T12:51:21.108Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T12:56:21.113Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:01:21.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:06:21.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:11:21.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:16:21.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:21:21.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:26:21.114Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:31:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:36:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:41:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:46:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:51:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:56:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:01:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:06:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:11:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:16:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:21:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:26:21.120Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:31:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:36:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:41:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:46:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:51:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:56:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:01:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:06:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:11:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:16:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:21:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:26:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:31:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:36:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:41:21.121Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:41:47.480Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:33:58.371Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:38:58.371Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:58:50.543Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:03:50.544Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:08:50.544Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:13:50.544Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:18:50.544Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:23:50.544Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:28:50.553Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:33:50.553Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:38:50.553Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-roperty").onclick')
-[ERROR - 2014-11-05T12:50:48.946Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.cheltenham.gov.uk/site/javascript/homepage_widget.js?md=1413898031:8)
-[ERROR - 2014-11-05T12:50:52.589Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (near '...()})}(window.jQuery)...')
-[ERROR - 2014-11-05T12:50:52.589Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[INFO  - 2015-02-02T23:46:21.399Z] GhostDriver - Main - running on port 52935
+[INFO  - 2015-02-02T23:46:22.219Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2015-02-02T23:46:22.219Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.customHeaders:  - {}
+[INFO  - 2015-02-02T23:46:22.219Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.8","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2015-02-02T23:46:22.219Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b12cff10-ab35-11e4-96c9-0f8231fef113
+[ERROR - 2015-02-02T23:46:34.580Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:46:34.580Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+
+[ERROR - 2015-02-02T23:47:10.618Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.body.appendChild')
+[ERROR - 2015-02-02T23:47:10.618Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.ashford.gov.uk/js/modernizr.custom.23683.js:5)
+  (anonymous function) (http://www.ashford.gov.uk/js/modernizr.custom.23683.js:4)
+  (anonymous function) (http://www.ashford.gov.uk/js/modernizr.custom.23683.js:5)
+[ERROR - 2015-02-02T23:48:17.657Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:48:17.658Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+
+[ERROR - 2015-02-02T23:49:08.378Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'breadcrumbURL.length')
+[ERROR - 2015-02-02T23:49:08.379Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  showSection (http://www.broadland.gov.uk/jscripts/global.js:71)
+[ERROR - 2015-02-02T23:49:30.488Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:49:30.488Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+
+[ERROR - 2015-02-02T23:49:50.838Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:49:50.839Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+
+[ERROR - 2015-02-02T23:50:09.200Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: NOT_SUPPORTED_ERR: DOM Exception 9: The implementation did not support the requested type of object or operation.
+[ERROR - 2015-02-02T23:50:09.200Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1260)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1268)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1469)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1317)
+  (anonymous function) (http://online.carmarthenshire.gov.uk/ajax/libs/jquery/1.4.2/jquery.min.js:92)
+  (anonymous function) (http://online.carmarthenshire.gov.uk/ajax/libs/jquery/1.4.2/jquery.min.js:74)
+  (anonymous function) (http://online.carmarthenshire.gov.uk/ajax/libs/jquery/1.4.2/jquery.min.js:72)
+  (anonymous function) (http://online.carmarthenshire.gov.uk/ajax/libs/jquery/1.4.2/jquery.min.js:91)
+  (anonymous function) (http://online.carmarthenshire.gov.uk/ajax/libs/jquery/1.4.2/jquery.min.js:95)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/Style%20Library/JS/featuredcontentglider.js:117)
+  (anonymous function) (http://online.carmarthenshire.gov.uk/ajax/libs/jquery/1.4.2/jquery.min.js:26)
+  (anonymous function) (http://online.carmarthenshire.gov.uk/ajax/libs/jquery/1.4.2/jquery.min.js:33)
+[ERROR - 2015-02-02T23:50:09.307Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: NOT_SUPPORTED_ERR: DOM Exception 9: The implementation did not support the requested type of object or operation.
+[ERROR - 2015-02-02T23:50:09.307Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1260)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1268)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1469)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/WebResource.axd?d=wAxwmXnWFworn8fIJ7mFiwY24aikRbd97lZ40NphfTr1EpbFgXPg-PgdIwjeLWfOMfvkigYNE98x3bgcc_OS9RQIWbhEFfwGED18IQzEJpiMyzooyEqTSS915xRp5e5TuXVQUVncpK0PyX254Lv1dolK5ohk6hXFmqjfW_wC-wCmcDfM0&t=634540308931727224:1317)
+  at (http://code.jquery.com/jquery-1.10.2.min.js:4)
+  (anonymous function) (http://code.jquery.com/jquery-1.10.2.min.js:5)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:14549)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:401)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:13867)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:401)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:560)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:362)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:507)
+  (anonymous function) (http://code.jquery.com/jquery-1.10.2.min.js:4)
+  (anonymous function) (http://code.jquery.com/jquery-1.10.2.min.js:4)
+  (anonymous function) (http://code.jquery.com/ui/1.10.3/jquery-ui.js:509)
+  (anonymous function) (http://www.carmarthenshire.gov.uk/Style%20Library/JS/main.js:63)
+  (anonymous function) (http://code.jquery.com/jquery-1.10.2.min.js:4)
+  (anonymous function) (http://code.jquery.com/jquery-1.10.2.min.js:4)
+  (anonymous function) (http://code.jquery.com/jquery-1.10.2.min.js:4)
+  (anonymous function) (http://code.jquery.com/jquery-1.10.2.min.js:4)
+[ERROR - 2015-02-02T23:50:28.346Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating '$("saveWidgetProperty").onclick')
+[ERROR - 2015-02-02T23:50:28.347Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.cheltenham.gov.uk/site/javascript/homepage_widget.js?md=1422887358:8)
+[ERROR - 2015-02-02T23:50:34.618Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (near '...()})}(window.jQuery)...')
+[ERROR - 2015-02-02T23:50:34.618Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.cheshireeast.gov.uk/js/bootstrap.min.js:11)
-[ERROR - 2014-11-05T12:51:12.266Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: google
-[ERROR - 2014-11-05T12:51:12.266Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.edinburgh.gov.uk/widgets/js/widget.js?1410524810:210)
-[ERROR - 2014-11-05T12:51:12.572Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: Error: Syntax error, unrecognized expression: .editor .snippet > iframe[src*=".youtube.com"
-[ERROR - 2014-11-05T12:51:12.572Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:51:03.734Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: google
+[ERROR - 2015-02-02T23:51:03.734Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.edinburgh.gov.uk/widgets/js/widget.js?1421146672:210)
+[ERROR - 2015-02-02T23:51:03.860Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: Error: Syntax error, unrecognized expression: .editor .snippet > iframe[src*=".youtube.com"
+[ERROR - 2015-02-02T23:51:03.860Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js:4)
   gt (http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js:4)
   kt (http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js:4)
@@ -74,208 +84,203 @@ roperty").onclick')
   (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js:4)
   (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js:4)
   (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js:4)
-[ERROR - 2014-11-05T12:51:21.580Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('webchat-wrapper').innerHTML = '  '')
-[ERROR - 2014-11-05T12:51:21.581Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (https://westminstercore.logo-net.co.uk/Delivery/TBURT.php?SDTID=156&PURL=https://www.westminster.gov.uk/&CMS=1415191879822:1)
-[INFO  - 2014-11-05T12:51:38.208Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
-[INFO  - 2014-11-05T12:51:38.208Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.customHeaders:  - {}
-[ERROR - 2014-11-05T12:51:38.214Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: $
-[ERROR - 2014-11-05T12:51:38.214Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:51:16.771Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('webchat-wrapper').innerHTML = '  '')
+[ERROR - 2015-02-02T23:51:16.772Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (https://westminstercore.logo-net.co.uk/Delivery/TBURT.php?SDTID=156&PURL=https://www.westminster.gov.uk/&CMS=1422921075829:1)
+[INFO  - 2015-02-02T23:51:21.393Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-02T23:51:47.091Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2015-02-02T23:51:47.091Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.customHeaders:  - {}
+[ERROR - 2015-02-02T23:51:47.105Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2015-02-02T23:51:47.105Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.cookstown.gov.uk/:32)
-[ERROR - 2014-11-05T12:51:38.230Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: cPrompt
-[ERROR - 2014-11-05T12:51:38.230Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:51:47.139Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: cPrompt
+[ERROR - 2015-02-02T23:51:47.139Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.cookstown.gov.uk/:62)
-[ERROR - 2014-11-05T12:52:35.040Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: SyntaxError: Parse error
-[ERROR - 2014-11-05T12:52:35.040Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:53:04.195Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:53:04.195Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
 
-[ERROR - 2014-11-05T12:52:36.666Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: storeSequence
-[ERROR - 2014-11-05T12:52:36.666Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:53:09.199Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: storeSequence
+[ERROR - 2015-02-02T23:53:09.200Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   PageLoad (http://www.devon.gov.uk/devon12.js:595)
-[INFO  - 2014-11-05T12:52:53.097Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2014-11-05T12:53:25.985Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 'jQuery('body').on')
-[ERROR - 2014-11-05T12:53:25.985Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:54:06.697Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 'jQuery('body').on')
+[ERROR - 2015-02-02T23:54:06.697Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.eastdevon.gov.uk/ga-downloadtracking.js:64)
-[ERROR - 2014-11-05T12:54:00.975Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: SyntaxError: Parse error
-[ERROR - 2014-11-05T12:54:00.975Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:54:44.533Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:54:44.533Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
 
-[ERROR - 2014-11-05T12:54:01.034Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: addOnLoadEvent
-[ERROR - 2014-11-05T12:54:01.034Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:54:44.636Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: addOnLoadEvent
+[ERROR - 2015-02-02T23:54:44.636Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www2.eastriding.gov.uk/:50)
-[ERROR - 2014-11-05T12:54:01.117Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: addOnLoadEvent
-[ERROR - 2014-11-05T12:54:01.117Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:54:44.762Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: addOnLoadEvent
+[ERROR - 2015-02-02T23:54:44.762Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www2.eastriding.gov.uk/EasySiteWeb/EasySite/SupportFiles/RenderEngine_SetScrollPos.js:16)
-[ERROR - 2014-11-05T12:55:20.014Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: jQuery
-[ERROR - 2014-11-05T12:55:20.014Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:55:24.472Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2015-02-02T23:55:24.473Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.fareham.gov.uk/control/js/jquery.fbc.home.js:84)
-[ERROR - 2014-11-05T12:55:25.349Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 't(document).on')
-[ERROR - 2014-11-05T12:55:25.349Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:55:31.037Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 't(document).on')
+[ERROR - 2015-02-02T23:55:31.037Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.fermanagh.gov.uk/plugins/system/superuikit/assets/js/uikit.min.js:3)
   (anonymous function) (http://www.fermanagh.gov.uk/plugins/system/superuikit/assets/js/uikit.min.js:3)
-[ERROR - 2014-11-05T12:55:25.445Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '$.cookieCuttr')
-[ERROR - 2014-11-05T12:55:25.445Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:55:31.178Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '$.cookieCuttr')
+[ERROR - 2015-02-02T23:55:31.178Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.fermanagh.gov.uk/:321)
   (anonymous function) (http://max.jotfor.ms/static/feedback2.js?3.2.3637:2)
   (anonymous function) (http://max.jotfor.ms/static/feedback2.js?3.2.3637:2)
   (anonymous function) (http://max.jotfor.ms/static/feedback2.js?3.2.3637:2)
-[ERROR - 2014-11-05T12:56:10.815Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'container.set')
-[ERROR - 2014-11-05T12:56:10.815Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[INFO  - 2015-02-02T23:56:21.399Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-02-02T23:56:52.793Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'container.set')
+[ERROR - 2015-02-02T23:56:52.793Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   addControls (http://www.hambleton.gov.uk/templates/beez52/javascript/md_stylechanger.js:66)
   (anonymous function) (http://www.hambleton.gov.uk/media/system/js/mootools-core.js:375)
-[ERROR - 2014-11-05T12:57:49.227Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: SyntaxError: Parse error
-[ERROR - 2014-11-05T12:57:49.227Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:57:32.385Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'frames["twitter-widget-0"].document')
+[ERROR - 2015-02-02T23:57:32.385Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.hertsmere.gov.uk/SiteElements/Scripts/topTasksAndTwitterFeed.js?build=7212545:10)
+[ERROR - 2015-02-02T23:59:33.596Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:59:33.597Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
 
-[ERROR - 2014-11-05T12:57:49.228Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: SyntaxError: Parse error
-[ERROR - 2014-11-05T12:57:49.229Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:59:33.598Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:59:33.598Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
 
-[ERROR - 2014-11-05T12:57:49.250Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: SyntaxError: Parse error
-[ERROR - 2014-11-05T12:57:49.250Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:59:33.626Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-02T23:59:33.626Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
 
-[ERROR - 2014-11-05T12:57:52.715Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'registry.get')
-[ERROR - 2014-11-05T12:57:52.715Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:59:38.915Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'registry.get')
+[ERROR - 2015-02-02T23:59:38.915Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   _createResponder (https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js:5557)
   observe (https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js:5636)
   (anonymous function) (http://www.lichfielddc.gov.uk/:376)
-[INFO  - 2014-11-05T12:57:53.096Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2014-11-05T12:57:54.353Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'registry.get')
-[ERROR - 2014-11-05T12:57:54.353Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:59:40.963Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'registry.get')
+[ERROR - 2015-02-02T23:59:40.964Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   _createResponder (https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js:5557)
   observe (https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js:5636)
-  init (http://www.lichfielddc.gov.uk/site/javascript/homepage_widget.js?md=1410786278:28)
+  init (http://www.lichfielddc.gov.uk/site/javascript/homepage_widget.js?md=1422444784:28)
   (anonymous function) (https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js:5598)
-[ERROR - 2014-11-05T12:58:00.336Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: ns_08
-[ERROR - 2014-11-05T12:58:00.336Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-02T23:59:51.043Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: ns_08
+[ERROR - 2015-02-02T23:59:51.043Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   ns_10 (http://www.lincolnshire.gov.uk/Javascript/sitestat.js:9)
   ns_25 (http://www.lincolnshire.gov.uk/Javascript/sitestat.js:15)
   (anonymous function) (http://www.lincolnshire.gov.uk/Javascript/sitestat.js:16)
-[ERROR - 2014-11-05T12:58:12.543Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 'this.each(function(value, index) {
+[ERROR - 2015-02-03T00:00:09.643Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 'this.each(function(value, index) {
       results.push(iterator.call(context, value, index));
     })')
-[ERROR - 2014-11-05T12:58:12.544Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:00:09.643Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   collect (http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js:866)
-[ERROR - 2014-11-05T12:59:20.845Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: jQueryCollapse
-[ERROR - 2014-11-05T12:59:20.845Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.lambeth.gov.uk/sites/all/themes/lambeth/js/script.js?ndswk7:32)
-  (anonymous function) (http://www.lambeth.gov.uk/sites/all/themes/lambeth/js/script.js?ndswk7:40)
-[ERROR - 2014-11-05T12:59:30.463Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: cookieID
-[ERROR - 2014-11-05T12:59:30.463Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  writeAvailableWidgetCookie (http://www.southwark.gov.uk/widgets/js/widget.js?1409221759:229)
-  (anonymous function) (http://www.southwark.gov.uk/widgets/js/widget.js?1409221759:321)
-[ERROR - 2014-11-05T12:59:46.013Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'formused')
-[ERROR - 2014-11-05T12:59:46.014Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  validate (http://www.wandsworth.gov.uk/widgets/js/widget.js?1414692525:607)
-  (anonymous function) (http://www.wandsworth.gov.uk/widgets/js/widget.js?1414692525:614)
-[ERROR - 2014-11-05T12:59:50.097Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '$("ul.sf-menu").supersubs')
-[ERROR - 2014-11-05T12:59:50.097Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[INFO  - 2015-02-03T00:01:22.044Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-02-03T00:02:04.400Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: jQueryCollapse
+[ERROR - 2015-02-03T00:02:04.401Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.lambeth.gov.uk/sites/all/themes/lambeth/js/script.js?nizpy5:32)
+  (anonymous function) (http://www.lambeth.gov.uk/sites/all/themes/lambeth/js/script.js?nizpy5:40)
+[ERROR - 2015-02-03T00:02:11.655Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2015-02-03T00:02:11.656Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.merton.gov.uk/toplink.js:1)
+[ERROR - 2015-02-03T00:02:29.482Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: cookieID
+[ERROR - 2015-02-03T00:02:29.482Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  writeAvailableWidgetCookie (http://www.southwark.gov.uk/widgets/js/widget.js?1416336532:229)
+  (anonymous function) (http://www.southwark.gov.uk/widgets/js/widget.js?1416336532:321)
+[ERROR - 2015-02-03T00:02:53.842Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '$("ul.sf-menu").supersubs')
+[ERROR - 2015-02-03T00:02:53.842Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.magherafelt.gov.uk/scripts/custom.js:247)
   (anonymous function) (http://www.magherafelt.gov.uk/scripts/jquery-1.6.3.min.js:2)
   (anonymous function) (http://www.magherafelt.gov.uk/scripts/jquery-1.6.3.min.js:2)
   (anonymous function) (http://www.magherafelt.gov.uk/scripts/jquery-1.6.3.min.js:2)
-[ERROR - 2014-11-05T13:00:20.568Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById("mainJourneyRequestDetailsdate").value = nowDate')
-[ERROR - 2014-11-05T13:00:20.569Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:03:49.668Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById("mainJourneyRequestDetailsdate").value = nowDate')
+[ERROR - 2015-02-03T00:03:49.668Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.midlothian.gov.uk/site/javascript/homepage_widget.js?md=635484596942962618:77)
-[ERROR - 2014-11-05T13:00:39.449Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: twinColumn_norm
-[ERROR - 2014-11-05T13:00:39.449Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:04:19.286Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: twinColumn_norm
+[ERROR - 2015-02-03T00:04:19.286Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.moray.gov.uk/js/bottom.js:68)
-[ERROR - 2014-11-05T13:00:47.552Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 'xmlDoc.load(file)')
-[ERROR - 2014-11-05T13:00:47.553Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:04:33.009Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 'xmlDoc.load(file)')
+[ERROR - 2015-02-03T00:04:33.010Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   importXML (http://www.newcastle-staffs.gov.uk/:288)
   (anonymous function) (http://www.newcastle-staffs.gov.uk/:291)
-[ERROR - 2014-11-05T13:01:04.145Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '$('.sys_itemslist','#ctl01').cycle({ fx: 'scrollLeft', speed: 3000, timeout: 7000, height:100})')
-[ERROR - 2014-11-05T13:01:04.146Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.north-ayrshire.gov.uk/home.aspx:580)
-  (anonymous function) (http://www.north-ayrshire.gov.uk/home.aspx:581)
-  (anonymous function) (http://www.north-ayrshire.gov.uk/home.aspx:583)
-[ERROR - 2014-11-05T13:01:18.336Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'ctl00_plcContent_newBin_rfv1.controltovalidate = "ctl00_plcContent_newBin_txtHouseNo"')
-[ERROR - 2014-11-05T13:01:18.337Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.northdown.gov.uk/About-the-Council.aspx:870)
-[ERROR - 2014-11-05T13:01:19.104Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'val.evaluationfunction')
-[ERROR - 2014-11-05T13:01:19.104Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:04:44.711Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'iframe.contentWindow')
+[ERROR - 2015-02-03T00:04:44.711Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.newport.gov.uk/siteElements/js/iframe.js?build=8012033:4)
+[ERROR - 2015-02-03T00:05:24.534Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'ctl00_plcContent_newBin_rfv1.controltovalidate = "ctl00_plcContent_newBin_txtHouseNo"')
+[ERROR - 2015-02-03T00:05:24.534Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.northdown.gov.uk/About-the-Council.aspx:895)
+[ERROR - 2015-02-03T00:05:24.965Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'val.evaluationfunction')
+[ERROR - 2015-02-03T00:05:24.965Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   ValidatorOnLoad (http://www.northdown.gov.uk/ScriptResource.axd?d=FTux55i3tbL-T5V9hdjkcfQwyKxokJmi6Lp1eGiFZMUc-POKtvK8TeDQpxO6oYlFjf223920YxeB_j8_vfNLYWZHHRV7WNgcpymIOk0qi07VIj30Hra80T49RR-a6FbKU0b6xPtD3GdzwcqRTNH_I55lkqE1&t=7579d9fe:289)
-  (anonymous function) (http://www.northdown.gov.uk/About-the-Council.aspx:910)
-[ERROR - 2014-11-05T13:02:09.801Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('engagetest').innerHTML = '  '')
-[ERROR - 2014-11-05T13:02:09.802Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.oldham.gov.uk/:803)
-[ERROR - 2014-11-05T13:02:41.847Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('skip_content').setAttribute')
-[ERROR - 2014-11-05T13:02:41.847Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+  (anonymous function) (http://www.northdown.gov.uk/About-the-Council.aspx:935)
+[ERROR - 2015-02-03T00:05:30.863Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2015-02-03T00:05:30.863Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.ne-derbyshire.gov.uk/:116)
+[ERROR - 2015-02-03T00:06:07.129Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-03T00:06:07.129Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+
+[INFO  - 2015-02-03T00:06:22.568Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-02-03T00:06:38.681Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('engagetest').innerHTML = '  '')
+[ERROR - 2015-02-03T00:06:38.681Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.oldham.gov.uk/:778)
+[ERROR - 2015-02-03T00:07:48.032Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('skip_content').setAttribute')
+[ERROR - 2015-02-03T00:07:48.032Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.preston.gov.uk/:517)
-[INFO  - 2014-11-05T13:02:53.098Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2014-11-05T13:03:24.782Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating 'jQuery("ul.menu-nav").supersubs({ 
-			minWidth: 15,
-            extraWidth:  1
-        })')
-[ERROR - 2014-11-05T13:03:24.782Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.richmondshire.gov.uk/:73)
-  (anonymous function) (http://www.richmondshire.gov.uk/media/jui/js/jquery.min.js:2)
-  (anonymous function) (http://www.richmondshire.gov.uk/media/jui/js/jquery.min.js:2)
-  (anonymous function) (http://www.richmondshire.gov.uk/media/jui/js/jquery.min.js:2)
-  J (http://www.richmondshire.gov.uk/media/jui/js/jquery.min.js:2)
-[ERROR - 2014-11-05T13:03:26.789Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'document.forms[0].__VIEWSTATE.value')
-[ERROR - 2014-11-05T13:03:26.789Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:08:02.334Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-03T00:08:02.335Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+
+[ERROR - 2015-02-03T00:08:57.826Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'document.forms[0].__VIEWSTATE.value')
+[ERROR - 2015-02-03T00:08:57.826Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   DisplaySearchBox (http://www.rochdale.gov.uk/js/common.js:73)
   (anonymous function) (http://www.rochdale.gov.uk/templates/default/js/DisplaySearchBox.js:3)
-[ERROR - 2014-11-05T13:03:26.815Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'this._form.onsubmit')
-[ERROR - 2014-11-05T13:03:26.815Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:08:57.876Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'this._form.onsubmit')
+[ERROR - 2015-02-03T00:08:57.876Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.rochdale.gov.uk/ScriptResource.axd?d=l1FuKz7D_xbDuRGbvt0t_p_5h_w9D59Ut3uyrJrTCJ1ElduGIZ8p_dNSEuEyah50g-FJa2vp2dKdZ4zU5IfoizC5HQLglzGQgBQqQuMWyhBMwKPw4Wcz8POKXhCYrTZLk4iNwgkX7sRVgf4FSIaZV8myjmxqPJCTNxHQKr7AyIv9bUkS0&t=2e2045e2:5)
   (anonymous function) (http://www.rochdale.gov.uk/ScriptResource.axd?d=l1FuKz7D_xbDuRGbvt0t_p_5h_w9D59Ut3uyrJrTCJ1ElduGIZ8p_dNSEuEyah50g-FJa2vp2dKdZ4zU5IfoizC5HQLglzGQgBQqQuMWyhBMwKPw4Wcz8POKXhCYrTZLk4iNwgkX7sRVgf4FSIaZV8myjmxqPJCTNxHQKr7AyIv9bUkS0&t=2e2045e2:5)
-  (anonymous function) (http://www.rochdale.gov.uk/:198)
-[ERROR - 2014-11-05T13:03:39.846Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: ns_08
-[ERROR - 2014-11-05T13:03:39.846Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+  (anonymous function) (http://www.rochdale.gov.uk/:202)
+[ERROR - 2015-02-03T00:09:17.776Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: ns_08
+[ERROR - 2015-02-03T00:09:17.776Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   ns_10 (http://www.rbkc.gov.uk/sitestat.js:50)
   ns_25 (http://www.rbkc.gov.uk/sitestat.js:52)
   (anonymous function) (http://www.rbkc.gov.uk/sitestat.js:52)
-[ERROR - 2014-11-05T13:03:42.144Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('engage').innerHTML = ''')
-[ERROR - 2014-11-05T13:03:42.144Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.kingston.gov.uk/:760)
-[ERROR - 2014-11-05T13:03:44.401Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: ns_08
-[ERROR - 2014-11-05T13:03:44.402Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  ns_10 (http://www.rbwm.gov.uk/_sitestat.js:8)
-  ns_25 (http://www.rbwm.gov.uk/_sitestat.js:10)
-  (anonymous function) (http://www.rbwm.gov.uk/_sitestat.js:10)
-[ERROR - 2014-11-05T13:03:46.489Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'container.setStyle')
-[ERROR - 2014-11-05T13:03:46.490Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.rugby.gov.uk/site/javascript/homepage_widget.js?md=1410348020:23)
-  (anonymous function) (http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js:3966)
-[ERROR - 2014-11-05T13:04:19.063Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '$('select#speedA').selectmenu({style:'popup'})')
-[ERROR - 2014-11-05T13:04:19.063Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:09:21.047Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('engage').innerHTML = ''')
+[ERROR - 2015-02-03T00:09:21.047Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.kingston.gov.uk/:778)
+[ERROR - 2015-02-03T00:09:52.439Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: google
+[ERROR - 2015-02-03T00:09:52.440Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  initialize (http://www.sandwell.gov.uk/widgets/js/widget.js?1417435243:75)
+[ERROR - 2015-02-03T00:10:23.476Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '$('select#speedA').selectmenu({style:'popup'})')
+[ERROR - 2015-02-03T00:10:23.476Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.shetland.gov.uk/:67)
   (anonymous function) (http://www.shetland.gov.uk/scripts/jquery.js:29)
   (anonymous function) (http://www.shetland.gov.uk/scripts/jquery.js:37)
-[ERROR - 2014-11-05T13:04:40.533Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: $
-[ERROR - 2014-11-05T13:04:40.534Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[ERROR - 2015-02-03T00:10:47.773Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: requestAnimationFrame
+[ERROR - 2015-02-03T00:10:47.773Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.south-ayrshire.gov.uk/:591)
+[ERROR - 2015-02-03T00:11:03.279Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2015-02-03T00:11:03.279Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
   (anonymous function) (http://www.south-derbys.gov.uk/Common/js/functions.js:352)
-[ERROR - 2014-11-05T13:05:04.549Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: $
-[ERROR - 2014-11-05T13:05:04.550Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.southlanarkshire.gov.uk/:116)
-[ERROR - 2014-11-05T13:05:51.378Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: jQuery
-[ERROR - 2014-11-05T13:05:51.378Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js:5)
-[ERROR - 2014-11-05T13:05:51.379Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: jQuery
-[ERROR - 2014-11-05T13:05:51.379Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.southtyneside.info/southtyneside/scripts/jquery/jquery.placeholder.min.js:2)
-[ERROR - 2014-11-05T13:05:51.383Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: $
-[ERROR - 2014-11-05T13:05:51.383Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.southtyneside.info/southtyneside/scripts/javascripts.js:364)
-[ERROR - 2014-11-05T13:05:51.418Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: jQuery
-[ERROR - 2014-11-05T13:05:51.418Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.southtyneside.info/southtyneside/scripts/maps/jquery.ui.map.js:373)
-[ERROR - 2014-11-05T13:05:51.624Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: jQuery
-[ERROR - 2014-11-05T13:05:51.624Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.southtyneside.info/southtyneside/scripts/jquery.fancybox.js:2020)
-[ERROR - 2014-11-05T13:05:53.851Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: SyntaxError: Parse error
-[ERROR - 2014-11-05T13:05:53.852Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
+[INFO  - 2015-02-03T00:11:22.570Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-02-03T00:11:35.361Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'elem.setAttribute')
+[ERROR - 2015-02-03T00:11:35.362Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.southnorthants.gov.uk/:357)
+[ERROR - 2015-02-03T00:12:39.240Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: SyntaxError: Parse error
+[ERROR - 2015-02-03T00:12:39.241Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
 
-[ERROR - 2014-11-05T13:07:47.029Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '('#nav li').hover')
-[ERROR - 2014-11-05T13:07:47.030Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.tamworth.gov.uk/sites/all/themes/professional_theme/js/custom.js?ndyh7p:41)
+[ERROR - 2015-02-03T00:12:40.553Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: $
+[ERROR - 2015-02-03T00:12:40.553Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.stockport.gov.uk/resource/js/stockport.homepage.js:1)
+[ERROR - 2015-02-03T00:13:12.100Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: Recite
+[ERROR - 2015-02-03T00:13:12.101Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.sunderland.gov.uk/sunderland/scripts/application.min.js:1)
+  (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:3)
+  (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:3)
+  (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:3)
+  (anonymous function) (http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js:3)
+[ERROR - 2015-02-03T00:13:23.206Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: stLight
+[ERROR - 2015-02-03T00:13:23.207Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.surreyheath.gov.uk/:41)
+[ERROR - 2015-02-03T00:13:44.259Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not a function (evaluating '('#nav li').hover')
+[ERROR - 2015-02-03T00:13:44.259Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.tamworth.gov.uk/sites/all/themes/professional_theme/js/custom.js?nin3ay:41)
   (anonymous function) (http://www.tamworth.gov.uk/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1:2)
   (anonymous function) (http://www.tamworth.gov.uk/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1:2)
   (anonymous function) (http://www.tamworth.gov.uk/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1:2)
   (anonymous function) (http://www.tamworth.gov.uk/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.1:2)
-[INFO  - 2014-11-05T13:07:53.128Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[ERROR - 2014-11-05T13:08:05.326Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: ReferenceError: Can't find variable: ccAddAnalytics
-[ERROR - 2014-11-05T13:08:05.326Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  cookiecontrol_accepted (http://www.tendringdc.gov.uk/:856)
-  (anonymous function) (http://www.tendringdc.gov.uk/:839)
+[ERROR - 2015-02-03T00:14:15.320Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: ccAddAnalytics
+[ERROR - 2015-02-03T00:14:15.320Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  cookiecontrol_accepted (http://www.tendringdc.gov.uk/:888)
+  (anonymous function) (http://www.tendringdc.gov.uk/:871)
   (anonymous function) (http://www.tendringdc.gov.uk/sites/default/files/js/js_yBu3abR4sDO96I6DNEgfOGRKsHdFgFPfWAVwaxr_fgY.js:19)
   (anonymous function) (http://www.tendringdc.gov.uk/sites/default/files/js/js_yBu3abR4sDO96I6DNEgfOGRKsHdFgFPfWAVwaxr_fgY.js:19)
   (anonymous function) (http://www.tendringdc.gov.uk/sites/default/files/js/js_yBu3abR4sDO96I6DNEgfOGRKsHdFgFPfWAVwaxr_fgY.js:19)
@@ -285,62 +290,148 @@ roperty").onclick')
   (anonymous function) (http://www.tendringdc.gov.uk/sites/default/files/js/js_YWHVd5xyXCesOAUqLr7xvfnoMBKLYQU6OIH_tIqjDzI.js:1164)
   (anonymous function) (http://www.tendringdc.gov.uk/sites/default/files/js/js_YWHVd5xyXCesOAUqLr7xvfnoMBKLYQU6OIH_tIqjDzI.js:435)
   (anonymous function) (http://www.tendringdc.gov.uk/sites/default/files/js/js_YWHVd5xyXCesOAUqLr7xvfnoMBKLYQU6OIH_tIqjDzI.js:923)
-[ERROR - 2014-11-05T13:09:05.525Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 'sampleMedia[0]')
-[ERROR - 2014-11-05T13:09:05.525Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  JsonpCallback (http://www.warwickshire.gov.uk/wp-content/themes/gamma/js/homepage-slider-test.js:16)
-  (anonymous function) (http://www.warwickshire.gov.uk/wp-content/themes/gamma/js/jquery-1.9.0.min.js:3)
-  (anonymous function) (http://www.warwickshire.gov.uk/wp-content/themes/gamma/js/jquery-1.9.0.min.js:1)
-  (anonymous function) (http://www.warwickshire.gov.uk/wp-content/themes/gamma/js/jquery-1.9.0.min.js:1)
-  r (http://www.warwickshire.gov.uk/wp-content/themes/gamma/js/jquery-1.9.0.min.js:3)
-  (anonymous function) (http://www.warwickshire.gov.uk/wp-content/themes/gamma/js/jquery-1.9.0.min.js:3)
-[ERROR - 2014-11-05T13:10:28.422Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('webchat').innerHTML = '  '')
-[ERROR - 2014-11-05T13:10:28.423Z] Session [f57f3670-64e9-11e4-9752-6d25d7bf8e56] - page.onError - stack:
-  (anonymous function) (http://www.wigan.gov.uk/index.aspx:873)
-[INFO  - 2014-11-05T13:12:53.129Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:17:53.128Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:22:53.127Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:27:53.141Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:32:53.146Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:37:53.158Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:42:53.161Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:47:53.161Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:52:53.168Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T13:57:53.169Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:02:53.169Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:07:53.172Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:12:53.176Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:17:53.176Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:22:53.187Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:27:53.189Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:32:53.189Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:37:53.189Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:42:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:47:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:52:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:57:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:02:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:07:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:12:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:17:53.190Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:22:53.191Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:27:53.191Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:32:53.191Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:37:53.191Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-pWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:20:23.458Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:25:23.458Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:30:23.460Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:35:23.470Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:40:23.471Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:45:23.475Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:50:23.480Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T14:55:23.480Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:00:23.483Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:05:23.483Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:10:23.483Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:15:23.483Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:20:23.487Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:25:23.487Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:30:23.499Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:35:23.501Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2014-11-05T15:40:23.501Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-02-03T00:15:54.414Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 's[a]=e')
+[ERROR - 2015-02-03T00:15:54.414Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:3)
+  r (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  r (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:2)
+  r (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  r (http://platform.twitter.com/widgets.js:1)
+  t (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:4)
+[ERROR - 2015-02-03T00:15:58.044Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'undefined' is not an object (evaluating 's[a]=e')
+[ERROR - 2015-02-03T00:15:58.044Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:3)
+  r (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  r (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:2)
+  r (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:1)
+  r (http://platform.twitter.com/widgets.js:1)
+  t (http://platform.twitter.com/widgets.js:1)
+  (anonymous function) (http://platform.twitter.com/widgets.js:4)
+[ERROR - 2015-02-03T00:16:17.774Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: requestAnimationFrame
+[ERROR - 2015-02-03T00:16:17.774Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.westberks.gov.uk/:1532)
+[ERROR - 2015-02-03T00:16:18.429Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: ReferenceError: Can't find variable: requestAnimationFrame
+[ERROR - 2015-02-03T00:16:18.429Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.westberks.gov.uk/:1532)
+[INFO  - 2015-02-03T00:16:22.569Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2015-02-03T00:17:19.825Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - msg: TypeError: 'null' is not an object (evaluating 'document.getElementById('webchat').innerHTML = '  '')
+[ERROR - 2015-02-03T00:17:19.825Z] Session [b12cff10-ab35-11e4-96c9-0f8231fef113] - page.onError - stack:
+  (anonymous function) (http://www.wigan.gov.uk/index.aspx:785)
+[INFO  - 2015-02-03T00:21:22.572Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T00:26:22.582Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T00:31:22.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T00:36:22.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T00:41:22.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T00:46:22.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T00:51:22.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T00:56:22.585Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:01:22.586Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:06:22.595Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:11:22.595Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:16:22.610Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:21:22.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:26:22.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:31:22.619Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:36:22.621Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:41:22.631Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:46:22.634Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:51:22.634Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T01:56:22.634Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:01:22.636Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:06:22.654Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:11:22.662Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:16:22.676Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:21:22.682Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:26:22.682Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:31:22.683Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:36:22.693Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:41:22.704Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:46:22.704Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:51:22.712Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T02:56:22.712Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:01:22.713Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:06:22.713Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:11:22.713Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:16:22.713Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:21:22.714Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:26:22.714Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:31:22.716Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:36:22.717Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:41:22.717Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:46:22.717Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:51:22.725Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T03:56:22.725Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:01:22.731Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:06:22.731Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:11:22.731Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:16:22.734Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:21:22.742Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:26:22.743Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:31:22.749Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:36:22.749Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:41:22.749Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:46:22.749Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:51:22.749Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T04:56:22.760Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:01:22.764Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:06:22.772Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:11:22.772Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:16:22.772Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:21:22.772Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:26:22.773Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:31:22.773Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:36:22.773Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:41:22.773Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:46:22.773Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:51:22.780Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T05:56:22.780Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:01:22.786Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:06:22.803Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:11:22.813Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:16:22.827Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:21:22.827Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:26:22.827Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:31:22.827Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:36:22.827Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:41:22.834Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:46:22.839Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:51:22.854Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T06:56:22.856Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:01:22.867Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:06:22.868Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:11:22.875Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:16:22.875Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:21:22.881Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:26:22.885Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:31:22.885Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:36:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:41:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:46:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:51:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T07:56:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:01:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:06:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:11:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:16:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:21:22.891Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:26:22.896Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:31:22.900Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:36:22.900Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-02-03T08:41:22.901Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

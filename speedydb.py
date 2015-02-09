@@ -80,6 +80,12 @@ class SpeedyDb(object):
 		rows = self.cur.fetchall()		
 		return rows 
 		
+	def newSites(self, monthId):
+		newSiteSql = "SELECT * from NewSites where NewMonthId = {0};"
+		self.cur.execute(newSiteSql.format(monthId))
+		rows = self.cur.fetchall()		
+		return rows 
+		
 	def getSingleSite(self, siteId):
 		self.cur.execute("SELECT * from SITES WHERE Id=" + siteId)		
 		rows = self.cur.fetchall()		

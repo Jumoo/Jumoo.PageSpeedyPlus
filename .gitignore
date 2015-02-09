@@ -22,3 +22,4 @@ councilsites.txt
 #
 /website/results/
 /website/*.db
+ghostdriver.log
