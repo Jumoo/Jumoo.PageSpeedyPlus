@@ -26,7 +26,7 @@
 	</div>
 
 	<div class="page-header">
-		<h2>New sites this month: <?php echo $speedy->getMonthName($month); ?></h2>
+		<h2>New sites detected in <?php echo substr($speedy->getMonthName($month),4); ?> - <small>will have changed during <?php echo substr($speedy->getMonthName(intval($month)-1),4); ?> </small></h2>
 	</div>
 	</div>
 </div>
@@ -57,19 +57,25 @@ function DisplayNewSites($speedy, $id) {
 	foreach($results as $site)
 	{	
 		?>
-		<div class="new-site result">
-			
-			<h3><a href="speedy.php?id=<?php echo $site['Id']; ?>"><?php echo $site['Name'] ; ?></a></h3>
-			<div class="siteimg">
-				<strong>Old</strong>
-				<img src="results/<?php echo $site['lastMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg">
+			<div class="new-site result">
+				<div class="row">
+						<div class="col-xs-12">
+									<h3><a href="speedy.php?id=<?php echo $site['Id']; ?>"><?php echo $site['Name'] ; ?></a></h3>
+						</div>
+						<div class="col-xs-6">
+								<h4>Old</h4>
+								<span class="thumbnail">
+									<img src="results/<?php echo $site['lastMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg">
+								</span>
+						</div>
+						<div class="col-xs-6">
+							<h4>New</h4>
+								<span class="thumbnail">
+									<img src="results/<?php echo $site['newMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg">
+									</span>
+						</div>
+				</div>
 			</div>
-			<div class="siteimg">
-				<strong>New</strong>
-				<img src="results/<?php echo $site['newMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg">
-			</div>
-			<div class="clearfix"></div>
-		</div>
 		<?php
 	}
 	?>

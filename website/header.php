@@ -1,5 +1,5 @@
-<?php 
-	$latest_month = 13;
+<?php
+	$latest_month = 14;
 ?>
 
 <!DOCTYPE html>
@@ -12,8 +12,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/speedy-all.min.css" type="text/css">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="newsitesfeed.php" />
-
-		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -21,7 +19,7 @@
 		<![endif]-->
 	</head>
 	<body>
-	
+
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -49,11 +47,10 @@
 							<li class="divider"></li>
 							<li><a href="https://github.com/KevinJump/Jumoo.PageSpeedyPlus/">Get the code</a></li>
 						</ul>
-					</li>		
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<div class="container">
-	

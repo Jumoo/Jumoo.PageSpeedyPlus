@@ -131,6 +131,7 @@ function ShowTextly($textly, $monthId)
 	foreach ($results as $t) {
 		echo '<dt>Links:</dt><dl>' .  $t['LinkCount'] . '</dl>';
 		echo '<dt>Top words:</dt><dl>' .  str_replace(',', '<br/>', $t['WORDS']) . '</dl>';
+		echo '<dt>Trendyness: <a href="http://blog.jumoo.co.uk/2015/the-speedy-trendyness-score/" target="_blank" title="what does this mean?">?</a></dt><dl>'  . $t['Trendyness'] . "</dl>";
 	}
 	echo '</dl>';
 
