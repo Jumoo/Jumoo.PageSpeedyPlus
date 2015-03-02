@@ -62,5 +62,5 @@ class ScreenGrabby(object):
 			
 if __name__ == '__main__':
 	grab = ScreenGrabby()
-	grab.runGrabby(13)
+	grab.runGrabby(14)
 	

@@ -5,12 +5,12 @@ import BeautifulSoup
 import sqlite3 as lite
 import speedydb 
 
-month = 13; 
+month = 14; 
 
 
-trendlySql_insert = "INSERT INTO Textly(SiteId, MonthId, TrendyNess, LinkCount, Words) VALUES({0}, {1}, {2}, {3}, {4});"
+trendlySql_insert = "INSERT INTO Textly(SiteId, MonthId, Trendyness, LinkCount, Words) VALUES({0}, {1}, {2}, {3}, {4});"
 
-trends = ['top task', 'straight to', 'residents', 'pay it', 'report it', 'find my nearest', 'popular tasks','highlights','faq','frequently asked','Popular topics','Quick links','Do it online']
+trends = ['top task', 'straight to', 'residents', 'pay it', 'report it', 'find my nearest', 'popular tasks','highlights','faq','frequently asked','Popular topics','Quick links','Do it online', 'press releases']
 trendcounts = range(len(trends)) 
 sitecount = 0;
 
@@ -87,6 +87,7 @@ for site in sites:
 		fo.close()
 		
 		sql = trendlySql_insert.format(site[0], month, trendyness, linkcount, words)
+		# print sql 
 		cur.execute(sql)
 		con.commit()		
 		print '{0:<2} {1:<4} {2}'.format(trendyness, linkcount, words),
