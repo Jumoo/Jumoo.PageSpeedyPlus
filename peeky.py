@@ -4,7 +4,7 @@ import speedydb
 import urllib2
 import urllib 
 
-month = 14
+month = 16
 
 
 class Peeky(object):
@@ -69,9 +69,12 @@ class Peeky(object):
 		else:
 			print 'not set'
 
+	def close(self):
+		self.db.cleanClose()
 
 if __name__ == '__main__':
 	peeky = Peeky()
 	peeky.goPeek(month)
-	#peeky.checkForUmbraco('http://www.liverpool.gov.uk/')
+	# peeky.checkForUmbraco('http://www.liverpool.gov.uk/')
+	peeky.close();
   
