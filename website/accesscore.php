@@ -53,8 +53,20 @@ class Checker
 	
 	function getXML($month, $sitename)
 	{
-		$path = "results/" . $month . "/checker/" . $sitename . ".txt";
-		$xml = simplexml_load_file($path);
+		
+		$zipPath = "zip://results/" . $month . "/checker.zip#" . $sitename . ".txt";
+		
+		$handle = fopen($zipPath, 'r'); 
+		$result = '';
+		while (!feof($handle)) {
+			$result .= fread($handle, 8192);
+		}
+		fclose($handle);
+		# echo $result;
+		$xml = simplexml_load_string($result);
+		
+		#$path = "results/" . $month . "/checker/" . $sitename . ".txt";
+		#$xml = simplexml_load_file($path);
 		
 		return $xml; 
 	}
