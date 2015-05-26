@@ -21,6 +21,10 @@ class SpeedyDb(object):
 		self.con = lite.connect('speedyplus.db')
 		self.cur = self.con.cursor()
 
+	def cleanClose(self):
+		self.con.commit()
+		self.cur.close()
+		self.con.close()
 
 	def listMonths(self):
 	
