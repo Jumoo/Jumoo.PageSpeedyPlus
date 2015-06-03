@@ -9,15 +9,18 @@
 	$speedy = new Speedy(1); 
 		
 	?>
+	<div class="row">
+		<div class="col-md-8">
+			<h2>Speedy Table: <?php echo $speedy->getMonthName($month); ?></h2>
+		</div>
+		<div class="col-md-4">
+			<div class="pull-right">
+				<?php MonthsList($speedy) ?> 
+			</div>
+		</div>
+	</div>
 	
-	<div class="previous">
-		<strong>Previously on speedy:</strong>
-		<?php MonthsList($speedy) ?> 
-	</div>
-
-	<div class="page-header">
-		<h2>Speedy Table: <?php echo $speedy->getMonthName($month); ?></h2>
-	</div>
+	<div class="col-sx-12">
 	
 	<ul id="myTab" class="nav nav-tabs" role="tablist">
 		<li><a href="#desktop" role="tab" data-toggle="tab">Desktop</a></li>
@@ -39,14 +42,18 @@
 <?php 
 function MonthsList($speedy)
 {
-	$months = $speedy->getProcessedMonths() ;
-
-	print '<ul class="monthlist">' ;
+	$months = $speedy->getMonthsWithNewSites() ;
+	print '<ul class="nav nav-pills monthlist">' ;
+	print '<li role="presentation" class="dropdown">' ;
+	print '<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">';
+	print 'previous months <span class="caret"></span></a>';
+	print '<ul class="dropdown-menu" role="menu">';
+    
 	foreach($months as $month)
 	{
 		print '<li><a href="speedytable.php?month=' . $month['Id'] . '">' . substr($month['Name'],4) . '</a></li>' ;
 	}
-	print '</ul>' ;
+	print '</ul></li></ul>';
 }
 
 function DisplayTable($speedy, $id, $platform) {	

@@ -9,25 +9,11 @@
 	$speedy = new Speedy(1); 
 		
 	?>
-	<br/>
-	<div class="alert alert-info">
-		<p>
-		As page speedy runs every month it gives us a good opportunity to spot when things change, this page
-		lists the new websites (we have noticed) as we've been running page speedy. 
-		</p>
-		<p>
-		The Month is the month in which the change was detected, so the site probably changed sometime in the previous month.
-		</p>
+	<div class="col-md-8">
+			<h2>New sites detected in <?php echo substr($speedy->getMonthName($month),4); ?> - <small>will have changed during <?php echo substr($speedy->getMonthName(intval($month)-1),4); ?> </small></h2>
 	</div>
-	
-	<div class="previous">
-		<strong>New Sites By Month:</strong>
+	<div class="col-md-4">
 		<?php MonthsList($speedy) ?> 
-	</div>
-
-	<div class="page-header">
-		<h2>New sites detected in <?php echo substr($speedy->getMonthName($month),4); ?> - <small>will have changed during <?php echo substr($speedy->getMonthName(intval($month)-1),4); ?> </small></h2>
-	</div>
 	</div>
 </div>
 
@@ -42,13 +28,17 @@
 function MonthsList($speedy)
 {
 	$months = $speedy->getMonthsWithNewSites() ;
-
-	print '<ul class="monthlist">' ;
+	print '<ul class="nav nav-pills monthlist">' ;
+	print '<li role="presentation" class="dropdown">' ;
+	print '<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">';
+	print 'previous months <span class="caret"></span></a>';
+	print '<ul class="dropdown-menu" role="menu">';
+    
 	foreach($months as $month)
 	{
 		print '<li><a href="newsites.php?month=' . $month['Id'] . '">' . substr($month['Name'],4) . '</a></li>' ;
 	}
-	print '</ul>' ;
+	print '</ul></li></ul>';
 }
 
 function DisplayNewSites($speedy, $id) {	
