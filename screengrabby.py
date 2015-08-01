@@ -1,5 +1,6 @@
 import os
 import sys
+import getopt
 import speedydb
 
 from selenium import webdriver
@@ -59,8 +60,27 @@ class ScreenGrabby(object):
 		source = open(source_file, 'w')
 		source.write(content.encode('utf-8'))
 		source.close()
-			
+
+def main(argv):
+	monthid = 0 
+
+	try:
+		opts, args = getopt.getopt(argv, "m:", ['month'])
+	except getopt.GetoptError:
+		print 'grabby.py -m <monthId>'
+		sys.exit(2)
+		
+	for opt, arg in opts:
+		if opt in ('-m', '--month'):
+			monthid = arg 
+	
+	print 'MonthId [', monthid , ']'
+
+	if monthid != 0:
+		grab = ScreenGrabby()
+		grab.runGrabby(monthid)
+
+
 if __name__ == '__main__':
-	grab = ScreenGrabby()
-	grab.runGrabby("2015Election")
+	main(sys.argv[1:])	
 	

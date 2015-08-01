@@ -1,10 +1,13 @@
 import os
 import sys
+import getopt
 import speedydb
 import urllib2
 import urllib 
 
-month = 16
+from urlparse import urlparse
+
+month = 18
 
 
 class Peeky(object):
@@ -21,8 +24,10 @@ class Peeky(object):
 		for site in sites:
 			siteId = site[0]
 			siteName = site[1]
-			siteUrl = site[2]
-
+			urlBits = urlparse(site[2])
+			
+			siteUrl = urlBits.scheme + "://" + urlBits.netloc 
+			
 			if (self.checkForDrupal(siteUrl)):
 				print siteId, siteName, siteUrl, 'Drupal'
 				self.db.saveFeatures(monthId, siteId, 'Drupal', 'cms', '')
@@ -72,9 +77,30 @@ class Peeky(object):
 	def close(self):
 		self.db.cleanClose()
 
+		
+		
+def main(argv):
+	monthid = 0 
+
+	try:
+		opts, args = getopt.getopt(argv, "m:", ['month'])
+	except getopt.GetoptError:
+		print 'peaky.py -m <monthId>'
+		sys.exit(2)
+		
+	for opt, arg in opts:
+		if opt in ('-m', '--month'):
+			monthid = arg 
+	
+	print 'MonthId [', monthid , ']'
+
+	if monthid != 0:
+		peeky = Peeky()
+		peeky.goPeek(monthid)
+		peeky.close();
+
+
 if __name__ == '__main__':
-	peeky = Peeky()
-	peeky.goPeek(month)
-	# peeky.checkForUmbraco('http://www.liverpool.gov.uk/')
-	peeky.close();
+	main(sys.argv[1:])	
+	
   

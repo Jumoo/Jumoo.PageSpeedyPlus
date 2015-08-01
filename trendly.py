@@ -5,14 +5,9 @@ import BeautifulSoup
 import sqlite3 as lite
 import speedydb 
 
-month = 15; 
-
-
 trendlySql_insert = "INSERT INTO Textly(SiteId, MonthId, Trendyness, LinkCount, Words) VALUES({0}, {1}, {2}, {3}, {4});"
-
-trends = ['top task', 'straight to', 'residents', 'pay it', 'report it', 'find my nearest', 'popular tasks','highlights','faq','frequently asked','Popular topics','Quick links','Do it online', 'press releases']
+trends = ['top task', 'straight to', 'residents', 'pay it', 'report it', 'find my nearest', 'popular tasks','highlights','faq','frequently asked','Popular topics','Quick links','Do it online', 'press releases', 'fostering']
 trendcounts = range(len(trends)) 
-sitecount = 0;
 
 from collections import Counter
 
@@ -61,43 +56,50 @@ def linkCounter(content):
 	return len(soup.findAll('a', href=True))
 
 
-# stuff...	
-here = os.path.dirname(__file__)
-folder = os.path.join(here, "results\\{0}\\html".format(month))
-
-
-con = lite.connect('speedyplus.db')
-cur = con.cursor()
-
-db = speedydb.SpeedyDb()
-sites = db.getSites()
-for site in sites:
-	siteName = site[1]
-	siteFile = "{0}\\{1}.html".format(folder, siteName)
-	print "{0:<3} {1:<25}".format(site[0], site[1]),
 	
-	if os.path.exists(siteFile):
-		sitecount = sitecount + 1 
-		print "{0:25}".format(os.path.split(siteFile)[1]),
-		fo = open(siteFile, 'r')
-		content = fo.read()
-		trendyness = GetTheTrendy(content) 
-		linkcount = linkCounter(content)
-		words = CountTheWords(content)
-		fo.close()
+	
+def runmonth(monthid):
+	# stuff...	
+	here = os.path.dirname(__file__)
+	folder = os.path.join(here, "results\\{0}\\html".format(monthid))
+
+	sitecount = 0;
+
+	con = lite.connect('speedyplus.db')
+	cur = con.cursor()
+
+	db = speedydb.SpeedyDb()
+	sites = db.getSites()
+	for site in sites:
+		siteName = site[1]
+		siteFile = "{0}\\{1}.html".format(folder, siteName)
+		print "{0:<3} {1:<25}".format(site[0], site[1]),
 		
-		sql = trendlySql_insert.format(site[0], month, trendyness, linkcount, words)
-		# print sql 
-		cur.execute(sql)
-		con.commit()		
-		print '{0:<2} {1:<4} {2}'.format(trendyness, linkcount, words),
-	
-	print '.' 
+		if os.path.exists(siteFile):
+			sitecount = sitecount + 1 
+			print "{0:25}".format(os.path.split(siteFile)[1]),
+			fo = open(siteFile, 'r')
+			content = fo.read()
+			trendyness = GetTheTrendy(content) 
+			linkcount = linkCounter(content)
+			words = CountTheWords(content)
+			fo.close()
+			
+			sql = trendlySql_insert.format(site[0], monthid, trendyness, linkcount, words)
+			
+			# print sql 
+			cur.execute(sql)
+			con.commit()		
+			print '{0:<2} {1:<4} {2}'.format(trendyness, linkcount, words),
+		
+		print '.' 
 
-print ''
-for i in range(len(trends)):
-	print '{0:<30}: {1}\t{2:.0%}'.format(trends[i], trendcounts[i], percentage(trendcounts[i],sitecount))
+	print ''
+	for i in range(len(trends)):
+		print '{0:<30}: {1}\t{2:.0%}'.format(trends[i], trendcounts[i], percentage(trendcounts[i],sitecount))
 
-for word, count in c.most_common(100):
-	print word, count 
+	for word, count in c.most_common(100):
+		print word, count 
 
+
+runmonth(19)
