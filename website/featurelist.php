@@ -5,9 +5,9 @@
 	<div class="col-md-12">
 <?php
 
-	$wapple = new Wapple(1);	
-	$sites = $wapple->listFeatures();
-	?>
+	$wapple = new Wapple(1);
+	$cats = $wapple->getCategories($latest_month);
+?>
 	<div class="page-header">
 		<h2>Site Features</h2>
 	</div>
@@ -18,20 +18,12 @@
 	<ul>
 	<?php
 	$last_app = "" ;
-	foreach($sites as $site)
+	foreach($cats as $cat)
 	{	
-		if ($last_app != $site['Category'] ) 
-		{
-				$last_app = $site['Category']; 
-				?>
-					</ul>
-					<h3><?php echo $site['Category']; ?></h3>
-					<ul>
-				<?php
-		}
-	
 		?>
-		<li><a href="feature.php?feature=<?php echo $site['Application'] ?>"><?php echo $site['Application'] ?></a></li>
+		<li>
+			<a href="category.php?cat=<?php echo$cat['Category'] ?>"><?php echo $cat['Category'] ?></a>
+		</li>
 		<?php
 	}
 	?>

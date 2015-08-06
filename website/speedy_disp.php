@@ -52,4 +52,27 @@ function GetChartData($MonthId, $platform, $data)
 }
 
 
+function ShowLatestSpeedy($sp, $month, $platform, $latest_month)
+{
+	$monthName = $sp->getMonthName($month);
+	
+	$results = $sp->getResults($platform, $monthName);
+
+	foreach($results as $line)
+	{
+		?>
+		<table class="size-data">
+			<tr><td class="data-key data-html"></td><th>Html:</th><td><?php echo number_format(($line['Html'] / 1024), 2, '.', ',') ?>Kb</td></tr>
+			<tr><td class="data-key data-css"></td><th>Css:</th><td><?php echo number_format(($line['Css'] / 1024), 2, '.', ',') ?>Kb</td></tr>
+			<tr><td class="data-key data-img"></td><th>Images:</th><td><?php echo number_format(($line['Img'] / 1024), 2, '.', ',') ?>Kb</td></tr>
+			<tr><td class="data-key data-js"></td><th>Scripts:</th><td><?php echo number_format(($line['Js'] / 1024), 2, '.', ',') ?>Kb</td></tr>
+			<tr><td class="data-key data-other"></td><th>Other:</th><td><?php echo number_format(($line['Other'] / 1024), 2, '.', ',') ?>Kb</td></tr>
+			<tr><td colspan="3">
+				<strong>Total:</strong> <?php echo number_format(($line['Total'] / 1024), 2, '.', ',') ?> Kb
+			</td></tr>
+		</table>
+		<?php
+	}
+}
+
 ?>

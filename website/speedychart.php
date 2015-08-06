@@ -116,7 +116,7 @@ function RenderSizeChart($speedy, $month, $platform)
 			if ( document.getElementById("piechart_<?php echo $pieId ?>") != null )
 			{
 				var canvas<?php echo $pieId ?> = document.getElementById("piechart_<?php echo $pieId ?>").getContext("2d");
-				var rCcanvas<?php echo $pieId ?> = new Chart(canvas<?php echo $pieId ?>).Pie(data_<?php echo $pieId ?>);
+				var rCcanvas<?php echo $pieId ?> = new Chart(canvas<?php echo $pieId ?>).Doughnut(data_<?php echo $pieId ?>);
 			}
 		<?php 
 	}

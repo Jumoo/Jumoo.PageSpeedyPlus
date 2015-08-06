@@ -1,4 +1,6 @@
 <?php include 'speedycore.php' ; ?>
+<?php include 'wapplecore.php'; ?>
+
 <?php include 'header.php'; ?>
 
 <div class="row">
@@ -43,9 +45,13 @@ function MonthsList($speedy)
 
 function DisplayNewSites($speedy, $id) {	
 	
+	$wapple = new Wapple(1);
+	
 	$results = $speedy->getNewSites($id);
 	foreach($results as $site)
 	{	
+	
+		$ls = new Speedy($site['Id']); 
 		?>
 			<div class="new-site result">
 				<div class="row">
@@ -57,12 +63,24 @@ function DisplayNewSites($speedy, $id) {
 								<span class="thumbnail">
 									<img src="results/<?php echo $site['lastMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg">
 								</span>
+								<small class="text-muted">
+									Desktop: <?php echo $ls->getScore('desktop', $site['lastMonthId']) ?>
+									Mobile: <?php echo $ls->getScore('mobile', $site['lastMonthId']) ?>
+									<br/>
+									CMS: <?php echo $wapple->GetApp($site['Id'], $site['lastMonthId'], 'cms') ?>
+								</small>
 						</div>
 						<div class="col-xs-6">
 							<h4>New</h4>
 								<span class="thumbnail">
 									<img src="results/<?php echo $site['newMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg">
-									</span>
+								</span>
+								<small class="text-muted">
+									Desktop: <?php echo $ls->getScore('desktop', $site['newMonthId']) ?>
+									Mobile: <?php echo $ls->getScore('mobile', $site['newMonthId']) ?>
+									<br/>
+									CMS: <?php echo $wapple->GetApp($site['Id'], $site['newMonthId'], 'cms') ?>
+								</small>
 						</div>
 				</div>
 			</div>
