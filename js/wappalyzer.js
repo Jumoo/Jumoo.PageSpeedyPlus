@@ -89,7 +89,7 @@ var wappalyzer = (function() {
 						}
 
 						// Replace back references
-						version = version.replace('\\' + i, match ? match : '');
+						version = version.replace(new RegExp('\\\\' + i, 'g'), match ? match : '');
 					});
 
 					if ( version && this.versions.indexOf(version) < 0 ) {
@@ -201,7 +201,7 @@ var wappalyzer = (function() {
 		config: {
 			websiteURL: 'https://wappalyzer.com/',
 			twitterURL: 'https://twitter.com/Wappalyzer',
-			githubURL:  'https://github.com/ElbertF/Wappalyzer',
+			githubURL:  'https://github.com/AliasIO/Wappalyzer',
 		},
 
 		/**

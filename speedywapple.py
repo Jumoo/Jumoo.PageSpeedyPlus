@@ -21,7 +21,7 @@ class SpeedyWapple(object):
 	def __init__(self):
 	
 		self.file_dir = os.path.dirname(__file__)
-		f = open(os.path.join(self.file_dir, 'apps.json'))
+		f = open(os.path.join(self.file_dir, 'wapple.apps.json'))
 		data = json.loads(f.read())
 		f.close()
 		
@@ -55,7 +55,7 @@ class SpeedyWapple(object):
 			ctxt.enter()
 
 			f1 = open(os.path.join(self.file_dir, 'js/wappalyzer.js'))
-			f2 = open(os.path.join(self.file_dir, 'js/driver.js'))
+			f2 = open(os.path.join(self.file_dir, 'js/php.driver.js'))
 			ctxt.eval(f1.read())
 			ctxt.eval(f2.read())
 			f1.close()
