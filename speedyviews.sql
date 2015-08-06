@@ -11,3 +11,18 @@ CREATE VIEW Checker_View AS
 CREATE VIEW NewSites_View as 		
 	select Sites.Id, Sites.Name, Sites.Url, NewSites.newMonthId, NewSites.newMonthId - 1 as lastMonthId from NewSites
 		INNER JOIN Sites ON Sites.Id = newSites.SiteId;
+		
+		
+CREATE VIEW AppScores as 
+select Speedy.MonthId as MonthId, Platform, Category, Application, Count(*) as SiteCount, Sum(Score)/Count(*) as AveScore, Max(Score) as TopScore, Min(Score) as LowScore from Speedy 
+	INNER JOIN Speedy_Result on Speedy_Result.SpeedyID = Speedy.Id
+	INNER JOIN Features on Features.SiteId = Speedy.SiteId 
+	WHERE Speedy.MonthId = 19 and category = 'cms' and Features.MonthId = 19 and Score > 0
+	GROUP BY Platform, Category, Application;
+
+	
+select Speedy.MonthId as MonthId, Platform, Category, Application, Count(*) as SiteCount, Sum(Score)/Count(*) as AveScore, Max(Score) as TopScore, Min(Score) as LowScore from Speedy
+	INNER JOIN Speedy_Result on Speedy_Result.SpeedyID = Speedy.Id 
+	INNER JOIN Features on Features.SiteId = Speedy.SiteId 
+	WHERE Speedy.MonthId = 19 and Features.MonthId = 19 and Category = 'cms' and Score > 0 and Platform = 'mobile' 
+	GROUP BY Application;

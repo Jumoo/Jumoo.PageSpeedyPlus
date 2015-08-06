@@ -45,5 +45,10 @@ INSERT INTO Months(Name, Processed) VALUES("03: March 15", 0);
 INSERT INTO Months(Name, Processed) VALUES("04: April 15", 0);
 
 		
+CREATE INDEX Feature_Category on Features (Category);
+CREATE INDEX SpeedyResults_SiteId on Speedy_Result (SpeedyID);
+CREATE INDEX Feature_Sites on Features (SiteId);
+CREATE INDEX Feature_Months on Features (MonthId);
+CREATE INDEX Speedy_Months on Speedy (MonthId);
 
 
