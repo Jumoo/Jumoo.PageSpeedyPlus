@@ -7,7 +7,7 @@ import urllib
 
 from urlparse import urlparse
 
-month = 18
+month = 19
 
 
 class Peeky(object):
@@ -37,6 +37,13 @@ class Peeky(object):
 			elif (self.checkForWordpress(siteUrl)):
 				print siteId, siteName, siteUrl, 'Wordpress'
 				self.db.saveFeatures(monthId, siteId, 'WordPress', 'blogs', '')
+			elif (self.checkForOrchard(siteUrl)):
+				print siteId, siteName, siteUrl, 'Orchard CMS'
+				self.db.saveFeatures(monthId, siteId, 'Orchard CMS', 'cms', '')
+			elif (self.checkForKentico(siteUrl)):
+				print siteId, siteName, siteUrl, 'Kentico'
+				self.db.saveFeatures(monthId, siteId, 'Kentico CMS', 'cms', '')
+			
 
 		print 'done'
       
@@ -44,6 +51,11 @@ class Peeky(object):
 		umbracoFile = "/umbraco_client/application/jquery/verticalalign.js"
 		umbracoText = 'fn.VerticalAlign = function(opts)'
 		return self.checkForFileAndContents(url, umbracoFile, umbracoText)
+		
+	def checkForOrchard(self, url):
+		orchardFile = "/Themes/SafeMode/Styles/ie6.css"
+		orchardText = 'images/orchardLogo.gif'
+		return self.checkForFileAndContents(url, orchardFile, orchardText)
   
 	def checkForDrupal(self, url):
 		return self.checkForFileAndContents(url, '/misc/drupal.js', 'var Drupal')
@@ -51,6 +63,10 @@ class Peeky(object):
 	def checkForWordpress(self, url):
 		wordpressFile = '/wp-trackback.php'
 		return self.checkForFileAndContents(url, '/wp-trackback.php', 'I really need an ID')
+		
+	def checkForKentico(self, url):
+		sitefile = '/CMSPages/GetResource.ashx?stylesheetfile=/App_Themes/Default/DesignMode.css'
+		return self.checkForFileAndContents(url, sitefile, '.default_')
   
 	def checkForFileAndContents(self, url, portion, text):
 		fullUrl = url + portion
