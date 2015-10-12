@@ -6,32 +6,32 @@
 <?php include 'header.php' ; ?>
 
 <?php
-	$id = $_GET["id"]; 	
-	$speedy = new Speedy($id); 
+	$id = $_GET["id"];
+	$speedy = new Speedy($id);
 	$wapple = new Wapple($id);
 	$checker = new Checker($id);
-	$textly = new Textly($id); 
-	
+	$textly = new Textly($id);
+
 	$url = $speedy->getSiteUrl();
 	$siteName = $speedy->getSiteName();
-	
+
 	$monthId = $latest_month;
 	if (isset($_GET["month"])) {
 		$monthId = $_GET["month"];
 	}
 	$monthName = $speedy->getMonthName($monthId);
 	$monthDisplayName = $monthName;
-	
-	
+
+
 ?>
 <div class="site-summary">
 <div class="row">
-	<div class="col-xs-12 col-sm-7">
+	<div class="col-xs-12 col-sm-6">
 		<h2 class="page-header"><?php echo $siteName; ?>
 			<small><a href="<?php echo $url ?>"><?php echo $url ?></a></small>
 		</h2>
 	</div>
-	<div class="col-sm-2">
+	<div class="col-sm-3">
 		<h2 class="page-header"><?php echo $monthDisplayName ?></h2>
 	</div>
 	<div class="col-sm-3">
@@ -66,7 +66,7 @@
 							<h3 class="page-header">Desktop</h3>
 						</div>
 						<div class="col-sm-4">
-							<?php ShowLatestSpeedy($speedy, $monthId, "desktop", $latest_month); ?>					
+							<?php ShowLatestSpeedy($speedy, $monthId, "desktop", $latest_month); ?>
 						</div>
 						<div class="col-sm-6">
 							<canvas id="piechart_<?php echo $monthId ?>_desktop" ></canvas>
@@ -83,7 +83,7 @@
 							<h3 class="page-header">Mobile</h3>
 						</div>
 						<div class="col-sm-4">
-							<?php ShowLatestSpeedy($speedy, $monthId, "mobile", $monthId); ?>					
+							<?php ShowLatestSpeedy($speedy, $monthId, "mobile", $monthId); ?>
 						</div>
 						<div class="col-sm-6">
 							<canvas id="piechart_<?php echo $monthId ?>_mobile" ></canvas>
@@ -99,7 +99,7 @@
 		</div>
 		<div class="col-xs-12 col-md-6">
 			<div class="row">
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-12">
 					<h3 class="page-header">Speed over time</h3>
 					<canvas id="results" width="500" height="200"></canvas>
 					<?php ShowUpdates($speedy) ?>
@@ -122,6 +122,11 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
+					<div class="pull-right" style="margin-top:2em;">
+						<a href="reports.php" class="btn btn-lg btn-success">
+							Order a SiteSpeedy Report for the whole site
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -132,8 +137,8 @@
 
 function ShowMonthPicker($id, $speedy)
 {
-	$months = $speedy->getProcessedMonths(); 
-	
+	$months = $speedy->getProcessedMonths();
+
 	print '<ul class="nav nav-pills monthlist">' ;
 	print '<li role="presentation" class="dropdown">' ;
 	print '<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">';
@@ -156,25 +161,25 @@ function ShowScore($score)
 	else if ( $score > 50 ) {
 		$q = 'score-med';
 	}
-	
+
 	return '<span class="score ' . $q . '">' . $score . '</span>' ;
 }
 
 function ShowUpdates($speedy)
 {
 	$updates = $speedy->getSiteUpdates();
-	
-	if ( count($updates) > 0 ) 
+
+	if ( count($updates) > 0 )
 	{
-		echo '<div><strong>New Site:</strong>';
+		echo '<div><strong>New Site</strong>';
 
 		foreach( $updates as $update )
 		{
-			echo $speedy->getMonthName($update['newMonthId']) . ' ' ;
+			echo ': ' . substr($speedy->getMonthName($update['newMonthId']), 4) . ' ' ;
 		}
-		
+
 		echo '</div>';
-		
+
 	}
 }
 
@@ -193,4 +198,3 @@ function ShowTextly($textly, $monthId)
 ?>
 <?php include 'speedychart.php' ?>
 <?php include 'footer.php'; ?>
-	

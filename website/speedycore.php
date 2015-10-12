@@ -71,7 +71,7 @@ class Speedy
 	{
 		$monthlist = array();
 		
-		$months_sql = 'SELECT * FROM Months WHERE Processed = 1 order by id DESC;';
+		$months_sql = 'SELECT * FROM Months WHERE Processed = 1 order by id;';
 		$statement = $this->db->prepare($months_sql);
 		$rows = $statement->execute();
 		while( $row = $rows->fetchArray())

@@ -5,10 +5,10 @@
 
 	$db = new SQlite3('speedyplus.db');
 
-	$statement = $db->prepare('SELECT * FROM SITES ORDER BY Name;');
+	$statement = $db->prepare('SELECT * FROM SITES WHERE ACTIVE = 1 ORDER BY Name;');
 	$results = $statement->execute();
 
-	print '<ul class="sitelist">';
+	print '<ul class="sitelist list-unstyled">';
 
 	while ($row = $results->fetchArray()) {
 	?>

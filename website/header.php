@@ -1,5 +1,5 @@
 <?php
-	$latest_month = 19;
+	$latest_month = 21;
 ?>
 
 <!DOCTYPE html>
@@ -36,15 +36,18 @@
 					<li><a href="sites.php">Sites</a></li>
 					<li><a href="featurelist.php">App list</a></li>
 					<li><a href="speedytable.php?month=<?php echo $latest_month ?>">Speeds</a></li>
+					<!--
 					<li><a href="achecktable.php?month=<?php echo $latest_month ?>">Accessibility</a></li>
+					-->
 					<li><a href="newsites.php?month=<?php echo $latest_month ?>">New Sites</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="http://blog.jumoo.co.uk/2014/the-council-speedy-indexish/">What is Pagespeedy?</a></li>
+							<li><a href="about.php">What is Pagespeedy?</a></li>
 							<li class="divider"></li>
+							<li><a href="reports.php">SiteSpeedy Reports</a></li>
 							<li><a href="https://github.com/KevinJump/Jumoo.PageSpeedyPlus/">Get the code</a></li>
 						</ul>
 					</li>

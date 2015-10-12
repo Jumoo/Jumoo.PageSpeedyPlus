@@ -7,15 +7,20 @@
 	<div class="col-md-12">
 <?php
 
-	$month = $_GET["month"];
-	$speedy = new Speedy(1); 
-		
+  $month = $latest_month;
+	if (isset($_REQUEST['month']))
+	{
+		$month = $_GET["month"];
+	}
+
+	$speedy = new Speedy(1);
+
 	?>
 	<div class="col-md-8">
 			<h2>New sites detected in <?php echo substr($speedy->getMonthName($month),4); ?> - <small>will have changed during <?php echo substr($speedy->getMonthName(intval($month)-1),4); ?> </small></h2>
 	</div>
 	<div class="col-md-4">
-		<?php MonthsList($speedy) ?> 
+		<?php MonthsList($speedy) ?>
 	</div>
 </div>
 
@@ -26,7 +31,7 @@
 </div>
 
 
-<?php 
+<?php
 function MonthsList($speedy)
 {
 	$months = $speedy->getMonthsWithNewSites() ;
@@ -35,7 +40,7 @@ function MonthsList($speedy)
 	print '<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">';
 	print 'previous months <span class="caret"></span></a>';
 	print '<ul class="dropdown-menu" role="menu">';
-    
+
 	foreach($months as $month)
 	{
 		print '<li><a href="newsites.php?month=' . $month['Id'] . '">' . substr($month['Name'],4) . '</a></li>' ;
@@ -43,15 +48,15 @@ function MonthsList($speedy)
 	print '</ul></li></ul>';
 }
 
-function DisplayNewSites($speedy, $id) {	
-	
+function DisplayNewSites($speedy, $id) {
+
 	$wapple = new Wapple(1);
-	
+
 	$results = $speedy->getNewSites($id);
 	foreach($results as $site)
-	{	
-	
-		$ls = new Speedy($site['Id']); 
+	{
+
+		$ls = new Speedy($site['Id']);
 		?>
 			<div class="new-site result">
 				<div class="row">
@@ -87,7 +92,7 @@ function DisplayNewSites($speedy, $id) {
 		<?php
 	}
 	?>
-<?php 
+<?php
  }
 ?>
 
