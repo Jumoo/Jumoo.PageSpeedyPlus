@@ -61,7 +61,7 @@ function DisplayNewSites($speedy, $id) {
 			<div class="new-site result">
 				<div class="row">
 						<div class="col-xs-12">
-									<h3><a href="speedy.php?id=<?php echo $site['Id']; ?>"><?php echo $site['Name'] ; ?></a></h3>
+									<h3><a href="speedy.php?id=<?php echo $site['Id']; ?>"><?php echo $speedy->GetSiteNameById($site['Id']) ; ?></a></h3>
 						</div>
 						<div class="col-xs-6">
 								<h4>Old</h4>

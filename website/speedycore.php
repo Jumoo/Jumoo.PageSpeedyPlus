@@ -9,9 +9,31 @@ class Speedy
 		$this->siteId = $id;
 	}
 	
+	function getByGSS($gss)
+	{
+		$this->siteId = $this->db->querySingle('SELECT Id from Sites where GSS = "' . $gss . '";');
+		return $this->siteId; 
+	}
+	
 	function getSiteName()
 	{
-		return $this->db->querySingle('SELECT Name FROM SITES WHERE ID = ' . $this->siteId . ';');
+		return $this->getSiteNameById($this->siteId);
+	}
+	
+	function getSiteNameById($id)
+	{
+		$name =  $this->db->querySingle('SELECT DisplayName FROM SITES WHERE ID = ' . $id . ';');
+		if ($name == null)
+		{
+			$name = $this->db->querySingle('SELECT Name FROM SITES WHERE ID = ' . $id . ';');
+		}
+		return $name;
+	
+	}
+	
+	function getSiteCode()
+	{
+		return $this->db->querySingle('SELECT GSS FROM SITES WHERE ID = ' . $this->siteId . ';');
 	}
 	
 	function getSiteId() {

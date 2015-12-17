@@ -12,7 +12,7 @@
 
 	while ($row = $results->fetchArray()) {
 	?>
-		<li><a href="speedy.php?id=<?php echo $row['Id'] ?>"><?php echo $row['Name'] ?></a></li>
+		<li><a href="speedy.php?id=<?php echo $row['Id'] ?>"><?php echo $row['DisplayName'] ?></a></li>
 	<?php
 	}
 

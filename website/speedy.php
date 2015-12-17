@@ -6,7 +6,25 @@
 <?php include 'header.php' ; ?>
 
 <?php
-	$id = $_GET["id"];
+
+	$id = "-1";
+	
+	if (array_key_exists("id", $_GET))	
+	{
+		$id = $_GET["id"];
+	}
+
+	$speedy = new Speedy($id);
+
+	if ($id == "-1") {
+	  $gss = $_GET["gss"];
+	  if ($gss != null)
+	  {
+		  $id = $speedy->getByGSS($gss);
+	  }
+	}
+	
+	
 	$speedy = new Speedy($id);
 	$wapple = new Wapple($id);
 	$checker = new Checker($id);
@@ -14,6 +32,7 @@
 
 	$url = $speedy->getSiteUrl();
 	$siteName = $speedy->getSiteName();
+	$siteCode = $speedy->getSiteCode();
 
 	$monthId = $latest_month;
 	if (isset($_GET["month"])) {
@@ -28,6 +47,7 @@
 <div class="row">
 	<div class="col-xs-12 col-sm-6">
 		<h2 class="page-header"><?php echo $siteName; ?>
+			<br>
 			<small><a href="<?php echo $url ?>"><?php echo $url ?></a></small>
 		</h2>
 	</div>
