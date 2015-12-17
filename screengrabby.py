@@ -1,3 +1,10 @@
+#
+# ScreenGrabby - A Screengrabing script. 
+# ======================================
+#
+# goes through the page speedy database, and goes and gets screenshots of each 
+# website, using phamtom drivers. 
+# 
 import os
 import sys
 import getopt
@@ -33,15 +40,19 @@ class ScreenGrabby(object):
 		
 	def grabScreen(self, url, name):	
 		try:
-			self.driver.set_window_size(1280, 1024)
-			self.driver.get(url)
-			
 			file_name = self.screenfolder + '/' + name + '.png'
-			self.driver.save_screenshot(file_name)
 			
-			self.saveSource(name, self.driver.page_source);
+			if not os.path.exists(file_name):
+				self.driver.set_window_size(1280, 1024)
+				self.driver.get(url)
 			
-			print 'grabbed' 
+				self.driver.save_screenshot(file_name)
+			
+				self.saveSource(name, self.driver.page_source);
+				print 'grabbed' 
+			else:
+				print 'already got'
+				
 		except Exception, e:
 			print 'error getting screenshot', e
 			return
