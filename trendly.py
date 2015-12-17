@@ -1,5 +1,6 @@
 import os
 import sys
+import getopt
 import segment
 import BeautifulSoup
 import sqlite3 as lite
@@ -101,5 +102,26 @@ def runmonth(monthid):
 	for word, count in c.most_common(100):
 		print word, count 
 
+def main(argv):
+	monthid = 0 
 
-runmonth(19)
+	try:
+		opts, args = getopt.getopt(argv, "m:", ['month'])
+	except getopt.GetoptError:
+		print 'grabby.py -m <monthId>'
+		sys.exit(2)
+		
+	for opt, arg in opts:
+		if opt in ('-m', '--month'):
+			monthid = arg 
+	
+	print 'MonthId [', monthid , ']'
+
+	if monthid != 0:
+		runmonth(monthid)
+
+if __name__ == '__main__':
+	main(sys.argv[1:])	
+	
+		
+
