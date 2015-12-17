@@ -5,7 +5,11 @@
 	<div class="col-md-12">
 <?php
 
-	$month = $_GET["month"];	
+	$month = $latest_month;
+	if (isset($_REQUEST['month']))
+	{
+		$month = $_GET["month"];
+	}
 	$speedy = new Speedy(1); 
 		
 	?>

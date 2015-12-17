@@ -5,7 +5,7 @@
 
 	$db = new SQlite3('speedyplus.db');
 
-	$statement = $db->prepare('SELECT * FROM SITES WHERE ACTIVE = 1 ORDER BY Name;');
+	$statement = $db->prepare('SELECT * FROM SITES WHERE ACTIVE = 1 ORDER BY Name COLLATE NOCASE;');
 	$results = $statement->execute();
 
 	print '<ul class="sitelist list-unstyled">';

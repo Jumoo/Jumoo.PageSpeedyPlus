@@ -28,7 +28,7 @@
 
 							$db = new SQlite3('speedyplus.db');
 
-							$statement = $db->prepare('SELECT * FROM SITES where active =1 order by Name;');
+							$statement = $db->prepare('SELECT * FROM SITES where active =1 order by Name COLLATE NOCASE;');
 							$results = $statement->execute();
 
 
