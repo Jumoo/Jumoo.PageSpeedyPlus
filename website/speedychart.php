@@ -1,5 +1,13 @@
 <script src="js/chart.min.js"></script>
 <script>
+
+	var opts = {
+		scaleOverride: true,
+		scaleSteps: 5,
+		scaleStepWidth: 20,
+		scaleStartValue: 0
+	}	
+
 	var data = {
 		labels: <?php MonthsDataList($speedy) ?>,
 		datasets: [
@@ -30,7 +38,7 @@
 	var ctx = document.getElementById("results").getContext("2d");
 
 
-	var resultChart = new Chart(ctx).Line(data);
+	var resultChart = new Chart(ctx).Line(data, opts);
 	
 	<?php GetMonthySizeCharts($speedy); ?>
 	

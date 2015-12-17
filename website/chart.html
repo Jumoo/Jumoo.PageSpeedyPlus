@@ -3,9 +3,16 @@
 
 <canvas id="results" width="400" height="400"></canvas>
 
-<script src="js/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 
 <script>
+
+	var opts = {
+		scaleOverride: true,
+		scaleSteps: 10,
+		scaleStepWidth: 10,
+		scaleStartValue: 0
+	}	
 
 	var data = {
 		labels: ["March", "April", "May", "June"],
@@ -18,13 +25,14 @@
 				pointStrokeColor: "#fff",
 				pointHighlightFill: "#fff",
 				pointHighlightStroke: "rgba(220,220,220,1)",
-				data: [65,43,45,43]
+				data: [65,43,45,43],
+			
 			}
 		]
 	};
 		
 	var ctx = document.getElementById("results").getContext("2d");
-	var resultChart = new Chart(ctx).Line(data);
+	var resultChart = new Chart(ctx).Line(data, opts);
 	
 </script>
 </body>

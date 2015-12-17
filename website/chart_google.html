@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<body>
+
+<div id="results" style="width:250px; height:200px;"></div>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script>
+
+	google.load("visualization", "1", {packages:["corechart"]});
+	google.setOnLoadCallback(drawChart);
+	
+	function drawChart() {
+	
+		var data = google.visualization.arrayToDataTable([
+			[ "Item", "Size" ],
+			[ "Html", 10231],
+			[ "Images", 293482],
+			[ "Javascript", 12929]
+		]);
+		
+		var options = { 
+			is3D: true,
+			legend: 'none'
+		};
+		
+		var chartPlace = document.getElementById("results");
+		
+		var chart = new google.visualization.PieChart(chartPlace);
+		chart.draw(data, options);
+	}
+
+</script>
+</body>
