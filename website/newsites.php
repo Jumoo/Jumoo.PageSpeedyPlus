@@ -2,33 +2,37 @@
 <?php include 'wapplecore.php'; ?>
 
 <?php include 'header.php'; ?>
+<div class="site-header">
+<div class="container">
+	<div class="row">
+		<?php
+			$month = $latest_month;
+			if (isset($_REQUEST['month']))
+			{
+				$month = $_GET["month"];
+			}
 
-<div class="row">
-	<div class="col-md-12">
-<?php
-
-  $month = $latest_month;
-	if (isset($_REQUEST['month']))
-	{
-		$month = $_GET["month"];
-	}
-
-	$speedy = new Speedy(1);
-
-	?>
-	<div class="col-md-8">
-			<h2>New sites detected in <?php echo substr($speedy->getMonthName($month),4); ?> - <small>will have changed during <?php echo substr($speedy->getMonthName(intval($month)-1),4); ?> </small></h2>
-	</div>
-	<div class="col-md-4">
-		<?php MonthsList($speedy) ?>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-8 col-md-offset-2">
-		<?php DisplayNewSites($speedy, $month) ?>
+			$speedy = new Speedy(1);
+		?>
+		<div class="col-md-8">
+				<h2>New sites detected in <?php echo substr($speedy->getMonthName($month),4); ?></h2>
+		</div>
+		<div class="col-md-4">
+			<div class="pull-right">
+				<?php MonthsList($speedy) ?>
+			</div>
+		</div>
 	</div>
 </div>
+</div>
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<small><em>(sites that have changed during <?php echo substr($speedy->getMonthName(intval($month)-1),4); ?>)</em></small>			
+			<?php DisplayNewSites($speedy, $month) ?>
+		</div>
+	</div>
 
 
 <?php
@@ -95,5 +99,5 @@ function DisplayNewSites($speedy, $id) {
 <?php
  }
 ?>
-
+</div>
 <?php include 'footer.php'; ?>

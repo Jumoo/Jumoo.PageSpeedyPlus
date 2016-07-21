@@ -1,6 +1,3 @@
-		</div>
-
-
 		<footer>
 			<div class="container">
 				<div class="col-xs-12">
@@ -8,9 +5,11 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js"   
+			integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   
+			crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/typeahead.bundle.js"></script>
+	
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

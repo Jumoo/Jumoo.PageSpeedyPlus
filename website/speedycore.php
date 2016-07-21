@@ -1,3 +1,4 @@
+<?php include 'monthnames.php' ; ?>
 <?php 
 class Speedy
 {
@@ -14,6 +15,11 @@ class Speedy
 		$this->siteId = $this->db->querySingle('SELECT Id from Sites where GSS = "' . $gss . '";');
 		return $this->siteId; 
 	}
+    
+	function getSiteShortName()
+	{
+		return $this->getSiteShortNameById($this->siteId);
+	}
 	
 	function getSiteName()
 	{
@@ -25,10 +31,14 @@ class Speedy
 		$name =  $this->db->querySingle('SELECT DisplayName FROM SITES WHERE ID = ' . $id . ';');
 		if ($name == null)
 		{
-			$name = $this->db->querySingle('SELECT Name FROM SITES WHERE ID = ' . $id . ';');
+			return getSiteShortNameById($id);
 		}
 		return $name;
+	}
 	
+	function getSiteShortNameById($id)
+	{
+		return $this->db->querySingle('SELECT Name FROM SITES WHERE ID = ' . $id . ';');
 	}
 	
 	function getSiteCode()
@@ -47,9 +57,10 @@ class Speedy
 	
 	function getMonthName($monthId)
 	{
-		return $this->db->querySingle('SELECT Name From Months where ID = ' . $monthId . ';');
+		return $GLOBALS['monthNames'][$monthId];
+		// return $this->db->querySingle('SELECT Name From Months where ID = ' . $monthId . ';');
 	}
-	
+
 	function getMonths()
 	{
 		$monthlist_sql = 'SELECT DISTINCT(Month) as Month From SpeedyResults_View where SiteId = :id order by MonthId DESC';

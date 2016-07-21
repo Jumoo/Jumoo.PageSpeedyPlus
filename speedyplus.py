@@ -10,10 +10,12 @@
 
 import sys, getopt 
 
-import speedydb 
-import pagespeedy as speedy
-import speedywapple as wapple 
-import speedyachecker as checker 
+import speedy.speedydb 
+import speedy.pagespeedy as speedy
+import speedy.speedywapple as wapple 
+import speedy.speedyachecker as checker 
+import speedy.peeky as peeky
+import speedy.screengrabby as grabby 
 
 def main(argv):
 	monthid = 0 
@@ -50,15 +52,15 @@ def main(argv):
 			ps = speedy.PageSpeedy()
 			ps.ProcessSingleSite(single, monthid)
 			
-			wp = wapple.SpeedyWapple()
-			wp.ProcessSingleSite(single, monthid)
+			#wp = wapple.SpeedyWapple()
+			#wp.ProcessSingleSite(single, monthid)
 			
-			ch = checker.AChecker()
-			ch.ProcessSingleSite(single, monthid)
+			#ch = checker.AChecker()
+			#ch.ProcessSingleSite(single, monthid)
 			
 			sys.exit()			
 		elif s.validMonth(monthid) == 1 :
-		
+			s.backup(monthid)	
 		
 		# pagespeed check
 			ps = speedy.PageSpeedy()
@@ -68,14 +70,22 @@ def main(argv):
 			wp = wapple.SpeedyWapple()
 			wp.process(monthid)
 
+		# peeky (extra looking)			
+			pky = peeky.Peeky()
+			pky.goPeek(monthid)
+			pky.close();
+
+		# screengrabs
+			grab = grabby.ScreenGrabby()
+			grab.runGrabby(monthid)
+			
 		# accessilbity check
-			ch = checker.AChecker()
-			ch.runChecker(monthid)
+		#	ch = checker.AChecker()
+		#	ch.runChecker(monthid)
 			
 			s.closeMonth(monthid)
 		else:
 			print 'not a valid month'
-
 
 if __name__ == '__main__':
 	main(sys.argv[1:])

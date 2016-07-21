@@ -3,7 +3,7 @@
 
 import os
 import sys
-import speedydb
+import speedy.speedydb
 
 class Changey(object):
 

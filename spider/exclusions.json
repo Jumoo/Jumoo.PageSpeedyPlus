@@ -1,0 +1,14 @@
+[
+    ".gif", ".jpg", ".jpeg", ".png",
+    "\\/external", "@", "javascript:", 
+    "\\?page=100", "\\?p=100", 
+    "authenticate.aspx", "search.aspx", "search\\?=q",
+    "\\/localviewext",
+    "calendar-node-field-event-date",
+    "&char=", 
+    "mgelection", "mguserinfo",
+    "(article\\/+\\d{1,5}\\/){2}",
+    "((calendar([-|\\w]+)?)\\D(((day|month|week|year)(.?[a-z]+)?)(\\D))?\\d{2,4})",
+    "(calendar\\?\\S?(day=)\\d{1,2})",
+    "(((a?(day|month|year))=\\d{1,4})&?){3}"
+]

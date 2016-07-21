@@ -4,7 +4,7 @@ import getopt
 import segment
 import BeautifulSoup
 import sqlite3 as lite
-import speedydb 
+import speedy.speedydb 
 
 trendlySql_insert = "INSERT INTO Textly(SiteId, MonthId, Trendyness, LinkCount, Words) VALUES({0}, {1}, {2}, {3}, {4});"
 trends = ['top task', 'straight to', 'residents', 'pay it', 'report it', 'find my nearest', 'popular tasks','highlights','faq','frequently asked','Popular topics','Quick links','Do it online', 'press releases', 'fostering']

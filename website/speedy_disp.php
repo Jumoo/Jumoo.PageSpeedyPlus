@@ -31,7 +31,7 @@ function ShowSpeedy($sp, $month, $platform, $latest_month)
 						<div class="col-sm-12">
 							<h3><strong>Total PageSize:</strong> <?php echo number_format(($line['Total'] / 1024), 2, '.', ',') ?> Kb</h3>
 						</div>
-					
+				
 					<div class="col-sm-12">
 						<div class="screenshot">
 						<?php if ($line['MonthId'] > 2) {?>
@@ -68,11 +68,23 @@ function ShowLatestSpeedy($sp, $month, $platform, $latest_month)
 			<tr><td class="data-key data-js"></td><th>Scripts:</th><td><?php echo number_format(($line['Js'] / 1024), 2, '.', ',') ?>Kb</td></tr>
 			<tr><td class="data-key data-other"></td><th>Other:</th><td><?php echo number_format(($line['Other'] / 1024), 2, '.', ',') ?>Kb</td></tr>
 			<tr><td colspan="3">
-				<strong>Total:</strong> <?php echo number_format(($line['Total'] / 1024), 2, '.', ',') ?> Kb
+				<strong>Total: </strong><?php echo number_format(($line['Total'] / 1024), 2, '.', ',') ?> Kb
+			</td></tr>
+			<tr><td colspan="3">
+				<strong>Floppies:</strong> <?php floppycount($line['Total']) ?>
 			</td></tr>
 		</table>
 		<?php
 	}
 }
 
+
+function floppycount($size)
+{
+	$count = ceil($size / 1024 / 1440);
+	
+	for ($i = 1; $i <= $count; $i++) {
+    	print '<img src="img/floppy.png" title="'. $count . ' floppy disks">';
+	}
+}
 ?>

@@ -10,7 +10,8 @@ councilsites.txt
 *.csv
 *.pyc
 *.log
-
+/lib/*
+/data/*
 /backfill/
 
 
@@ -22,5 +23,7 @@ councilsites.txt
 #
 /website/results/
 /website/*.db
+/website/node/
 ghostdriver.log
 *.log
+/backups/

@@ -1,12 +1,12 @@
 import os
 import sys
 import getopt
-import speedydb
 import urllib2
 import urllib 
 
 from urlparse import urlparse
 
+import speedy.speedydb
 class Sniffy(object):
 	def __init__(self):
 		self.db = speedydb.SpeedyDb()
@@ -27,7 +27,7 @@ class Sniffy(object):
 
 	def checkSite(self, type, sitebit):
 	
-		url = 'https://' + type + sitebit
+		url = 'http://' + type + sitebit
 		code = self.getSite(url)
 			
 		if (code == 200):

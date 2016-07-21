@@ -1,25 +1,39 @@
 <?php include 'header.php' ; ?>
+<div class="site-header">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<h2><span class="logo"><span class="lg">Localgov</span>.pagespeedy</span> sites</h2>
+			<p>All the sites that localgov pagespeedy looks at each month </p>
+		</div>
+	</div>
+</div>
+</div>		
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<?php
 
-<p>All the sites <span class="logo"><span class="lg">Localgov</span>.pagespeedy</span> looks at:
-<?php
+				$db = new SQlite3('speedyplus.db');
 
-	$db = new SQlite3('speedyplus.db');
+				$statement = $db->prepare('SELECT * FROM SITES WHERE ACTIVE = 1 ORDER BY DisplayName COLLATE NOCASE;');
+				$results = $statement->execute();
 
-	$statement = $db->prepare('SELECT * FROM SITES WHERE ACTIVE = 1 ORDER BY Name COLLATE NOCASE;');
-	$results = $statement->execute();
+				print '<ul class="sitelist list-unstyled">';
 
-	print '<ul class="sitelist list-unstyled">';
+				while ($row = $results->fetchArray()) {
+				?>
+					<li><a href="speedy.php?id=<?php echo $row['Id'] ?>"><?php echo $row['DisplayName'] ?></a></li>
+				<?php
+				}
 
-	while ($row = $results->fetchArray()) {
-	?>
-		<li><a href="speedy.php?id=<?php echo $row['Id'] ?>"><?php echo $row['DisplayName'] ?></a></li>
-	<?php
-	}
+				print '</ul>';
 
-	print '</ul>';
-
-	$statement->close();
-?>
+				$statement->close();
+			?>
+		</div>
+	</div>
+</div>
 <?php include 'footer.php'; ?>
 </body>
 </html>

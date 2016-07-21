@@ -2,29 +2,39 @@
 <?php include 'wapplecore.php'; ?>
 <?php include 'header.php'; ?>
 
-<div class="row">
-	<div class="col-md-6">
-<?php
-
-	$feature = $_GET["feature"];	
-	$wapple = new Wapple(1);	
-	$speedy = new Speedy(1); 
-	$sites = $wapple->getSites($feature, $latest_month);
-	?>
-	<div class="page-header">
-		<h2> Sites Running <?php echo $feature; ?> (<?php echo Count($sites); ?>)</h2>
+<div class="site-header">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<?php
+				$feature = $_GET["feature"];	
+				$wapple = new Wapple(1);	
+				$speedy = new Speedy(1); 
+				$sites = $wapple->getSites($feature, $latest_month);
+			?>
+			<div>
+				<h2> Feature : <?php echo $feature; ?> (<?php echo Count($sites); ?>)</h2>
+				<small>features detected via wapplaizer scripts</small>				
+			</div>
+		</div>
 	</div>
-	
-	<ul>
-	<?php
-	foreach($sites as $site)
-	{	
-		?>
-		<li><a href="speedy.php?id=<?php echo $site['SiteId'] ?>"><?php echo $site['Name'] ?></a></li>
-		<?php
-	}
-	?>
-	</ul>
+</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Sites:</h3>	
+		<ul>
+			<?php
+			foreach($sites as $site)
+			{	
+				?>
+				<li><a href="speedy.php?id=<?php echo $site['SiteId'] ?>"><?php echo $site['Name'] ?></a> 
+				</li>
+				<?php
+			}
+			?>
+		</ul>
 	</div>
 	<div class="col-md-6">
 		<div class="page-header">
@@ -95,4 +105,5 @@ function MonthsDataList($speedy)
 	print ']' ;
 }
 ?>
+</div>
 <?php include 'footer.php'; ?>

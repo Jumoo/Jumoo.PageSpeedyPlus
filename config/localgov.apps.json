@@ -1,0 +1,130 @@
+{
+    "apps": {
+		"JADU": {
+			"website": "www.jadu.net",
+			"cats": [ 1 ],
+			"meta": { "generator": "http://www.jadu.net" },
+			"html": "Jadu"
+		},
+		
+		"GOSS icm": {
+			"website": "www.goss.com",
+			"cats": [ 1 ],
+			"html": "GOSS iCM"
+		},
+		
+		"EasySite": {
+			"website": "www.easysite.com",
+			"cats": [ 1 ],
+			"html": "EasySite"
+		},
+		
+		"Immediacy": {
+			"website": "www.immediacy.com",
+			"cats": [ 1 ],
+			"html": "Immediacy .NET CMS"
+		},
+
+		"GovMetric": {
+			"website": "www.govmetric.com",
+			"cats": [ 10 ],
+			"script": [ "js/socitm_wrapper\\.aspx" ]
+		},
+		
+		"VerseOne ECM": {
+			"website": "www.VerseOne.com",
+			"cats": [ 1 ],
+			"meta": { "generator": "VerseOne ECM" }
+		},
+		
+		"ActivEdition": {
+			"website": "http://www.activedition.com/",
+			"cats": [ 1 ],
+			"html": "activedition"
+		},
+		
+		"Intelligent WebCenter" : {
+			"website": "http://www.smartmedia.com/",
+			"cats": [ 1 ],
+			"html": "rte.asp"
+		},
+
+		"Captia School Admissions" : {
+			"website": "",
+			"cats": [101],
+			"html": "ccsenterprise_admissionsonline_live"
+		},
+		"E Genda" : {
+			"website": "",
+			"cats": [102],
+			"html": "E-GENDA"
+		},
+		"Axiell" : {
+			"website": "",
+			"cats": [103],
+			"html": "Powered by Axiell"
+		},
+		"Idox": {
+			"website": "",
+			"cats": [100],
+			"html": ["an idox solution", "idox.gif", "http://www.idoxgroup.com/"]
+		},
+		"Firmstep Self Service": {
+			"website": "",
+			"cats": [104],
+			"script": "firmsteputil\\.js"
+		},
+		"Modern Gov": {
+			"website": "",
+			"cats": [102],
+			"html": ["mgContent", "mgCommitteeDetails.aspx", "ieDocHome.aspx"]
+		},
+		"Spydus Library System": {
+			"website": "",
+			"cats": [103],
+			"html": "spydus.exe"
+		},
+		"ArcGis": {
+			"website": "",
+			"cats": [105],
+			"html": ["arcgis/", "ArcGIS/"]
+		},
+		"iShare Maps": {
+			"website": "",
+			"cats": [105],
+			"html": ["iShareCommon.css", "iShareMaps"]
+		},
+		"FixMyStreet": {
+			"website": "",
+			"cats": [106],
+			"html": "fixmystreet.js"
+		},
+		"Tribal Enrol": {
+			"website": "",
+			"cats": [101],
+			"html": ["Tribal Education"]
+		},
+		"Snap Surveys": {
+			"website": "",
+			"cats": [107],
+			"html": "snapsurveys.com/cgi-bin"
+		},
+		"Gladstone MRM": {
+			"website": "",
+			"cats": [108],
+			"html": "gladstonemrm"
+		}
+		
+    },
+    "categories": {
+        "100": "Planning System",
+        "101": "School Admissions",
+		"102": "Democracy Services",
+		"103": "Library System",
+		"104": "Self Service Portal",
+		"105": "GIS System",
+		"106": "Streetscene",
+		"107": "Survey Tools",
+		"108": "Lesuire Services"
+	}
+}

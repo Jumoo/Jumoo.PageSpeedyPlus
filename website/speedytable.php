@@ -1,17 +1,16 @@
 <?php include 'speedycore.php' ; ?>
 <?php include 'header.php'; ?>
-
-<div class="row">
-	<div class="col-md-12">
-<?php
-
-	$month = $latest_month;
-	if (isset($_REQUEST['month']))
-	{
-		$month = $_GET["month"];
-	}
-	$speedy = new Speedy(1); 
+<div class="site-header">
+<div class="container">
+	<?php
+		$month = $latest_month;
+		if (isset($_REQUEST['month']))
+		{
+			$month = $_GET["month"];
+		}
 		
+		
+		$speedy = new Speedy(1); 
 	?>
 	<div class="row">
 		<div class="col-md-8">
@@ -23,6 +22,10 @@
 			</div>
 		</div>
 	</div>
+</div>
+</div>
+<div class="container">
+	<div class="row">
 	
 	<div class="col-sx-12">
 	
@@ -42,10 +45,11 @@
 
 	</div>
 </div>
-
+</div>
 <?php 
 function MonthsList($speedy)
 {
+
 	$months = $speedy->getMonthsWithNewSites() ;
 	print '<ul class="nav nav-pills monthlist">' ;
 	print '<li role="presentation" class="dropdown">' ;
@@ -61,6 +65,9 @@ function MonthsList($speedy)
 }
 
 function DisplayTable($speedy, $id, $platform) {	
+
+	$doom = isset($_REQUEST['doom']);
+	$floppy = $doom ;
 	
 	$results = $speedy->getTable($platform, $id);
 	
@@ -76,6 +83,9 @@ function DisplayTable($speedy, $id, $platform) {
 			<th>Js</th>
 			<th>Other</th>
 			<th>Total</th>
+			<?php if ($doom) { ?>
+				<th>Sizes</th>
+			<?php } ?>
 		</tr>
 	<?php
 	$x = 1;
@@ -93,6 +103,17 @@ function DisplayTable($speedy, $id, $platform) {
 			<td><?php echo $site['Js'] ; ?></td>
 			<td><?php echo $site['Other'] ; ?></td>
 			<td><?php echo number_format(($site['Total'] / 1024), 2, '.', ',') ?> Kb</td>
+			
+			<?php 
+			if ($doom == true) 
+			{ ?>
+			<td>
+				<?php
+  				    floppycount($site['Total']);
+					doomSize($site['Total']);	
+				?>	
+			</td>
+			<?php } ?>
 		</td>
 		<?php
 		$x = $x + 1;
@@ -104,3 +125,25 @@ function DisplayTable($speedy, $id, $platform) {
 ?>
 
 <?php include 'footer.php'; ?>
+
+<?php
+function doomSize($size)
+{
+	$dooms = floor($size / 1024 / 2393); 
+	if ($dooms > 0) {
+		for ($i = 1; $i <= $dooms; $i++) {
+			print '<img src="img/doom.gif" alt="doom head" title="' . $dooms . ' copies of doom" style="margin: -20px -15px;" >';
+		}
+	}
+}
+
+function floppycount($size)
+{
+	$count = ceil($size / 1024 / 1440);
+	
+	for ($i = 1; $i <= $count; $i++) {
+    	print '<img src="img/floppy.png" title="'. $count . ' floppy disks">';
+	}
+}
+
+?>

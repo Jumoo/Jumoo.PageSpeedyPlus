@@ -1,7 +1,5 @@
-<?php
-	$latest_month = 23;
-?>
 
+<?php include('month.php') ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,6 +9,7 @@
 		<title>Localgov.PageSpeedy by Jumoo</title>
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/speedy-all.min.css" type="text/css">
+		<link rel="stylesheet" href="css/speedy2.css" type="text/css">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="newsitesfeed.php" />
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -21,7 +20,7 @@
 	<body>
 
 	<nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ps-navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -29,7 +28,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">PageSpeedy</a>
+				<a class="navbar-brand" href="index.php">PageSpeedy</a>
 			</div>
 			<div class="collapse navbar-collapse" id="ps-navbar">
 				<ul class="nav navbar-nav">
@@ -56,4 +55,3 @@
 		</div>
 	</nav>
 
-	<div class="container">

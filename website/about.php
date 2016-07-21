@@ -1,8 +1,16 @@
 <?php include 'header.php'; ?>
-
+<div class="site-header">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-offset-1 col-sm-8">
+      <h2>LocalGov.PageSpeedy </h2>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
 <div class="row">
   <div class="col-xs-12 col-sm-offset-1 col-sm-8">
-    <h2 class="page-header">What is PageSpeedy?</h2>
     <p>
       Pagespeedy started out as an experiment, looking at different ways we could
       analyse websites, and use existing services to measure and improve the
@@ -74,5 +82,5 @@
 
   </div>
 </div>
-
+</div>
 <?php include 'footer.php'; ?>

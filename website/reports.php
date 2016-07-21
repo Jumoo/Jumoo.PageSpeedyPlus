@@ -1,9 +1,17 @@
 <?php include 'header.php'; ?>
-
+<div class="site-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-8">
+        <h2><span class="logo">SiteSpeedy Reports</span></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
 <div class="row">
   <div class="col-xs-12 col-sm-offset-1 col-sm-8">
     <div class="content">
-    <h2 class="page-header"><span class="logo text-danger">SiteSpeedy</span></h2>
     <p>
       Localgov Pagespeedy offers a quick insight into each council’s website
       offering a snapshot of the performance of the homepage, but to truly
@@ -88,5 +96,5 @@
 	</div>
   </div>
 </div>
-
+</div>
 <?php include 'footer.php'; ?>
