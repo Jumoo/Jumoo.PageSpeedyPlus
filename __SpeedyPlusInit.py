@@ -21,7 +21,7 @@ try:
 		cur.executescript(f.read())
 		con.commit()
 
-	with open('sql/linkcounter.sql', 'r') as f:
+	with open('sql/LinkCounter.sql', 'r') as f:
 		cur.executescript(f.read())
 		con.commit()
 	
