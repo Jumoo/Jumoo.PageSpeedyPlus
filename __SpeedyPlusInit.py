@@ -20,6 +20,10 @@ try:
 	with open('sql/speedyviews.sql', 'r') as f:
 		cur.executescript(f.read())
 		con.commit()
+
+	with open('sql/linkcounter.sql', 'r') as f:
+		cur.executescript(f.read())
+		con.commit()
 	
 	with open(site_file, 'r') as f:
 		all_lines = f.read().splitlines()
