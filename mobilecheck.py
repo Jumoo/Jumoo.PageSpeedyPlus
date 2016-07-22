@@ -12,12 +12,12 @@ import time;
 
 import base64
 
-import speedy.speedydb;
+from speedy.speedydb import SpeedyDb
 
 class MobileCheck(object):
 
     def __init__(self):
-        self.db = speedydb.SpeedyDb();
+        self.db = SpeedyDb();
         
 
     def runCheck(self, monthId):

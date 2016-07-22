@@ -10,12 +10,12 @@
 
 import sys, getopt 
 
-import speedy.speedydb 
-import speedy.pagespeedy as speedy
-import speedy.speedywapple as wapple 
-import speedy.speedyachecker as checker 
-import speedy.peeky as peeky
-import speedy.screengrabby as grabby 
+from speedy.speedydb import SpeedyDb
+from speedy.pagespeedy import PageSpeedy
+from speedy.speedywapple import SpeedyWapple
+from speedy.speedyachecker import AChecker
+from speedy.peeky import Peeky
+from speedy.screengrabby import ScreenGrabby as grabby
 
 def main(argv):
 	monthid = 0 
@@ -34,7 +34,7 @@ def main(argv):
 		elif opt in ('-m', '--month'):
 			monthid = arg 
 		elif opt in ('-l', '--list'):
-			s = speedydb.SpeedyDb()
+			s = SpeedyDb()
 			s.listMonths()
 			sys.exit()
 		elif opt in ('-s', '--single'):
@@ -45,11 +45,11 @@ def main(argv):
 	
 	if monthid != 0:
 
-		s = speedydb.SpeedyDb()
+		s = SpeedyDb()
 
 		if single != 0:
 			#process just one site. (ignore valid month thing)			
-			ps = speedy.PageSpeedy()
+			ps = PageSpeedy()
 			ps.ProcessSingleSite(single, monthid)
 			
 			#wp = wapple.SpeedyWapple()
@@ -67,16 +67,16 @@ def main(argv):
 			ps.runSpeedy(monthid)
 			
 		# wapplizer check
-			wp = wapple.SpeedyWapple()
+			wp = SpeedyWapple()
 			wp.process(monthid)
 
 		# peeky (extra looking)			
-			pky = peeky.Peeky()
+			pky = Peeky()
 			pky.goPeek(monthid)
 			pky.close();
 
 		# screengrabs
-			grab = grabby.ScreenGrabby()
+			grab = ScreenGrabby()
 			grab.runGrabby(monthid)
 			
 		# accessilbity check
@@ -88,5 +88,16 @@ def main(argv):
 			print 'not a valid month'
 
 if __name__ == '__main__':
+
+	print r'-------------------------------------------------------------'
+	print r'    ____                  _____                     __       '
+	print r'   / __ \____ _____ ____ / ___/____  ___  ___  ____/ /_  __  '
+	print r'  / /_/ / __ `/ __ `/ _ \\__ \/ __ \/ _ \/ _ \/ __  / / / /  '
+	print r' / ____/ /_/ / /_/ /  __/__/ / /_/ /  __/  __/ /_/ / /_/ /   '
+	print r'/_/    \__,_/\__, /\___/____/ .___/\___/\___/\__,_/\__, /    '
+	print r'            /____/         /_/ and other tools    /____/     '
+	print r'-------------------------------------------------------------'
+	print r''
+
 	main(sys.argv[1:])
 	

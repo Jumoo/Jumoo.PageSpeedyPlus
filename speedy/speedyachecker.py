@@ -14,14 +14,14 @@ import json
 
 import xml.etree.ElementTree as ET
 
-results_folder = '{0}/data/results/{1}/{2}'
+results_folder = '{0}/../data/results/{1}/{2}'
 
 class AChecker(object):
 	def __init__(self):
 		self.db = speedydb.SpeedyDb()
 		self.file_dir = os.path.dirname(__file__)
 		
-		with open('config/achecker.config.json') as config_file:
+		with open('../config/achecker.config.json') as config_file:
 			config = json.load(config_file)
 			self.key = config['apikey']
 			self.host = config['host']

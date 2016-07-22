@@ -1,0 +1,4 @@
+{
+    "eaststaffsbc": [ "\\/content\\/\\d{1,6}" ],
+    "eastriding": [ "\\?vaction=" ]
+}

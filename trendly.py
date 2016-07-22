@@ -4,7 +4,8 @@ import getopt
 import segment
 import BeautifulSoup
 import sqlite3 as lite
-import speedy.speedydb 
+
+from speedy.speedydb import SpeedyDb 
 
 trendlySql_insert = "INSERT INTO Textly(SiteId, MonthId, Trendyness, LinkCount, Words) VALUES({0}, {1}, {2}, {3}, {4});"
 trends = ['top task', 'straight to', 'residents', 'pay it', 'report it', 'find my nearest', 'popular tasks','highlights','faq','frequently asked','Popular topics','Quick links','Do it online', 'press releases', 'fostering']
@@ -62,14 +63,14 @@ def linkCounter(content):
 def runmonth(monthid):
 	# stuff...	
 	here = os.path.dirname(__file__)
-	folder = os.path.join(here, "results\\{0}\\html".format(monthid))
+	folder = os.path.join(here, "../results/{0}/html".format(monthid))
 
 	sitecount = 0;
 
 	con = lite.connect('speedyplus.db')
 	cur = con.cursor()
 
-	db = speedydb.SpeedyDb()
+	db = SpeedyDb()
 	sites = db.getSites()
 	for site in sites:
 		siteName = site[1]

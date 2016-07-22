@@ -23,14 +23,15 @@ class SpeedyDb(object):
 
 	def __init__(self):
 		self.file_dir = os.path.dirname(__file__)
+		print self.file_dir
 		
-		self.con = lite.connect(os.path.join(self.file_dir, 'data/speedyplus.db'))
+		self.con = lite.connect(os.path.join(self.file_dir, '../data/speedyplus.db'))
 		self.cur = self.con.cursor()
 		
 	def backup(self, monthId):
 	
-		source = os.path.join(self.file_dir, 'data/speedyplus.db')
-		backup = os.path.join(self.file_dir, 'data/backup/{0}/'.format(monthId))
+		source = os.path.join(self.file_dir, '../data/speedyplus.db')
+		backup = os.path.join(self.file_dir, '../data/backup/{0}/'.format(monthId))
 		
 		if not os.path.exists(backup):
 			os.makedirs(backup)

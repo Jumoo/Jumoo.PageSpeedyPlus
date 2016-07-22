@@ -6,10 +6,11 @@ import urllib
 
 from urlparse import urlparse
 
-import speedy.speedydb
+from speedy.speedydb import SpeedyDb
+
 class Sniffy(object):
 	def __init__(self):
-		self.db = speedydb.SpeedyDb()
+		self.db = SpeedyDb()
 	
 	def findBetas(self):
 		sites = self.db.getSites()

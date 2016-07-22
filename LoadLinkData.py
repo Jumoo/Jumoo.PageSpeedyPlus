@@ -3,9 +3,8 @@ import json
 import csv 
 from urlparse import urlparse
 
-import speedy.speedydb
-import speedy.domainwapple as dw  
-
+from speedy.speedydb import SpeedyDb
+from speedy.domainwapple import DomainWapple
 
 #
 # Gets the folder (that will have all the files in.)
@@ -53,7 +52,7 @@ def getDomains(id, url, name, db):
                 db.saveDomainInfo(id, row[0].replace("'", " "), row[1].replace("'", " "))
 
 def loaddata():
-    db = speedydb.SpeedyDb()
+    db = SpeedyDb()
     sites = db.getSites()
 
     for site in sites:
@@ -69,9 +68,9 @@ def loaddata():
 
 if __name__ == '__main__':
 
-    #loaddata()
+    loaddata()
 
-    wp = dw.DomainWapple()
+    wp = DomainWapple()
     wp.process()
 
 #    wp.test('http://democracy.allerdale.gov.uk/ielistdocuments.aspx?cid=11&mid=3351')

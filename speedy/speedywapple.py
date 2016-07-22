@@ -16,11 +16,11 @@ try:
 except ImportError:
 	import simplejson as json 
 	
-wappal_script = 'lib/Wappalyzer/src/wappalyzer.js'
-wappal_driver = 'lib/Wappalyzer/src/drivers/php/js/driver.js'
-wappal_apps = 'lib/Wappalyzer/src/apps.json'
+wappal_script = '../lib/Wappalyzer/src/wappalyzer.js'
+wappal_driver = '../lib/Wappalyzer/src/drivers/php/js/driver.js'
+wappal_apps = '../lib/Wappalyzer/src/apps.json'
 
-localgov_apps = 'config/localgov.apps.json'
+localgov_apps = '../config/localgov.apps.json'
 	
 class SpeedyWapple(object):
 

@@ -16,12 +16,12 @@ try:
 except ImportError:
 	import simplejson as json 
 	
-wappal_script = 'lib/Wappalyzer/src/wappalyzer.js'
-wappal_driver = 'lib/Wappalyzer/src/drivers/php/js/driver.js'
+wappal_script = '../lib/Wappalyzer/src/wappalyzer.js'
+wappal_driver = '../lib/Wappalyzer/src/drivers/php/js/driver.js'
 
 # for the subdomains, we are just looking for the localgov specific stuff.
 #wappal_apps = 'lib/Wappalyzer/src/apps.json'
-localgov_apps = 'config/localgov.services.json'
+localgov_apps = '../config/localgov.services.json'
 	
 class DomainWapple(object):
     def __init__(self):

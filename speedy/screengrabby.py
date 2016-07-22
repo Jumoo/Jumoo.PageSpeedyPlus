@@ -13,8 +13,8 @@ from selenium import webdriver
 
 import speedydb
 
-screenshot_folder = '{0}/data/results/{1}/screengrabs/'
-source_folder = '{0}/data/results/{1}/html/'
+screenshot_folder = '{0}/../data/results/{1}/screengrabs/'
+source_folder = '{0}/../data/results/{1}/html/'
 
 class ScreenGrabby(object):
 
@@ -22,9 +22,9 @@ class ScreenGrabby(object):
 		self.db = speedydb.SpeedyDb()
 		
 		self.file_dir = os.path.dirname(__file__)
-		phantompath = os.path.join(self.file_dir, 'lib/phantomjs/bin/phantomjs') 
+		phantompath = os.path.join(self.file_dir, '../lib/phantomjs/bin/phantomjs') 
 		
-		self.driver = webdriver.PhantomJS(executable_path='lib/phantomjs/bin/phantomjs')
+		self.driver = webdriver.PhantomJS(executable_path='../lib/phantomjs/bin/phantomjs')
 		#self.driver = webdriver.Firefox()
 		#self.driver = webdriver.Chrome()
 		

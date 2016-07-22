@@ -13,7 +13,7 @@ import time
 
 import base64 
 
-results_folder = '{0}/data/results/{1}/{2}'
+results_folder = '{0}/../data/results/{1}/{2}'
 
 class PageSpeedy(object):
 
@@ -23,7 +23,7 @@ class PageSpeedy(object):
 		self.file_dir = os.path.dirname(__file__)
 
 		
-		with open('config/pagespeedy.config.json') as config_file:
+		with open('../config/pagespeedy.config.json') as config_file:
 			config = json.load(config_file)
 			self.key = config['apikey']
 			

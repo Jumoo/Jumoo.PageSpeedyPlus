@@ -21,7 +21,7 @@ class SpeedyParser(HTMLParser):
         self.root = urlbits.netloc.replace('www.', '')
 
         # load the exclusions         
-        with open('spider/exclusions.json') as ef:
+        with open('../spider/exclusions.json') as ef:
             regexes = json.load(ef)
 
         self.exclusionsRegex = "(" + ")|(".join(regexes) + ")"
