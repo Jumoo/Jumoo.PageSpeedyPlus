@@ -9,8 +9,8 @@
     $mobilepass = 310;
     $mobilefail = 89;
     $features = 59425;
-    $crawled = 251;
-    $c_pages = 557704;
-    $c_docs =  543532;
-    $c_domains = 1980;
+    $crawled = 197;
+    $c_pages = 534592;
+    $c_docs =  562555;
+    $c_domains = 2035;
 ?>

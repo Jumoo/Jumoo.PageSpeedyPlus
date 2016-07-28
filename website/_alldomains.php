@@ -28,7 +28,7 @@
                     this page lists all the domains where we haven't worked out what they running yet.
                 </p>
                 <p>
-                    if you can know what one of these domains is running, and think you can help us to detect it, <a href="https://github.com/Jumoo/Jumoo.PageSpeedyPlus/issues">please go over to our github page, submit an issue</a>, we 
+                    if you can know what one of these domains is running, and think you can help us to detect it, <a href="https://github.com/Jumoo/Jumoo.PageSpeedyPlus/issues/1">please go over to our github page, submit an issue</a>, we 
                     will then add it to the detection script
                 </p>
             </div>
