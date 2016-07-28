@@ -125,8 +125,9 @@ class SpeedyParser(HTMLParser):
 
     # is the url a document 
     def isDocument(self, url):
+        testUrl = url.lower()
         for ext, filetype in self.docExtensions.items():
-            if ext in url.lower():
+            if ext in testUrl:
                 return filetype
 
         return ''  
@@ -213,6 +214,8 @@ class SpeedyParser(HTMLParser):
                 html = htmlBytes.decode('iso-8859-1') 
         return response.code, html
 
+    # are we one the same domain ? 
+    # (lets us craw http & https) if we only compare netloc. 
     def containsBaseUrl(self, url):
         # return self.url.startswith(self.base)
         urlbits = urlparse(url) 
