@@ -10,23 +10,15 @@ import os
 
 import requests
 
+import robotparser
 
-url = 'http://www.liverpool.gov.uk'
 
-print '>> START'
+url = 'http://www.westdevon.gov.uk/'
 
-print '    HEAD', url,
-request_header = {'User-Agent': 'Mozilla/5.0 (SpeedySpider-Crawler)'}
-headers = requests.head(url,allow_redirects=True, 
-                            timeout = 7, headers = request_header)
+rp = robotparser.RobotFileParser()
+rp.set_url(url + 'robots.txt')
+rp.read()
 
-print headers.status_code
+canGet = rp.can_fetch("*", url)
 
-print '    GET', headers.url,
-if headers.status_code == 200:
-    req = urllib2.Request(headers.url)
-    req.add_header('User-Agent', 'Mozilla/5.0 (SpeedySpider-Crawler)')
-    response = urllib2.urlopen(req, timeout=7)
-    print response.code
-
-print '<< DONE'
+print url, canGet 

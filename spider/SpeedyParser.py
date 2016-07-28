@@ -102,6 +102,11 @@ class SpeedyParser(HTMLParser):
 
                                 # we are not lower checking here... we might end
                                 # up with duplicate links from a page :-(
+                                #
+                                # When SppedyCrawler gets them it will look at them
+                                # but it will fully lower case them before adding
+                                # them to the list of documents we have already seen
+                                #
                                 if not link in self.links:
                                     self.links = self.links + [link]
 
