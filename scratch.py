@@ -6,21 +6,27 @@ from urlparse import urljoin
 import Queue
 import json
 import re
+import os
 
-url = "http://www.colchester.gov.uk/article/14241/article/10739/article/10740/article/10736/what-can-you-see"
-url = "http://www.cotswold.gov.uk/about-the-council/councillors-committees/meetings,-minutes-agendas/"
-url = "http://www.renfrewshire.gov.uk/article/3010/building-standards-register"
-url = "http://www.rochdale.gov.uk/"
-url = "http://www.devon.gov.uk/"
-url = "http://www.east-northamptonshire.gov.uk/download/meetings/id/2906/item_1_-_minutes_of_the_meeting_held_on_030915"
-bits = urlparse(url)
+import requests
 
-req = urllib2.Request(url, headers={ 'User-Agent': 'Mozilla/5.0' })
-response = urllib2.urlopen(req)
 
-response = urllib2.urlopen(url)
-print response.code
-print response.info()
-print response.url
+url = 'http://www.liverpool.gov.uk'
 
- 
+print '>> START'
+
+print '    HEAD', url,
+request_header = {'User-Agent': 'Mozilla/5.0 (SpeedySpider-Crawler)'}
+headers = requests.head(url,allow_redirects=True, 
+                            timeout = 7, headers = request_header)
+
+print headers.status_code
+
+print '    GET', headers.url,
+if headers.status_code == 200:
+    req = urllib2.Request(headers.url)
+    req.add_header('User-Agent', 'Mozilla/5.0 (SpeedySpider-Crawler)')
+    response = urllib2.urlopen(req, timeout=7)
+    print response.code
+
+print '<< DONE'

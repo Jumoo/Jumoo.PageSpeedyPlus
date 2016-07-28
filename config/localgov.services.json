@@ -90,6 +90,16 @@
 			"cats": [105],
 			"html": ["aurora\\.js", "Aurora.svc"]
 		},
+		"EGenda": {
+			"website": "",
+			"cats": [102],
+			"html": ["EGENDA", "Egenda"] 
+		},
+		"CKAN": {
+			"website": "http://ckan.org",
+			"cats": [107],
+			"html": ["ckan-footer-logo", "http://ckan.org"]
+		},
 		"Drupal": {
 			"cats": [200],
 			"env": "^Drupal$",
@@ -117,6 +127,7 @@
 		"105": "GIS System",
 		"106": "Streetscene",
 		"107": "Survey Tools",
+		"108": "Open Data",
 		"108": "Lesuire Services",
 		"200": "Content Management"
 	}

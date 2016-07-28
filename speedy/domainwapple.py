@@ -10,6 +10,7 @@ import requests
 from urlparse import urlparse 
 import speedydb 
 import codecs
+import urllib
 
 try:
 	import json
@@ -75,31 +76,54 @@ class DomainWapple(object):
                 ctxt.eval(f.read())
 
             host = urlparse(url).hostname
-            response = requests.get(url)
-            html = response.text
-            headers = dict(response.headers)
-            data = {'host': host, 'url': url, 'html': html, 'headers': headers}
-            apps = json.dumps(self.apps)
-            categories = json.dumps(self.categories)
 
-            results = ctxt.eval("w.apps = %s; w.categories = %s; w.driver.data = %s; w.driver.init();" % (apps, categories, json.dumps(data)))
+            headers = requests.head(url,allow_redirects=True, timeout = 7)
+            if headers.status_code == 200:
+                url = self.cleanUrl(headers.url)
+                contentType = headers.headers['content-type'].split(';')[0]
+                if contentType == 'text/html':
+                    response = requests.get(url, timeout=7)
+                    html = response.text
+                    headers = dict(response.headers)
+                    data = {'host': host, 'url': url, 'html': html, 'headers': headers}
+                    apps = json.dumps(self.apps)
+                    categories = json.dumps(self.categories)
 
-            #print results 
-            answers = json.loads(results) 
-            print "{0} Feature Count {1}".format(url, answers.__len__())
-            for app, thing in answers.items():
-                categories = "" 
-                version = thing["version"]
-                for c in thing["categories"]: 
-                    categories = str(c) + "," 
+                    results = ctxt.eval("w.apps = %s; w.categories = %s; w.driver.data = %s; w.driver.init();" % (apps, categories, json.dumps(data)))
 
-                if id > 0:
-                    self.db.saveDomainFeature(id, app, categories.strip(","), version) ;
-                else:
-                    print app, '-', categories.strip(","), '-', version
+                    #print results 
+                    answers = json.loads(results) 
+                    print "{0} Feature Count {1}".format(url, answers.__len__())
+                    for app, thing in answers.items():
+                        categories = "" 
+                        version = thing["version"]
+                        for c in thing["categories"]: 
+                            categories = str(c) + "," 
 
-            print ''
+                        if id > 0:
+                            self.db.saveDomainFeature(id, app, categories.strip(","), version) ;
+                        else:
+                            print app, '-', categories.strip(","), '-', version
+
+            # print ''
 
         except:
             print 'error getting url: {0}'.format(url)
             self.db.saveDomainFeature(id, "error", "bad url", "0")		
+
+    def cleanUrl(self, url):
+
+        urlbits = urlparse(url)
+        clensedUrl = '{0}://{1}'.format(urlbits.scheme, urlbits.netloc)
+
+        if urlbits.path:
+            if not '%20' in urlbits.path:
+                clensedUrl += urllib.quote(urlbits.path.encode('utf-8'))
+            else:
+                clensedUrl += urlbits.path.encode('utf-8')
+
+        if urlbits.query:
+            clensedUrl += '?' + urlbits.query
+
+        # we don't add the fragment, it's just a page anchor to the same page.
+        return clensedUrl

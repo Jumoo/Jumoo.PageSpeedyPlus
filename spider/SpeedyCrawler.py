@@ -14,6 +14,8 @@ import robotparser
 import Queue 
 import SpeedyParser
 
+import requests 
+
 from timeit import default_timer as timer  
 
 class SpeedyCrawler(object):
@@ -21,6 +23,8 @@ class SpeedyCrawler(object):
     def __init__(self, maxPages, folder):
         self.maxPages = maxPages
         self.rootFolder = folder 
+
+        self.dontIndex = ["downloads/file", "downloads/download"]
 
     def process(self, name, url):
 
@@ -45,9 +49,13 @@ class SpeedyCrawler(object):
         discovered = []
 
         # load in robots.txt
-        rp = robotparser.RobotFileParser()
-        rp.set_url(url + '/robots.txt')
-        rp.read()
+        try:
+            rp = robotparser.RobotFileParser()
+            rp.set_url(url + '/robots.txt')
+            rp.read()
+        except:
+            print "--- can't read robots", url
+            return 
 
         counters = { "pages": 0, "domains": 0, "documents": 0, "links": 0, "errors": 0, "queued": 0}
 
@@ -60,10 +68,12 @@ class SpeedyCrawler(object):
         f_domain = self.__openFile('domain')
 
         maxLinks = self.maxPages*2
-        parser =  SpeedyParser.SpeedyParser()
-        parser.setupParser(url)
+        maxErrors = 500
 
-        while counters['pages'] < self.maxPages and linksParsed < maxLinks and counters['errors'] < 1000 and not queue.empty():
+        parser =  SpeedyParser.SpeedyParser()
+        parser.setupParser(name, url)
+
+        while counters['pages'] < self.maxPages and linksParsed < maxLinks and counters['errors'] < maxErrors and not queue.empty():
 
             linksParsed += 1
 
@@ -82,30 +92,47 @@ class SpeedyCrawler(object):
                     print '>> robots.txt blocked page', page.encode('utf-8')
                     continue
 
-                isPage, page_links, page_docs, page_domains = parser.parsePage(page)
+                pageCode, page_links, page_docs, page_domains = parser.parsePage(page)
 
                 # parser may sometimes, return a doc or a domain, the page
                 # may not really be a 'page'
-                if isPage: 
+                if pageCode == 200: 
                     bits = urlparse(page)
                     page_url = '{uri.scheme}://{uri.netloc}{uri.path}'.format(uri=bits).lower().encode('utf-8')
         
-                    if not page_url in pages:
+                    if not page_url.lower() in pages and self.isIndexed(page_url):
                         counters["pages"] += 1
-                        pages = pages + [page_url]
+                        pages = pages + [page_url.lower()]
                         f_links.write(page_url + '\n')
+                
+                elif pageCode > 1:
+                    # it's an error code. add it to errors
+                    counters['errors'] += 1
+                    self.__saveError(page, parent, f_err, pageCode)
 
                 # process the domains, links and docs from the parse. 
                 for domain, link in page_domains.items():
                     if not domain in domains:
                         counters["domains"] += 1
-                        domains = domains + [domain]
+                        domains = domains + [domain.lower()]
                         f_domain.write(domain.encode('utf-8') + ',' + link.encode('utf-8') + '\n')
 
+                # Links
+                # =====
+                # Everything else comes from the parser lower cased, 
+                # but links do not, because sometimes it matters what the 
+                # case it. 
+                #
+                # for comparison and checking purposes we lower case things 
+                # but when putting stuff in the queue, it goes in in the case
+                # the link is.
                 for link in page_links:
                     cleanLink = parser.cleanUrl(link)
-                    if not cleanLink in discovered:
-                        discovered = discovered + [cleanLink]
+                    if not cleanLink.lower() in discovered:
+                        discovered = discovered + [cleanLink.lower()]
+                        # we check lower case everywhere but
+                        #   -  we maintain the case in the queue, for sites where that matters
+                        #
                         queue.put({'page': cleanLink, 'parent': page}) 
 
                 for doc, docType in page_docs.items():
@@ -114,6 +141,9 @@ class SpeedyCrawler(object):
                         docs[doc] = docType
                         f_docs.write(doc.encode('utf-8') + ' , ' + docType + '\n')
         
+            except requests.exceptions.Timeout as e:
+                counters['errors'] += 1
+                self.__saveError(page, parent, f_err, e)
             except urllib2.HTTPError as e:
                 counters['errors'] += 1
                 self.__saveError(page, parent, f_err, e)
@@ -141,7 +171,7 @@ class SpeedyCrawler(object):
             
             while not queue.empty():
                 i = queue.get()
-                f_queue.write(i['page'] + ',' + i['parent'] + '\n')
+                f_queue.write(i['page'].encode('utf-8') + ',' + i['parent'].encode('utf-8') + '\n')
                 counters["queued"] += 1
             f_queue.close();
 
@@ -161,7 +191,15 @@ class SpeedyCrawler(object):
         f_info.write('}' + '\n')
         f_info.close()
 
-        print 'site finished', self.name, str(timer_elapsed)
+        print 'site finished', self.name, str(counters['pages']), ' in ', str(timer_elapsed/60), 'mins'
+
+
+    def isIndexed(self, url):
+        for exc in self.dontIndex:
+            if exc in url:
+                return False
+
+        return True
 
     def __getSiteFolder(self, name):
         folder = os.path.join(self.rootFolder, name + '/')
@@ -176,7 +214,7 @@ class SpeedyCrawler(object):
 
     def __saveError(self, page, parent, file, err):
         try:
-            print '!!', err, page.encode('utf-8')
+            print '                        !!', err, page.encode('utf-8')
             file.write( str(err) + ',' + page.encode('utf-8') + ' , ' + parent.encode('utf-8') + '\n')
         except:
             file.write('unable to log error')

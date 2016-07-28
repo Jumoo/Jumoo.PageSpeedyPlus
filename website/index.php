@@ -64,7 +64,7 @@
                 </table>
             </div>
             <div class="col-sm-6">
-                <h2 class="page-header"><a href="newsites.php">News Sites</a></h2>
+                <h2 class="page-header"><a href="newsites.php">New Sites</a></h2>
                 <p>
                     This month pagespeedy detected <a href="newsites.php"><strong><?php echo $newsites ?></strong>
                     redesigned sites</a>,

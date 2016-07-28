@@ -57,11 +57,18 @@ def loaddata():
 
     for site in sites:
         name = site[1]
-        print name, 
+        print name,
+        spider_ok = True 
         data = getSiteInfo(name)
         if not (data is None):
-            print 'Loading....', name, data['pages'] 
-            db.saveLinkInfo(site[0], data['pages'], data['docs'], data['broken'], data['queued'])
+            print 'Loading....', site[0], name, data['pages'], 
+
+            db.saveLinkInfo(site[0], int(data['pages']), int(data['docs']), int(data['broken']), int(data['queued']))
+
+            if int(data["pages"]) == 10000 or int(data['links']) == 20000 or int(data['broken']) == 1000 or int(data['queued']) > 0:
+                spider_ok = False 
+            db.setSpiderStatus(site[0], spider_ok)
+            # print spider_ok
 
         domains = getDomains(site[0], site[2], name, db)
    
@@ -70,8 +77,8 @@ if __name__ == '__main__':
 
     loaddata()
 
-    wp = DomainWapple()
-    wp.process()
+    #wp = DomainWapple()
+    #wp.process()
 
 #    wp.test('http://democracy.allerdale.gov.uk/ielistdocuments.aspx?cid=11&mid=3351')
 #    wp.test('https://democracy.basingstoke.gov.uk/mgfindmember.aspx')

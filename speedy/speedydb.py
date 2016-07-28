@@ -16,6 +16,7 @@ checker_insert = "INSERT INTO Checker(SiteId, MonthID, Status, Errors) VALUES({0
 mobileCheck_insert = "INSERT INTO MobileCheck(SiteId, MonthId, Pass) VALUES({0},{1},'{2}');"
 
 linkinfo_insert = "INSERT INTO SiteLinks(SiteId, Pages, Docs, Err, Queued) VALUES({0},{1},{2},{3},{4});"
+linkinfo_update = "UPDATE SiteLinks SET Pages = {1}, Docs = {2}, Err = {3}, Queued = {4} WHERE SiteId = {0};"
 linkinfo_insert_domains = "INSERT INTO Domains(SiteId, Domain, Link) VALUES({0}, '{1}', '{2}');"
 linkinfo_insert_features = "INSERT INTO Domain_Features(DomainId, Application, Category, Version) VALUES({0}, '{1}', '{2}', '{3}');"
 
@@ -102,6 +103,17 @@ class SpeedyDb(object):
 		rows = self.cur.fetchall()		
 		return rows 
 
+	def getSpiderSites(self):
+		self.cur.execute("SELECT * from SITES WHERE Spider = 1")		
+		rows = self.cur.fetchall()		
+		return rows
+
+	def getSpiderSitesInError(self):
+		self.cur.execute("SELECT * from SITES WHERE Spider = 1 and Spider_OK = 0;")		
+		rows = self.cur.fetchall()		
+		return rows
+		 
+
 		
 	def newSites(self, monthId):
 		newSiteSql = "SELECT * from NewSites where NewMonthId = {0};"
@@ -151,10 +163,25 @@ class SpeedyDb(object):
 		counter_row = self.cur.fetchone()
 		counter = counter_row[0]
 
+		sql = ""
 		if counter == 0 :
-			print linkinfo_insert.format(siteId, pages, docs, err, queue)
-	 		self.cur.execute( linkinfo_insert.format(siteId, pages, docs, err, queue))
+			sql = linkinfo_insert.format(siteId, pages, docs, err, queue)
+		else:
+			sql = linkinfo_update.format(siteId, pages, docs, err, queue)
+
+		if sql:
+			print sql
+			self.cur.execute(sql)
 			self.con.commit()
+
+	def setSpiderStatus(self, siteId, ok):
+		ok_val = 0
+		if ok:
+			ok_val = 1
+
+		sql = "UPDATE SITES SET Spider_OK = {1} WHERE ID = {0};".format(siteId, ok_val)
+		self.cur.execute(sql)
+		self.con.commit()
 
 	def cleanDomainInfo(self, siteId):
 		self.cur.execute ("DELETE FROM Domains where SiteId = {0};".format(siteId))
