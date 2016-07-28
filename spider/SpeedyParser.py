@@ -92,9 +92,11 @@ class SpeedyParser(HTMLParser):
                             # local to this site
                             doctype = self.isDocument(link)
                             docLink = link.lower()
-                            if doctype and not self.docs.has_key(docLink):
+                            if doctype:
                                 # is a document 
-                                self.docs[docLink] = doctype
+                                if not self.docs.has_key(docLink):
+                                    # we haven't seen before.
+                                    self.docs[docLink] = doctype
                             else:
                                 # isn't a document
 
