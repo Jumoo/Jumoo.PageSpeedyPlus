@@ -22,8 +22,12 @@ class PageSpeedy(object):
 		self.db = speedydb.SpeedyDb()
 		self.file_dir = os.path.dirname(__file__)
 
+		self.file_dir = os.path.dirname(__file__)
+		print self.file_dir
 		
-		with open('../config/pagespeedy.config.json') as config_file:
+		config = os.path.join(self.file_dir, '../config/pagespeedy.config.json')
+		
+		with open(config) as config_file:
 			config = json.load(config_file)
 			self.key = config['apikey']
 			

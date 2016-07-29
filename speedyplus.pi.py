@@ -12,17 +12,32 @@ import sys, getopt
 
 from speedy.speedydb import SpeedyDb
 from speedy.pagespeedy import PageSpeedy
-from speedy.speedywapple import SpeedyWapple
-from speedy.speedyachecker import AChecker
-from speedy.peeky import Peeky
-from speedy.screengrabby import ScreenGrabby as grabby
+
+import datetime
+
+# from speedy.speedywapple import SpeedyWapple
+# from speedy.speedyachecker import AChecker
+# from speedy.peeky import Peeky
+# from speedy.screengrabby import ScreenGrabby as grabby
+
+def getMonth():
+	d = datetime.date.today()
+	t = datetime.timedelta(days=5)
+	d = d + t
+	monthId = "{0:02d}{1}".format(d.month, d.year)
+
+	speedy = SpeedyDb()
+	id = speedy.getMonthByDate(d)
+	speedy.cleanClose()
+	return id
 
 def main(argv):
 	monthid = 0 
 	single = 0;
 
 	try:
-		opts, args = getopt.getopt(argv, "lhm:s:", ['month','list', 'single'])
+		opts, args = getopt.getopt(argv, "lhmn:s:", ['month','list', 'single', 'now'])
+	
 	except getopt.GetoptError:
 		print 'SpeedyPlus.py -m <monthId> [-s <siteid>]'
 		sys.exit(2)
@@ -31,15 +46,20 @@ def main(argv):
 		if opt == '-h':
 			print 'SpeedyPlus.py -m <monthId>'
 			sys.exit()
+		
 		elif opt in ('-m', '--month'):
 			monthid = arg 
+		
 		elif opt in ('-l', '--list'):
 			s = SpeedyDb()
 			s.listMonths()
 			sys.exit()
+		
 		elif opt in ('-s', '--single'):
 			single = arg 
-			
+
+		elif opt in ('-n', '--now'):
+			monthid = getMonth()
 	
 	print 'MonthId [', monthid , ']'
 	
@@ -63,21 +83,21 @@ def main(argv):
 			s.backup(monthid)	
 		
 		# pagespeed check
-		#	ps = speedy.PageSpeedy()
-		#	ps.runSpeedy(monthid)
+			ps = PageSpeedy()
+			ps.runSpeedy(monthid)
 			
 		# wapplizer check
-			wp = SpeedyWapple()
-			wp.process(monthid)
+		#	wp = SpeedyWapple()
+		#	wp.process(monthid)
 
 		# peeky (extra looking)			
-			pky = Peeky()
-			pky.goPeek(monthid)
-			pky.close();
+		#	pky = Peeky()
+		#	pky.goPeek(monthid)
+		#	pky.close();
 
 		# screengrabs
-			grab = ScreenGrabby()
-			grab.runGrabby(monthid)
+		#	grab = ScreenGrabby()
+		#	grab.runGrabby(monthid)
 			
 		# accessilbity check
 		#	ch = checker.AChecker()

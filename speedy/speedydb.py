@@ -3,7 +3,7 @@
 import os
 import sys
 import sqlite3 as lite
-
+import datetime 
 import shutil
 
 speedySql_find = "SELECT Id FROM Speedy WHERE SiteId = {0} AND MonthId = {1};" 
@@ -81,7 +81,7 @@ class SpeedyDb(object):
 		
 		
 	def validMonth(self, monthId):
-		validMonthSql = "SELECT count(*) from MONTHS WHERE processed=0 AND ID=" + monthId  + ";" 
+		validMonthSql = "SELECT count(*) from MONTHS WHERE processed=0 AND ID=" + str(monthId)  + ";" 
 		
 		self.cur.execute(validMonthSql)
 		total_count = self.cur.fetchone()
@@ -92,11 +92,22 @@ class SpeedyDb(object):
 		return 0
 		
 	def closeMonth(self, monthId):
-		print "Marking month " + monthId + " as processed" 
-		closeSql = "UPDATE Months SET Processed = 1 WHERE Id=" + monthId + ";"		
+		print "Marking month " + str(monthId) + " as processed" 
+		closeSql = "UPDATE Months SET Processed = 1 WHERE Id=" + str(monthId) + ";"		
 		self.cur.execute(closeSql)
 		self.con.commit() 
 		
+	def getMonthByDate(self, date):
+		monthId = "{0:02d}{1}".format( date.month, date.year)
+		sql = "SELECT id FROM MONTHS WHERE DateId = '{0}' AND PROCESSED = 0;".format(monthId)
+		print sql
+		self.cur.execute(sql)
+		m = self.cur.fetchone()
+
+		if m == None:
+			return 0
+		else:
+			return int(m[0])
 		
 	def getSites(self):
 		self.cur.execute("SELECT * from SITES WHERE Active = 1")		
@@ -113,6 +124,11 @@ class SpeedyDb(object):
 		rows = self.cur.fetchall()		
 		return rows
 		 
+	def getNewSites(self, monthId):
+		siteSql = "SELECT * FROM SITES WHERE ID IN (SELECT SiteId from NewSites where NewMonthId = {0});"
+		self.cur.execute(siteSql.format(monthId))
+		rows = self.cur.fetchall()
+		return rows
 
 		
 	def newSites(self, monthId):
