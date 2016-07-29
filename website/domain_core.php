@@ -30,6 +30,13 @@ class Domains
         return $domains;
     }
 
+    function getSiteFeatureCount()
+    {
+        
+        $sql = "SELECT count(*) from Domain_Features where Application != 'error' and DomainId in (Select Id from Domains where SiteId =  " . $this->siteId . ");";
+        return $this->db->querySingle($sql);
+    }
+
     function getDomainFeatures($domainId)
     {
         $features = array();
@@ -152,6 +159,9 @@ class Domains
     }
     function getQueue() {
         return $this->db->querySingle("SELECT Queued FROM SiteLinks WHERE SiteId = " . $this->siteId . ';');
+    }
+    function getDomainCount() {
+        return $this->db->querySingle("SELECT count(*) FROM Domains WHERE SiteId = " . $this->siteId . ';');
     }
 }
 

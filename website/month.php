@@ -1,1 +1,1 @@
-<?php $latest_month = 30; ?>
+<?php $latest_month = 31; ?>

@@ -75,8 +75,9 @@
                     <h3>Site Crawls</h3>
                     <p>
                         The Experimental <em>pageSpeedySpider<sup>&trade;</sup></em> has also performed full site crawls of <strong><?php echo $crawled ?></strong> of 410 local gov sites, and detected
-                        <strong><?php echo number_format($c_pages) ?></strong> pages and <strong><?php echo number_format($c_docs) ?></strong> documents. Where a site has been crawled this information
-                        appears on it's speedy page.
+                        <strong><?php echo number_format($c_pages) ?></strong> pages and <strong><?php echo number_format($c_docs) ?></strong> documents. 
+                        We have also found <strong><?php echo number_format($c_domains) ?></strong> domains 
+                        and identified <strong><?php echo number_format($c_dapps)?></strong> applications so far. <a href="#">help us find more....</a> 
                     </p>
                 </div>
             </div>

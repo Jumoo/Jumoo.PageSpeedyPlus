@@ -236,36 +236,6 @@ function ShowScreenshots($monthId, $siteShort, $siteId, $speedy)
 	}	
 }
 
-function ShowDomains($id, $domains)
-{
-	if (!empty($domains)) 
-	{
-		?>
-		<tr>
-			<th>Domains</th>
-			<td><a href="#domain-list" data-toggle="collapse"><?php echo count($domains) ?></a></td>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<div id="domain-list" class="collapse well">
-					<?php
-						echo '<ul>';
-						foreach($domains as $domain)
-						{
-							?><li><a href="<?php echo $domain[3] ?>"><?php echo $domain[2] ?></a></li><?php 
-						}
-						echo '</ul>';
-					?>
-					<div>
-						[<a href="site_domain.php?id=<?php echo $id ?>">more details</a>]
-					</div>
-				</div>
-			</td>
-		</tr> 
-		<?php
-	}
-}
-
 function ShowPageStuff($id, $domains)
 {
 	$pages = $domains->getPages();
@@ -289,7 +259,14 @@ function ShowPageStuff($id, $domains)
 				<th>Documents</th>
 				<td><?php echo $domains->getDocs() ?></td>
 			</tr>
-			<?php ShowDomains($id, 	$domains->getDomains()); ?>
+			<tr>
+				<th>Domains</th>
+				<td><a href="site_domain.php?id=<?php echo $id ?>"><?php echo $domains->getDomainCount(); ?></a></td>
+			</tr>
+			<tr>
+				<th>Applications</th>
+				<td><a href="site_domain.php?id=<?php echo $id ?>"><?php echo $domains->getSiteFeatureCount(); ?></a></td>
+			</tr>
 			
 		</table>
 		<?php

@@ -1,16 +1,17 @@
 <?php
-    $latest_name = 'July 2016';
-    $ave_score = 56.16;
-    $ave_size = 1848.54;
-    $test_count = 24456;
-    $newsites = 7;
-    $yearsites = 91;
-    $newtotal = 216;
+    $latest_name = 'Augugst 2016';
+    $ave_score = 55.26;
+    $ave_size = 1888.32;
+    $test_count = 25267;
+    $newsites = 5;
+    $yearsites = 89;
+    $newtotal = 223;
     $mobilepass = 310;
     $mobilefail = 89;
-    $features = 59425;
-    $crawled = 197;
-    $c_pages = 534592;
-    $c_docs =  562555;
-    $c_domains = 2035;
+    $features = 61755;
+    $crawled = 201;
+    $c_pages = 539550;
+    $c_docs =  610037;
+    $c_domains = 2188;
+    $c_dapps = 448; 
 ?>
