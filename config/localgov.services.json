@@ -5,11 +5,6 @@
 			"cats": [101],
 			"html": "ccsenterprise_admissionsonline_live"
 		},
-		"E Genda" : {
-			"website": "",
-			"cats": [102],
-			"html": "E-GENDA"
-		},
 		"Axiell" : {
 			"website": "",
 			"cats": [103],
@@ -93,7 +88,7 @@
 		"EGenda": {
 			"website": "",
 			"cats": [102],
-			"html": ["EGENDA", "Egenda"] 
+			"html": ["EGENDA", "Egenda", "E-GENDA"] 
 		},
 		"CKAN": {
 			"website": "http://ckan.org",
@@ -128,7 +123,7 @@
 		"106": "Streetscene",
 		"107": "Survey Tools",
 		"108": "Open Data",
-		"108": "Lesuire Services",
+		"109": "Lesuire Services",
 		"200": "Content Management"
 	}
 }
