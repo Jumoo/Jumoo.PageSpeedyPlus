@@ -1,24 +1,8 @@
-import urllib
-import urllib2
-from urlparse import urlparse
-from urlparse import urljoin
-
-import Queue
-import json
-import re
-import os
-
-import requests
-
-import robotparser
+from spider.SpeedyParser import SpeedyParser
 
 
-url = 'http://www.westdevon.gov.uk/'
+p = SpeedyParser()
 
-rp = robotparser.RobotFileParser()
-rp.set_url(url + 'robots.txt')
-rp.read()
+ex = p.loadExclusions("elmbridge")
 
-canGet = rp.can_fetch("*", url)
-
-print url, canGet 
+print ex
