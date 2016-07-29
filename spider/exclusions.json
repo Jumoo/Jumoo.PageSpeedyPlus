@@ -2,7 +2,7 @@
     ".gif", ".jpg", ".jpeg", ".png",
     "\\/external", "@", "javascript:", 
     "\\?page=\\d{3}", "\\?p=\\d{3}", 
-    "authenticate\\.aspx", "search\\.aspx", "search\\?=q",
+    "authenticate\\.aspx", "search\\.aspx", "search\\?=q", "search\\/\\?",
     "\\/localviewext",
     "calendar-node-field-event-date",
     "&char=", 
@@ -12,13 +12,17 @@
     "(calendar\\?\\S?(day=)\\d{1,2})",
     "(((a?(day|month|year))=\\d{1,4})&?){3}",
     "\\d{4}-\\d{2}-\\d{2}\\?month=\\d{1,4}-\\d{1,4}",
+    "[\\?|&]year=\\d{4}&month=\\d{1,2}",
+    "year=(?!2016|2015)",
     "minisites\\/index\\.cfm\\?fuseaction",
     "news\\.aspx\\?termstoreid",
-    "login\\?", "25252525", "email_friend\\.php",
+    "login\\?", "25252525", "email_?friend", "emailthispage",
     "readspeaker\\.com",
     "feedback(modal|\\.aspx)?", 
     "\\/article\\/\\d+\\/article\\/\\d+",
     "rate-this-page", "(tel%3A|tel:)", "comment-on-this-page", "page-rating\\?",
     "\\?acceptcookies=",
-    "\\?vaction=", "\\/page_comments\\/"
+    "\\?vaction=", "\\/page_comments\\/",
+    "login.aspx", "register.aspx",
+    "[\\?|\\&]language="
 ]

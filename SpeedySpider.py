@@ -16,8 +16,10 @@ from multiprocessing import Pool
 from spider.SpeedyCrawler import SpeedyCrawler
 from speedy.speedydb import SpeedyDb
 
-
-def spiderSites(site):
+#
+# main spider call, will spider a site. using the crawler
+#
+def spiderSingleSite(site):
     
     # this is how many pages we will max out on
     # limit * 2 is the number links we will try
@@ -29,6 +31,25 @@ def spiderSites(site):
     spider.process(site[1], site[2])
     print '################ Done     :        ', site[1]
 
+#
+# Multi-threaded spider crawl, will fire off multiple site crawls
+# (each crawl is single threaded)
+#
+def SpiderSites(sites, threads):
+    pool = Pool(processes=threads)
+    pool.map(spiderSingleSite, sites)
+    pool.close()
+    pool.join()
+
+
+#
+# helper functions
+#
+
+#
+# the nightly spider is designed to crawl all sites over 30 days
+#    everynight it takes 14 sites from speedy, and crawls them.
+#
 def nightlySpider(dayNum, threads):
     db = SpeedyDb()
     sites = db.getSpiderSites()
@@ -42,25 +63,20 @@ def nightlySpider(dayNum, threads):
     print '---------------------------------------------------------------------'
     print ''
 
-    pool = Pool(processes=threads)
-    pool.map(spiderSites, sites[start:end])
-    pool.close()
-    pool.join()
+    SpiderSites(sites[start:end], threads)
 
+#
 # respiders the broken sites.
+#
 def respider(count, threads):
-
     db = SpeedyDb()
-
     sites = db.getSpiderSitesInError()
-   
-    pool = Pool(processes=threads)
-    pool.map(spiderSites, sites[count:count+14])
-    pool.close()
-    pool.join()
+    SpiderSites(sites[count:count+14, threads])
 
-    #for site in sites[count:count+14]:
-    #        print site[0], site[1]
+
+
+#    for site in sites[count:count+14]:
+#            print site[0], site[1]
 
 if __name__ == '__main__':
 
@@ -80,4 +96,10 @@ if __name__ == '__main__':
 #    site = ['1', 'liverpool', 'http://liverpool.gov.uk']
 #    spiderSites(site)
 
-    respider(14, 8)
+#    respider(42, 8)
+    
+
+    db = SpeedyDb()
+    sites = db.getNewSites(31)
+
+    SpiderSites(sites, 8)
