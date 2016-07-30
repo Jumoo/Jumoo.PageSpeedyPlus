@@ -10,6 +10,8 @@ import os
 import datetime
 import getopt
 import sys
+import math
+
 
 from multiprocessing import Pool
 
@@ -68,10 +70,28 @@ def nightlySpider(dayNum, threads):
 #
 # respiders the broken sites.
 #
-def respider(count, threads):
+def respider(groupsize, threads):
     db = SpeedyDb()
     sites = db.getSpiderSitesInError()
-    SpiderSites(sites[count:count+14, threads])
+
+    siteCount = len(sites)
+    nights = int(math.ceil(float(siteCount) / groupsize))
+    size = int(math.ceil( siteCount / nights))
+    day = datetime.datetime.today().day
+
+    group = (day % nights)+1
+    start = group * size;
+    end =  min((group * size) + size, siteCount)
+
+    print '    Performing recrawl from sites in error ( currently', siteCount , ')'
+        
+    print '    Day:', day, '. Group:', group, 
+    print '. Start:', start, ". End:", end
+    print ''
+
+    print r'------------------------------------------------------------------'
+
+    # SpiderSites(sites[start:end], threads])
 
 
 
@@ -89,17 +109,17 @@ if __name__ == '__main__':
     print r'------------------------------------------------------------------'
     print
     
-#    day = datetime.datetime.today().day
 #    nightlySpider(day, 8)
 
 #    nightlySpider(12, 8)
 #    site = ['1', 'liverpool', 'http://liverpool.gov.uk']
 #    spiderSites(site)
 
-#    respider(42, 8)
+    respider(20, 8)
     
 
-    db = SpeedyDb()
-    sites = db.getNewSites(31)
+    # db = SpeedyDb()
+    # sites = db.getNewSites(31)
 
-    SpiderSites(sites, 8)
+    # SpiderSites(sites, 8)
+
