@@ -84,7 +84,7 @@ class SpeedyParser(HTMLParser):
 
                 if not href.startswith('#'):
 
-                    link = urljoin(self.url, href).strip()
+                    link = urljoin(self.url, href).strip().replace('../', '')
 
                     if not self.isExcluded(link):
 
