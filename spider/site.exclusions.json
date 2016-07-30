@@ -38,5 +38,6 @@
     "tendringdc": ["\\?qt-block_menu"],
     "westminster": ["\\parkinglocator\\"],
     "warwickdc": ["\\/events\\/start\\/"],
-    "westlothian": ["articleaction=subscribe"]
+    "westlothian": ["articleaction=subscribe"],
+    "wyrebc": ["results\\?planningStatus="]
 }
