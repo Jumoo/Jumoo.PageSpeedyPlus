@@ -19,7 +19,7 @@
 		        <img src="results/<?php echo $site['newMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg"
                 alt="<?php echo $site['Name'] ?>" title="<?php echo $site['Name'] ?>">
                 <div class="caption">
-                    <?php echo $site['Name'] ?>
+                    <?php echo $site['DisplayName'] ?>
                 </div>
                     
             </a>
