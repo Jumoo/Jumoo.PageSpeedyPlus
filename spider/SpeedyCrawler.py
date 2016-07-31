@@ -84,7 +84,7 @@ class SpeedyCrawler(object):
 
             # when we are running in loads of threads, writing every line doesn't really help us in any way
             if linksParsed == 1 or linksParsed % 25 == 0:
-                print '{0}/{1} [P:{2} D:{3} S:{4} X:{5}]'.format(linksParsed, queue.qsize(), counters['pages'], counters['documents'], counters['domains'], counters['errors']), 
+                print '{0:>5}/{1:>5} [P:{2:>5} D:{3:>4} S:{4:>4} X:{5:>4}]'.format(linksParsed, queue.qsize(), counters['pages'], counters['documents'], counters['domains'], counters['errors']), 
                 print page.encode('utf-8').ljust(120)[:120]
 
             try:
