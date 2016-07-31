@@ -77,8 +77,8 @@ if __name__ == '__main__':
 
     loaddata()
 
-    #wp = DomainWapple()
-    #wp.process()
+    wp = DomainWapple()
+    wp.process()
 
 #    wp.test('http://democracy.allerdale.gov.uk/ielistdocuments.aspx?cid=11&mid=3351')
 #    wp.test('https://democracy.basingstoke.gov.uk/mgfindmember.aspx')

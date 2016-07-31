@@ -72,21 +72,23 @@ function DisplayTable($speedy, $id, $platform) {
 	$results = $speedy->getTable($platform, $id);
 	
 	?>
-	<table class="table">
-		<tr>
-			<th></th>
-			<th>Name</th>
-			<th>Score</th>
-			<th>Html</th>
-			<th>Img</th>
-			<th>Css</th>
-			<th>Js</th>
-			<th>Other</th>
-			<th>Total</th>
-			<?php if ($doom) { ?>
-				<th>Sizes</th>
-			<?php } ?>
-		</tr>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+				<th>Score</th>
+				<th>Html</th>
+				<th>Img</th>
+				<th>Css</th>
+				<th>Js</th>
+				<th>Other</th>
+				<th>Total</th>
+				<?php if ($doom) { ?>
+					<th>Sizes</th>
+				<?php } ?>
+			</tr>
+		</thead>
 	<?php
 	$x = 1;
 

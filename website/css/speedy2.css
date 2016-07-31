@@ -193,3 +193,7 @@ footer {
     margin: 0;
     border-radius: 0
 }
+
+.page-header {
+    border-bottom: 2px solid #eee;
+}

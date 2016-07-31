@@ -6,12 +6,12 @@
     $newsites = 5;
     $yearsites = 89;
     $newtotal = 223;
-    $mobilepass = 313;
-    $mobilefail = 80;
+    $mobilepass = 316;
+    $mobilefail = 82;
     $features = 61755;
     $crawled = 205;
     $c_pages = 555505;
     $c_docs =  624525;
     $c_domains = 2211;
-    $c_dapps = 448; 
+    $c_dapps = 452; 
 ?>
