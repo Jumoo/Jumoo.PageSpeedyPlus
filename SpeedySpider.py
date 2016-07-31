@@ -29,9 +29,9 @@ def spiderSingleSite(site):
     
     folder = os.path.join(os.path.dirname(__file__), 'data/links/')
     spider = SpeedyCrawler(page_limit, folder)
-    print '################ Starting :        ', site[1], site[2]
+    print '>>>>> Starting :        ', site[1], site[2]
     spider.process(site[1], site[2])
-    print '################ Done     :        ', site[1]
+    print '<<<<< Done     :        ', site[1]
 
 #
 # Multi-threaded spider crawl, will fire off multiple site crawls
@@ -91,7 +91,10 @@ def respider(groupsize, threads):
 
     print r'------------------------------------------------------------------'
 
-    # SpiderSites(sites[start:end], threads])
+    SpiderSites(sites[start:end], threads)
+
+    #for site in sites[start:end]:
+    #       print site[1], site[2]
 
 
 
