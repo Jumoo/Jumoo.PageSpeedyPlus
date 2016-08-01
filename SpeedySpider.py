@@ -77,7 +77,7 @@ def respider(groupsize, threads):
     siteCount = len(sites)
     nights = int(math.ceil(float(siteCount) / groupsize))
     size = int(math.ceil( siteCount / nights))
-    day = datetime.datetime.today().day
+    day = datetime.datetime.today().day - 1
 
     group = (day % nights)+1
     start = group * size;
@@ -118,7 +118,7 @@ if __name__ == '__main__':
 #    site = ['1', 'liverpool', 'http://liverpool.gov.uk']
 #    spiderSites(site)
 
-    respider(20, 8)
+    respider(14, 7)
     
 
     # db = SpeedyDb()
