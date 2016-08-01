@@ -28,3 +28,4 @@ select count(*) from domains;
 -- Domain Apps
 select count(*) from domain_features where application != 'error';
 
+select ()

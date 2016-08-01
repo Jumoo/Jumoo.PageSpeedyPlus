@@ -10,8 +10,8 @@
     $mobilefail = 82;
     $features = 61755;
     $crawled = 205;
-    $c_pages = 555505;
-    $c_docs =  624525;
-    $c_domains = 2211;
-    $c_dapps = 452; 
+    $c_pages = 547546;
+    $c_docs =  627341;
+    $c_domains = 2239;
+    $c_dapps = 459; 
 ?>
