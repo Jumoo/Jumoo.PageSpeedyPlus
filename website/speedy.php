@@ -21,6 +21,7 @@
 <?php include 'mobilecheck.php' ; ?>
 <?php include 'header.php' ; ?>
 <?php include 'domain_core.php'; ?>
+<?php include 'review_core.php' ; ?>
 <?php
 
 	$speedy = new Speedy($id);
@@ -40,7 +41,7 @@
 	$textly = new Textly($id);
 	$mobile = new MobileCheck($id);
     $domains = new Domains($id);
-
+	$reviews = new Reviews($id);
 
 	$url = $speedy->getSiteUrl();
 	$siteName = $speedy->getSiteName();
@@ -143,7 +144,8 @@
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<h3 class="page-header">Info</h3>
-				<?php ShowUpdates($speedy) ?>
+				<?php ShowUpdates($speedy); ?>
+				<?php ShowReview($reviews); ?>
 				<?php ShowTextly($textly, $monthId); ?>
 				<?php ShowPageStuff($id, $domains); ?>
 				<?php ShowWapple($wapple, $monthName); ?>
@@ -180,7 +182,7 @@ function ShowUpdates($speedy)
 
 		foreach( $updates as $update )
 		{
-			echo '<div>' . substr($speedy->getMonthName($update['newMonthId']), 4) . '</div>' ;
+			echo '<div>' . substr($speedy->getMonthName($update['newMonthId']), 3) . '</div>' ;
 		}
 
 		echo '</div>';
@@ -271,6 +273,19 @@ function ShowPageStuff($id, $domains)
 		</table>
 		<?php
 	}
+}
+
+function ShowReview($reviews) {
+
+	$url = $reviews->getReview(); 
+
+	if ($url) {
+		?>
+			<a href="<?php echo $url; ?>">Jumoo Site Review</a>
+		<?php
+		
+	}
+
 }
 ?>
 <?php include 'speedychart.php' ?>

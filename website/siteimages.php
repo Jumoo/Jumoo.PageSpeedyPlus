@@ -11,10 +11,14 @@
 	
     $results = $speedy->getNewSites($month);
 	
+    $count = 0;
+
     foreach($results as $site)
 	{
+        $count += 1;
+
         ?>
-        <div class="col-xs-4 col-sm-2">
+        <div class="col-xs-4 col-sm-3">
             <a href="speedy.php?id=<?php echo $site['Id'] ?>" class="thumbnail">
 		        <img src="results/<?php echo $site['newMonthId'] ?>/screenshots/<?php echo $site['Name'] ?>_desktop.jpg"
                 alt="<?php echo $site['Name'] ?>" title="<?php echo $site['Name'] ?>">
@@ -25,5 +29,13 @@
             </a>
         </div>
         <?php
+
+        if ($count == 4) {
+            $count = 0;
+        ?>
+           <div class="clearfix hidden-xs-block"></div>
+        <?php
+        }
+
     }
 ?>

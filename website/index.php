@@ -66,7 +66,7 @@
             <div class="col-sm-6">
                 <h2 class="page-header"><a href="newsites.php">New Sites</a></h2>
                 <p>
-                    This month pagespeedy detected <a href="newsites.php"><strong><?php echo $newsites ?></strong>
+                    Last quarter pagespeedy detected <a href="newsites.php"><strong><?php echo $newsites ?></strong>
                     redesigned sites</a>,
                     We have now tracked <strong><?php echo $yearsites ?></strong> site changes in the last 12 months, and a 
                     total of <strong><?php echo $newtotal ?></strong> changes since March 2014.
@@ -87,6 +87,11 @@
                 <h3 class="page-header">Latest</h3>
                 <div class="newsite-images">
                     <?php include 'siteimages.php' ?>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="pull-right">
+                    <small><a href="http://blog.jumoo.co.uk/c/site-review/">Our latest site reviews are avalible on our blog</a></small>
                 </div>
             </div>
         </div>

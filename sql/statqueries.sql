@@ -1,17 +1,17 @@
 -- AveScore
-SELECT sum(Score) / count(*) as AveScore from SpeedyResults_View where MonthId = 31 and Platform = 'mobile';
+SELECT sum(Score) / count(*) as AveScore from SpeedyResults_View where MonthId = 35 and Platform = 'mobile';
 
 -- Ave Size
-SELECT (sum(total) / count(*)) / 1024 as Size from SpeedyResults_View where MonthId = 31 and Platform = 'mobile';
+SELECT (sum(total) / count(*)) / 1024 as Size from SpeedyResults_View where MonthId = 35 and Platform = 'mobile';
 
 -- Test Count 
 select count(*) from Speedy_Result;
 
 -- New Sites
-select count(*) from newsites where NewMonthId = 31;
+select count(*) from newsites where NewMonthId = 35;
 
 -- Year sites
-select count(*) from newsites where NewMonthId > (31-12);
+select count(*) from newsites where NewMonthId > (35-12);
 
 -- total new 
 select count(*) from newsites

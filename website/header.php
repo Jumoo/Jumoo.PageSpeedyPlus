@@ -48,6 +48,7 @@
 							<li class="divider"></li>
 							<li><a href="reports.php">SiteSpeedy Reports</a></li>
 							<li><a href="https://github.com/KevinJump/Jumoo.PageSpeedyPlus/">Get the code</a></li>
+							<li><a href="http://blog.jumoo.co.uk/2016/pagespeedyspider/">PageSpeedy Spider</a></li>
 						</ul>
 					</li>
 				</ul>

@@ -9,6 +9,7 @@ import urllib;
 import urllib2;
 import json;
 import time;
+from multiprocessing import Pool
 
 import base64
 
@@ -26,17 +27,17 @@ class MobileCheck(object):
         
         sites = self.db.getUncheckedMobileSites(monthId)
         
-        print 'Processing ', len(sites), ' sites' 
-        
-        for site in sites:
-        
-            siteId = site[0]
-            siteName = site[1]
-            siteUrl = site[2]
-            
-            print ''
-            print siteId, siteName, siteUrl, 
-            self.getMobileResult(siteUrl, siteId, monthId)
+        print 'Processing ', len(sites), ' sites'
+
+       #for site in sites:
+       # 
+       #     siteId = site[0]
+       #     siteName = site[1]
+       #     siteUrl = site[2]
+       #     
+       #     print ''
+       #     print siteId, siteName, siteUrl, 
+       #     self.getMobileResult(siteUrl, siteId, monthId)
 
     def getMobileResult(self, url, siteId, monthId):
     
@@ -65,6 +66,15 @@ class MobileCheck(object):
             
             print 'get mobile result error:', url, e
 
+
+def processSite(site):
+    siteId = site[0]
+    siteUrl = site[2]
+    print siteId, siteUrl
+
+    mc = MobileCheck()
+    mc.getMobileResult(siteUrl, siteId, 32)
+
 def main(argv):
     monthid = 0 
 
@@ -81,8 +91,19 @@ def main(argv):
     print 'MonthId [', monthid , ']'
 
     if monthid != 0:
-        mc = MobileCheck()
-        mc.runCheck(monthid)  
+        db = SpeedyDb();
+   
+        print 'running mobile check'
+        
+        sites = db.getUncheckedMobileSites(monthid)
+        
+        print 'Processing ', len(sites), ' sites'
+
+        pool = Pool(processes=8)
+        pool.map(processSite, sites)
+        pool.close()
+        pool.join()         
+
 
 if __name__ == '__main__':
     main(sys.argv[1:])                          

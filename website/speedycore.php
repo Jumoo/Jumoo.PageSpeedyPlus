@@ -191,7 +191,7 @@ class Speedy
 	{
 		$speedytable = array() ;
 
-		$tablesql = 'SELECT * FROM SPEEDYRESULTS_VIEW WHERE monthId = :month and platform = :platform ORDER BY Score DESC;';
+		$tablesql = 'SELECT * FROM SPEEDYRESULTS_VIEW WHERE monthId = :month and platform = :platform ORDER BY Score DESC, Total ASC;';
 		$statement = $this->db->prepare($tablesql);
 		$statement->bindValue(':month', $month, SQLITE3_TEXT);
 		$statement->bindValue(':platform', $platform, SQLITE3_TEXT);

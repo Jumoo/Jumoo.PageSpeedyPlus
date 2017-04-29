@@ -3,14 +3,13 @@
 		"JADU": {
 			"website": "www.jadu.net",
 			"cats": [ 1 ],
-			"meta": { "generator": "http://www.jadu.net" },
-			"html": "Jadu"
+			"html": "[Jj]adu"
 		},
 		
 		"GOSS icm": {
 			"website": "www.goss.com",
 			"cats": [ 1 ],
-			"html": "GOSS iCM"
+			"html": ["GOSS iCM", "index\\.aspx\\?articleid="]
 		},
 		
 		"EasySite": {
@@ -113,18 +112,47 @@
 			"website": "",
 			"cats": [108],
 			"html": "gladstonemrm"
+		},
+		"Kentico CMS": {
+			"cats": [1],
+			"html" : "/CMSPages/GetResource.ashx",
+			"website": "www.kentico.com"
+		}, 
+		"Microsoft SharePoint": {
+			"website": "",
+			"cats": [1],
+			"html": "MSOWebPartPageFormName"		
+		},
+		"Cuttlefish CMS": {
+			"website": "",
+			"cats": [1],
+			"html": "Cuttlefish CMS"		
+		},
+		"Squarespace": {
+			"website": "",
+			"cats": [1],
+			"html": "This is Squarespace"
+		},
+		"Contensis": {
+			"cats": ["1"],
+			"icon": "Contens.png",
+			"implies": ["Java","CFML"],
+			"meta": {
+				"generator": "Contensis CMS Version ([\\d.]+)\\;version:\\1"
+			},
+			"website": "http://www.contens.com/en/pub/index.cfm",
+			"html": "Contensis CMS"
 		}
-		
     },
     "categories": {
-        "100": "Planning System",
-        "101": "School Admissions",
-		"102": "Democracy Services",
-		"103": "Library System",
-		"104": "Self Service Portal",
-		"105": "GIS System",
-		"106": "Streetscene",
-		"107": "Survey Tools",
-		"108": "Lesuire Services"
+        "100": { "name": "Planning System", "priority": "9"},
+        "101": { "name": "School Admissions", "priority": "9"},
+		"102": { "name": "Democracy Services", "priority": "9"},
+		"103": { "name": "Library System", "priority": "9"},
+		"104": { "name": "Self Service Portal", "priority": "9"},
+		"105": { "name": "GIS System", "priority": "9"},
+		"106": { "name": "Streetscene", "priority": "9"},
+		"107": { "name": "Survey Tools", "priority": "9"},
+		"108": { "name": "Lesuire Services", "priority": "9"}
 	}
 }

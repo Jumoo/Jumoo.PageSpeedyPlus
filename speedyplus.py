@@ -15,7 +15,7 @@ from speedy.pagespeedy import PageSpeedy
 from speedy.speedywapple import SpeedyWapple
 from speedy.speedyachecker import AChecker
 from speedy.peeky import Peeky
-from speedy.screengrabby import ScreenGrabby as grabby
+from speedy.screengrabby import ScreenGrabby 
 
 def main(argv):
 	monthid = 0 
@@ -52,8 +52,8 @@ def main(argv):
 			ps = PageSpeedy()
 			ps.ProcessSingleSite(single, monthid)
 			
-			#wp = wapple.SpeedyWapple()
-			#wp.ProcessSingleSite(single, monthid)
+			wp = wapple.SpeedyWapple()
+			wp.ProcessSingleSite(single, monthid)
 			
 			#ch = checker.AChecker()
 			#ch.ProcessSingleSite(single, monthid)
@@ -63,7 +63,7 @@ def main(argv):
 			s.backup(monthid)	
 		
 		# pagespeed check
-		#	ps = speedy.PageSpeedy()
+		#	ps = PageSpeedy()
 		#	ps.runSpeedy(monthid)
 			
 		# wapplizer check
@@ -73,7 +73,7 @@ def main(argv):
 		# peeky (extra looking)			
 			pky = Peeky()
 			pky.goPeek(monthid)
-			pky.close();
+			pky.close()
 
 		# screengrabs
 			grab = ScreenGrabby()

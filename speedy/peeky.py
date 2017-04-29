@@ -8,8 +8,6 @@ from urlparse import urlparse
 
 import speedydb
 
-month = 19
-
 
 class Peeky(object):
 
@@ -34,19 +32,19 @@ class Peeky(object):
 			
 				if (self.checkForDrupal(siteUrl)):
 					print siteId, siteName, siteUrl, 'Drupal'
-					self.db.saveFeatures(monthId, siteId, 'Drupal', 'cms', '')
+					self.db.saveFeatures(monthId, siteId, 'Drupal', 'CMS', '')
 				elif ( self.checkForUmbraco(siteUrl)):
 					print siteId, siteName, siteUrl, 'Umbraco'
-					self.db.saveFeatures(monthId, siteId, 'Umbraco', 'cms', '')
+					self.db.saveFeatures(monthId, siteId, 'Umbraco', 'CMS', '')
 				elif (self.checkForWordpress(siteUrl)):
 					print siteId, siteName, siteUrl, 'Wordpress'
 					self.db.saveFeatures(monthId, siteId, 'WordPress', 'blogs', '')
 				elif (self.checkForOrchard(siteUrl)):
 					print siteId, siteName, siteUrl, 'Orchard CMS'
-					self.db.saveFeatures(monthId, siteId, 'Orchard CMS', 'cms', '')
+					self.db.saveFeatures(monthId, siteId, 'Orchard CMS', 'CMS', '')
 				elif (self.checkForKentico(siteUrl)):
 					print siteId, siteName, siteUrl, 'Kentico'
-					self.db.saveFeatures(monthId, siteId, 'Kentico CMS', 'cms', '')
+					self.db.saveFeatures(monthId, siteId, 'Kentico CMS', 'CMS', '')
 			except:
 				print 'failed to get site' ,		
 
@@ -55,7 +53,12 @@ class Peeky(object):
 	def checkForUmbraco(self, url):
 		umbracoFile = "/umbraco_client/application/jquery/verticalalign.js"
 		umbracoText = 'fn.VerticalAlign = function(opts)'
-		return self.checkForFileAndContents(url, umbracoFile, umbracoText)
+		find = self.checkForFileAndContents(url, umbracoFile, umbracoText)
+		if (find):
+			return True
+		else:
+			return self.checkForFileAndContents(url, '/', "umbraco" )
+
 		
 	def checkForOrchard(self, url):
 		orchardFile = "/Themes/SafeMode/Styles/ie6.css"
@@ -70,8 +73,8 @@ class Peeky(object):
 		return self.checkForFileAndContents(url, '/wp-trackback.php', 'I really need an ID')
 		
 	def checkForKentico(self, url):
-		sitefile = '/CMSPages/GetResource.ashx?stylesheetfile=/App_Themes/Default/DesignMode.css'
-		return self.checkForFileAndContents(url, sitefile, '.default_')
+		sitefile = '/CMSPages/GetResource.ashx?stylesheetfile=/App_Themes/Default/CMSDesk.css'
+		return self.checkForFileAndContents(url, sitefile, 'ObjectEditMenuInfo')
   
 	def checkForFileAndContents(self, url, portion, text):
 		fullUrl = url + portion
@@ -84,7 +87,10 @@ class Peeky(object):
   
 	def getContent(self, url):
 		try:
-			response = urllib2.urlopen(url, timeout=10)
+			headers = {'User-agent': 'Mozilla/5.0'}
+			request = urllib2.Request(url, None, headers)
+			response = urllib2.urlopen(request, timeout=10)
+			# response = urllib2.urlopen(url, timeout=10)
 			return response.read()
 		except:
 			return ''
@@ -118,7 +124,7 @@ def main(argv):
 	if monthid != 0:
 		peeky = Peeky()
 		peeky.goPeek(monthid)
-		peeky.close();
+		peeky.close()
 
 
 if __name__ == '__main__':

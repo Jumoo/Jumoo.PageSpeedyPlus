@@ -1,11 +1,11 @@
 [
     ".gif", ".jpg", ".jpeg", ".png",
     "\\/external", "@", "javascript:", 
-    "\\?page=\\d{3}", "\\?p=\\d{3}", 
+    "[\\?|&]page=\\d{3}", "\\?p=\\d{3}", 
     "authenticate\\.aspx", "search\\.aspx", "search\\?=q", "search\\/\\?",
     "\\/localviewext",
     "calendar-node-field-event-date",
-    "&char=", 
+    "[\\?|&]char=", 
     "mgelection", "mguserinfo", "mgissuehistoryhome", "mgattendance", "mgcalendar",
     "(article\\/+\\d{1,5}\\/){2}",
     "((calendar([-|\\w]+)?)\\D(((day|month|week|year)(.?[a-z]+)?)(\\D))?\\d{2,4})",
@@ -21,8 +21,8 @@
     "feedback(modal|\\.aspx)?", 
     "\\/article\\/\\d+\\/article\\/\\d+",
     "rate-this-page", "(tel%3A|tel:)", "comment-on-this-page", "page-rating\\?",
-    "\\?acceptcookies=",
-    "\\?vaction=", "\\/page_comments\\/",
+    "[\\?|&]acceptcookies=",
+    "[\\?|&]vaction=", "\\/page_comments\\/",
     "login.aspx", "register.aspx",
     "[\\?|\\&]language=", "\\/textsize\\/"
 ]

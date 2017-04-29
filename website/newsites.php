@@ -29,7 +29,6 @@
 
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<small><em>(sites that have changed during <?php echo substr($speedy->getMonthName(intval($month)-1),4); ?>)</em></small>			
 			<?php DisplayNewSites($speedy, $month) ?>
 		</div>
 	</div>

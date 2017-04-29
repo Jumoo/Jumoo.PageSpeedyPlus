@@ -26,7 +26,6 @@ CREATE TABLE Textly(Id INTEGER PRIMARY KEY, SiteId INTEGER, MonthID, INTEGER, Tr
 CREATE TABLE MobileCheck(Id INTEGER PRIMARY KEY, SiteId INTEGER, MonthId INTEGER, PASS BOOLEAN);
 /*
  * Load Some Months
- *
  */
  
 INSERT INTO Months(Name, Processed) VALUES("02: February 14", 0);
@@ -52,4 +51,6 @@ CREATE INDEX Feature_Sites on Features (SiteId);
 CREATE INDEX Feature_Months on Features (MonthId);
 CREATE INDEX Speedy_Months on Speedy (MonthId);
 
+CREATE TABLE CMS_Speeds (Id INTEGER PRIMARY KEY, MonthId INTEGER, Max REAL, Min REAL, CMS TEXT );
 
+CREATE TABLE Reviews (Id INTEGER PRIMARY KEY, SiteId INTEGER, URL TEXT)

@@ -11,6 +11,7 @@ speedySql_insert = "INSERT INTO Speedy(SiteId, MonthId) VALUES({0}, {1});"
 spResultSql = "INSERT INTO Speedy_Result(SpeedyId, Platform, Score, Html, Img, Css, Js, Other, Total) VALUES({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8});"
 
 wapFeature_insert = "INSERT INTO Features(SiteId, MonthId, Application, Category, Version) VALUES({0}, {1}, '{2}','{3}','{4}');"
+wapFeature_clear = "DELETE FROM Features WHERE SiteId = {0} AND MonthId = {1};"
 
 checker_insert = "INSERT INTO Checker(SiteId, MonthID, Status, Errors) VALUES({0}, {1}, '{2}', {3});"
 mobileCheck_insert = "INSERT INTO MobileCheck(SiteId, MonthId, Pass) VALUES({0},{1},'{2}');"
@@ -158,6 +159,10 @@ class SpeedyDb(object):
 
 		self.cur.execute(spResultSql.format(speedyid, siteType, score, html, img, css, js, other, total))
 		self.con.commit() 
+
+	def clearFeatures(self, siteId, monthId):
+		self.cur.execute(wapFeature_clear.format(siteId, monthId))
+		self.con.commit()
 
 	def saveFeatures(self, monthId, siteId, app, categories, version):
 		if ( self.IsFeatureSet(siteId, monthId, app) == False):
